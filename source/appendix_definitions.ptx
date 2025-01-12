@@ -32,7 +32,7 @@
     </fn> gives this definition of <em>continuous</em>.
   </p>
   <blockquote>
-    Characterized by continuity; extending in space without interruption of substance; having no interstices or breaks; having its parts in immediate connection; connected, unbroken.
+    <p>Characterized by continuity; extending in space without interruption of substance; having no interstices or breaks; having its parts in immediate connection; connected, unbroken.</p>
   </blockquote>
   <p>
     Likewise, we often hear calculus students speak of a continuous function as one whose graph can be drawn
@@ -48,9 +48,9 @@
     Contrast the OED's descriptive definition of continuous with the definition of continuous found in a real analysis textbook.
   </p>
   <blockquote>
-    A function <m>f:A\to \mathbb{R}</m> is <em>continuous at a point</em> <m>c\in A</m> if,  for all <m>\varepsilon>0</m>, there exists <m>\delta>0</m> such that whenever <m>|x-c|\lt \delta</m> (and <m>x\in A</m>) it follows that <m>|f(x)-f(c)|\lt \varepsilon</m>. If <m>f</m> is continuous at every point in the domain <m>A</m>, then we say that <m>f</m> is <em>continuous on</em> <m>A</m>.<fn>
+    <p>A function <m>f:A\to \mathbb{R}</m> is <em>continuous at a point</em> <m>c\in A</m> if,  for all <m>\varepsilon>0</m>, there exists <m>\delta>0</m> such that whenever <m>|x-c|\lt \delta</m> (and <m>x\in A</m>) it follows that <m>|f(x)-f(c)|\lt \varepsilon</m>. If <m>f</m> is continuous at every point in the domain <m>A</m>, then we say that <m>f</m> is <em>continuous on</em> <m>A</m>.<fn>
     This definition is taken from page 109 of Stephen Abbott's <em>Understanding Analysis</em>, but the definition would be essentially the same in any modern real analysis textbook.
-    </fn></blockquote>
+    </fn></p></blockquote>
   <p>
     In mathematics there is very little freedom in definitions.
     Mathematics is a deductive theory;
