@@ -1,0 +1,15 @@
+INFO    : Using PreTeXt-CLI version: 2.11.4.  This is the latest available version.
+
+INFO    : PreTeXt project found in `/Users/danaernst/GitHub/IntroToProofViaIBL`.
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext init --refresh` to produce a compatible file.
+INFO    : Staging deployment according to strategy default_target
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Staging latest build located in `/Users/danaernst/GitHub/IntroToProofViaIBL/output/web` at `/Users/danaernst/GitHub/IntroToProofViaIBL/output/stage`.
+INFO    : 
+INFO    : Preparing to deploy from active `main` git branch.
+INFO    : 
+INFO    : Changes to project source since last commit detected.
+INFO    : Add/committing these changes to local Git repository.
+INFO    : 
