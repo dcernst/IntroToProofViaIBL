@@ -34,7 +34,13 @@
     and second, they retained only some of what I had taught them.
     In the words of Dylan Retsek:
   </p>
-  ``Things my students claim that I taught them masterfully, they don't know."
+
+<blockquote>
+<p>Things my students claim that I taught them masterfully, they don't know.</p>
+</blockquote>
+
+  <!-- ``Things my students claim that I taught them masterfully, they don't know." -->
+
   <p>
     Inspired by a desire to address these concerns, I began transitioning away from direct instruction towards a more student-centered approach.
     The goals and philosophy behind inquiry-based learning (IBL) resonate deeply with my ideals,
@@ -81,12 +87,17 @@
     you can either make a pull request on GitHub or submit the improvements via email.
     You are also welcome to fork the source and modify the text for your purposes as long as you maintain the Creative Commons Attribution-Share Alike 4.0 International License.
   </p>
-  <p>
+  <!-- <p>
     \epigraph{Much more important than specific mathematical results are the habits of mind used by the people who create those results.
     <ellipsis/> Although it is necessary to infuse courses and curricula with modern content,
     what is even more important is to give students the tools they will need in order to use,
     understand,
     and even make mathematics that does not yet exist.}{Cuoco, Goldenberg, &amp; Mark in
     <em>Habit of Mind: An Organizing Principle for Mathematics Curriculum</em>}
-  </p>
+  </p> -->
+
+<blockquote>
+<p>Much more important than specific mathematical results are the habits of mind used by the people who create those results. <ellipsis/> Although it is necessary to infuse courses and curricula with modern content, what is even more important is to give students the tools they will need in order to use, understand, and even make mathematics that does not yet exist.</p>
+<attribution>Cuoco, Goldenberg, &amp; Mark in <em>Habit of Mind: An Organizing Principle for Mathematics Curriculum</em></attribution>
+</blockquote>
 </preface>
