@@ -10,7 +10,7 @@
     <statement>
       <p>
         Let <m>r\in\mathbb{R}</m>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               We say that <m>r</m> is <term>rational</term> if <m>r=\frac{m}{n}</m>,

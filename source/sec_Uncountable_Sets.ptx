@@ -53,7 +53,7 @@
         <me>
           b_i=\begin{cases}2, \amp  \text{ if } a_{ii}\neq 2\\ 3, \amp  \text{ if } a_{ii}=2. \end{cases}
         </me>
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               Prove that the decimal expansion that defines <m>b</m> above is in standard decimal form.
@@ -184,7 +184,7 @@
         Determine whether each of the following statements is true or false.
         If a statement is true, prove it.
         Otherwise, provide a counterexample.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               If <m>A</m> and <m>B</m> are sets such that <m>A</m> is uncountable,

@@ -151,7 +151,7 @@
 <problem>
 <statement>
 <p>Assume that <m>x\in\mathbb{Z}</m>. Consider the following proposition: If <m>x</m> is odd, then 2 does not divide <m>x</m>.
- <ol marker="labeltextrmalph">
+ <ol marker="a">
 <li><p>Prove the contrapositive of this statement.</p></li>
 <li><p>Prove the statement using a proof by contradiction.</p></li>
 </ol>

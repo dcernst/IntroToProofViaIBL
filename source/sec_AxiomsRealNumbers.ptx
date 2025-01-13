@@ -141,7 +141,7 @@ we should make it clear how the natural numbers are embedded in <m>\mathbb{R}</m
 <p>We define the <term>natural numbers</term>,
 denoted by <m>\mathbb{N}</m>,
 to be the smallest subset of <m>\mathbb{R}</m> satisfying:
-<!-- <ol marker="labeltextrmalph"> -->
+<!-- <ol marker="a"> -->
 <ol marker="a">
 <li><p><m>1\in\mathbb{N}</m>, and</p></li>
 <li><p>for all <m>n\in\mathbb{N}</m>, we have <m>n+1\in\mathbb{N}</m>.</p></li>
@@ -167,7 +167,7 @@ Take a moment to think about why the following is a definition as opposed to an 
 <statement>
 <p>For every <m>a,b\in\mathbb{R}</m> and
 <m>n\in\mathbb{Z}</m>, we define the following:
-<ol marker="labeltextrmalph">
+<ol marker="a">
 <li><p><m>\tcboxmath{a-b\coloneqq a+(-b)}</m></p></li>
 <li><p><m>\tcboxmath{\displaystyle\frac{a}{b}\coloneqq ab^{-1}}</m> (for <m>b\neq 0</m>)</p></li>
 <li><p><m>\tcboxmath{\displaystyle a^n\coloneqq \begin{cases}\overbrace{aa\cdots a}^n, \amp \text{ if } n\in \mathbb{N}\\ 1, \amp \text{ if } n=0\text{ and } a\neq 0\\ \displaystyle\frac{1}{a^{-n}}, \amp \text{ if } -n\in \mathbb{N}\text{ and } a\neq 0 \end{cases} }</m></p></li>
@@ -191,7 +191,7 @@ we can prove each of the statements in the following theorem.</p>
 <theorem xml:id="thm_consequences_of_axioms">
 <statement>
 <p>For all <m>a,b,c\in\mathbb{R}</m>, we have the following:
-<ol marker="labeltextrmalph">
+<ol marker="a">
 <li><p><m>a=b</m> if and only if <m>a+c=b+c</m>;</p></li>
 <li><p><m>0a=0</m>;</p></li>
 <li><p><m>-a=(-1)a</m>;</p></li>
@@ -247,7 +247,7 @@ There are similar definitions for
 <definition>
 <statement>
 <p>For <m>a,b\in\mathbb{R}</m>, we define:
-<ol marker="labeltextrmalph">
+<ol marker="a">
 <li><p><m>\tcboxmath{a>b}</m> if <m>b\lt a</m>;</p></li>
 <li><p><m>\tcboxmath{a\leq b}</m> if <m>a\lt b</m> or <m>a=b</m>;</p></li>
 <li><p><m>\tcboxmath{a\geq b}</m> if <m>b\leq a</m>.</p></li>
@@ -300,7 +300,7 @@ then <m>ac\lt bd</m>.</p>
 <theorem>
 <statement>
 <p>For all <m>a,b\in\mathbb{R}</m>, we have the following:
-<ol marker="labeltextrmalph">
+<ol marker="a">
 <li><p><m>ab>0</m> if and only if either <m>a,b>0</m> or <m>a,b\lt 0</m>;</p></li>
 <li><p><m>ab\lt 0</m> if and only if <m>a\lt 0\lt b</m> or <m>b\lt 0\lt a</m>.</p></li>
 </ol>
@@ -660,7 +660,7 @@ Try defining them.</p>
 <problem xml:id="prob_find_upper_bounds">
 <statement>
 <p>Find all upper bounds and all lower bounds for each of the following sets when they exist.
-<ol marker="labeltextrmalph">
+<ol marker="a">
 <li><p><m>\{5,11,17,42,103\}</m></p></li>
 <li><p><m>\mathbb{N}</m></p></li>
 <li><p><m>\mathbb{Z}</m></p></li>

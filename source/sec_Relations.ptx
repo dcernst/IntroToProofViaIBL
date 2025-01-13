@@ -271,7 +271,7 @@ edge [bend left]  node {} (A)
         <me>
           {R}=\{(a,a),(a,b),(a,c),(b,b),(b,a),(b,c),(c,c),(c,a),(c,b),(d,d)\}
         </me>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               Draw the digraph for <m>R</m>.
@@ -331,7 +331,7 @@ edge [bend left]  node {} (A)
       <p>
         For each of the following,
         draw a portion of the graph that represents the relation as a subset of <m>\mathbb{R}^2</m>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>\{(x,y)\in \mathbb{R}^2 \mid y=x^2\}</m>
@@ -475,7 +475,7 @@ edge [bend left]  node {} (A)
     <statement>
       <p>
         Let <m>R</m> be a relation on a set <m>A</m>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               The relation <m>R</m> is <term>reflexive</term>
@@ -504,7 +504,7 @@ edge [bend left]  node {} (A)
     <statement>
       <p>
         Here are a few examples that illustrate the concepts in the previous definition.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               The relation <m>=</m> on <m>\mathbb{R}</m> is reflexive,
@@ -535,7 +535,7 @@ edge [bend left]  node {} (A)
         Determine whether the relations given in each of the following is reflexive,
         symmetric,
         or transitive.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <xref ref="ex_relation_on_finite">Example</xref>
@@ -554,7 +554,7 @@ edge [bend left]  node {} (A)
     <statement>
       <p>
         Suppose <m>R</m> is a relation on a set <m>A</m>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               Explain what it means for <m>R</m> to
@@ -581,7 +581,7 @@ edge [bend left]  node {} (A)
     <statement>
       <p>
         Let <m>A=\{a,b,c,d,e\}</m>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               Define a relation <m>R</m> on <m>A</m> that is reflexive but not symmetric nor transitive.
@@ -653,7 +653,7 @@ edge [bend left]  node {} (A)
 <problem xml:id="prob_lots_of_relations">
 <statement>
 <p>Determine whether each of the following relations is reflexive, symmetric, or transitive. In each case, you should either provide a specific counterexample or a proof.
-<ol marker="labeltextrmalph">
+<ol marker="a">
 <li><p>Consider the relation <m>T</m> described in <xref ref="ex_Twitter">Example</xref>.</p></li>
 <li><p>Consider the relation <m>F</m> described in <xref ref="prob_facebook">Problem</xref>.</p></li>
 <li><p>Consider the relation <m>\equiv_5</m> described in <xref ref="prob_mod_5">Problem</xref>.</p></li>

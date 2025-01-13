@@ -185,7 +185,7 @@ some of which are polygons with finite area
 (bounded regions)
 and some of which are not
 (unbounded regions).
-<ol marker="labeltextrmalph">
+<ol marker="a">
   <li>
 <p>
   Let <m>R(n)</m> be the number of regions the plane is divided into by <m>n</m> lines in general position.

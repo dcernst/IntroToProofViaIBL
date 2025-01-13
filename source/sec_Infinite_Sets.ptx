@@ -48,7 +48,7 @@
         Quickly verify that the following sets are infinite by appealing to <xref ref="thm_naturalNumbersInfinite">Theorem</xref>,
         <xref ref="thm_infiniteSetsSameCardinality">Theorem</xref>,
         or <xref ref="prob_cardinalityPractice">Problem</xref>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               The set of odd natural numbers
@@ -209,7 +209,7 @@
       <p>
         Quickly verify that the following sets are infinite by appealing to either <xref ref="thm_infiniteSetTFAE">Theorem</xref>
         (use (ii) implies (i)) or <xref ref="cor_infiniteSetInfiniteSubset">Corollary</xref>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               Set of odd natural numbers

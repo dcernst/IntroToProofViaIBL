@@ -150,7 +150,7 @@
         Determine whether each of the following statements is true or false.
         If a statement is true, prove it.
         If a statement is false, provide a counterexample.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               The product of an odd integer and an even integer is odd.
@@ -197,7 +197,7 @@
         For <m>n,m\in\mathbb{Z}</m>,
         how are the following mathematical expressions similar and how are they different?
         In particular, is each one a sentence or simply a noun?
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>n|m</m>
@@ -241,7 +241,7 @@
         Determine whether each of the following statements is true or false.
         If a statement is true, prove it.
         If a statement is false, provide a counterexample.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li xml:id="prob_first_divisibility_example">
             <p>
               If <m>a|n</m>, then <m>a|mn</m>.
@@ -348,7 +348,7 @@
         determine whether each of the following statements is true or false.
         If a statement is true, prove it.
         If a statement is false, provide a counterexample.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               If <m>a</m> divides <m>n^2</m>,

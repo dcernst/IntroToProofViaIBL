@@ -52,7 +52,7 @@
       <p>
         Determine whether each of the following sets is open.
         Justify your assertions.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>(1,2)</m>
@@ -144,7 +144,7 @@
     <statement>
       <p>
         If <m>U</m> and <m>V</m> are open sets, then
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>U\cup V</m> is an open set, and
@@ -193,7 +193,7 @@
     <statement>
       <p>
         Give an example of each of the following.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               A collection of open sets <m>\{U_{\alpha}\}_{\alpha\in\Delta}</m> such that <m>\bigcap_{\alpha\in\Delta} U_{\alpha}</m> is an open set.
@@ -236,7 +236,7 @@
       <p>
         Consider the open interval <m>I=(1,2)</m>.
         Prove each of the following.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               The points <m>1</m> and <m>2</m> are accumulation points of <m>I</m>.
@@ -323,7 +323,7 @@
       <p>
         Provide an example of each of the following.
         You do not need to prove that your answers are correct.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               A set that is open but not closed.
@@ -384,7 +384,7 @@
     <statement>
       <p>
         If <m>A</m> and <m>B</m> are closed sets, then
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>A\cup B</m> is a closed set, and
@@ -432,7 +432,7 @@
 <problem xml:id="prob_open_or_closed">
 <statement>
 <p>Determine whether each of the following sets is open, closed, both, or neither.
-<ol marker="labeltextrmalph">
+<ol marker="a">
 <li><m>V=\bigcup_{n=2}^{\infty} \left(n - \frac{1}{2},n\right)</m></li>
 <li><p><m>W=\bigcap_{n=2}^{\infty} \left(n - \frac{1}{2},n\right)</m></p></li>
 <li><p><m>X=\bigcap_{n=1}^{\infty} \left(-\frac{1}{n}, \frac{1}{n}\right)</m></p></li>
@@ -471,7 +471,7 @@
       <p>
         Determine whether each of the following sets is compact.
         Briefly justify your assertions.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>[0,1)\cup [2,3]</m>

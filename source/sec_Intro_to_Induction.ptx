@@ -2,7 +2,7 @@
   <title>Introduction to Induction</title>
   <p>
 Consider the claims:
-<ol marker="labeltextrmalph">
+<ol marker="a">
   <li>
 <p>
   For all <m>n\in\mathbb{N}</m>,

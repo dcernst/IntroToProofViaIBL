@@ -14,7 +14,7 @@
 <problem>
 <statement>
 <p>Determine whether each of the following is a proposition. Explain your reasoning.
-<ol marker="labeltextrmalph">
+<ol marker="a">
 <li><p>All cars are red.</p></li>
 <li><p>Every person whose name begins with J has the name Joe.</p></li>
 <li><p><m>x^2=4</m>.</p></li><li><p>There exists a real number <m>x</m> such that <m>x^2=4</m>.</p></li>
@@ -36,7 +36,7 @@
 <definition xml:id="def_logical_connectives">
 <statement>
 <p>Let <m>A</m> and <m>B</m> be propositions.
-<ol marker="labeltextrmalph">
+<ol marker="a">
 <li><p>The proposition <q><term>not <m>A</m></term></q> is true if <m>A</m> is false; expressed symbolically as <m>\tcboxmath{\neg A}</m> and called the <term>negation</term> of <m>A</m>.</p></li>
 <li><p>The proposition <q><term><m>A</m> and <m>B</m></term></q> is true if both <m>A</m> and <m>B</m> are true; expressed symbolically as <m>\tcboxmath{A \wedge B}</m> and called the <term>conjunction</term>  of <m>A</m> and <m>B</m>.</p></li>
 <li><p>The proposition <q><term><m>A</m> or <m>B</m></term></q> is true if at least one of <m>A</m> or <m>B</m> is true; expressed symbolically as <m>\tcboxmath{A \vee B}</m> and called the <term>disjunction</term> of <m>A</m> and <m>B</m>.</p></li>
@@ -60,7 +60,7 @@
         and <m>B</m> represent
         <q>4 divides 6.</q>
         Express each of the following compound propositions in an ordinary English sentence and then determine its truth value.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>A \wedge B</m>
@@ -271,7 +271,7 @@
         Let <m>x</m> be your favorite real number.
         Negate each of the following statements.
         Note that the statement in Part<nbsp/>(b) involves a conjunction.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>x\lt -1</m> or <m>x\geq 3</m>.
@@ -365,7 +365,7 @@
       <p>
         Let <m>A</m> and <m>B</m> represent the statements from <xref ref="prob_translations">Problem</xref>.
         Express each of the following in an ordinary English sentence.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               The converse of <m>A \implies B</m>.
@@ -435,7 +435,7 @@
         and
         <q>Every rectangle is a trapezoid,</q>
         respectively.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               Express <m>A\implies B</m> as an English sentence involving the disjunction

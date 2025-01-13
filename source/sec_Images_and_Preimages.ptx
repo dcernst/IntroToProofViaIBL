@@ -7,7 +7,7 @@
 <definition>
 <statement>
 <p>Let <m>f:X\to Y</m> be a function.
-<ol marker="labeltextrmalph">
+<ol marker="a">
 <li><p>If <m>S\subseteq X</m>, the <term>image</term> of <m>S</m> under <m>f</m> is defined via
 <me>
 \tcboxmath{f(S)\coloneqq \{f(x) \mid  x\in S\}}
@@ -61,7 +61,7 @@
       <p>
         Define <m>f:\mathbb{Z}\to\mathbb{Z}</m> via <m>f(x)=x^2</m>.
         List elements in each of the following sets.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>f(\{0,1,2\})</m>
@@ -81,7 +81,7 @@
       <p>
         Define <m>f:\mathbb{R}\to\mathbb{R}</m> via <m>f(x)=3x^2-4</m>.
         Find each of the following sets.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>f(\{-1,1\})</m>
@@ -140,7 +140,7 @@
     <statement>
       <p>
         Define <m>f:\mathbb{R}\to\mathbb{R}</m> via <m>f(x)=x^2</m>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               Find two nonempty subsets <m>A</m> and <m>B</m> of <m>\mathbb{R}</m> such that
@@ -183,7 +183,7 @@
         Determine whether each of the following statements is true or false.
         If a statement is true, prove it.
         Otherwise, provide a counterexample.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               If <m>A\subseteq B</m>, then <m>f(A)\subseteq f(B)</m>.
@@ -275,7 +275,7 @@
       <p>
         Let <m>f:X\to Y</m> be a function and suppose
         <m>\{A_{\alpha}\}_{\alpha\in\Delta}</m> is a collection of subsets of <m>X</m>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>\displaystyle f\left(\bigcup_{\alpha\in\Delta} A_{\alpha}\right)=\bigcup_{\alpha\in\Delta} f\left(A_{\alpha}\right)</m>.
@@ -295,7 +295,7 @@
       <p>
         Let <m>f:X\to Y</m> be a function and suppose
         <m>\{C_{\alpha}\}_{\alpha\in\Delta}</m> is a collection of subsets of <m>Y</m>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>\displaystyle f^{-1}\left(\bigcup_{\alpha\in\Delta} C_{\alpha}\right)=\bigcup_{\alpha\in\Delta} f^{-1}\left(C_{\alpha}\right)</m>.
@@ -323,7 +323,7 @@
       <p>
         Suppose that <m>f: \mathbb{R}\to \mathbb{R}</m> is a function satisfying
         <m>f(x+y)=f(x)+f(y)</m> for all <m>x,y\in\mathbb{R}</m>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               Prove that <m>f(0)=0</m>.

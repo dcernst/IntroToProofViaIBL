@@ -121,7 +121,7 @@
     <statement>
       <p>
         Prove that each of the following real functions is continuous using <xref ref="def_continuity">Definition</xref>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>f:\mathbb{R}\to \mathbb{R}</m> defined via <m>f(x)=x</m>.
@@ -162,7 +162,7 @@
     <statement>
       <p>
         Define <m>f:\mathbb{R}\to\mathbb{R}</m> via <m>f(x)=x^2</m>.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               Prove that <m>f</m> is continuous at 0.

@@ -78,7 +78,7 @@ we can also make a claim about which values of the free variables apply to the p
 Both of the following sentences are propositions.
 Decide whether each is true or false.
 What would it take to justify your answers?
-<ol marker="labeltextrmalph">
+<ol marker="a">
   <li>
 <p>
   For all <m>x\in\mathbb{R}</m>, <m>x^2-4=0</m>.
@@ -145,7 +145,7 @@ The collection of intended values for a variable is called the
 <statement>
   <p>
 Suppose our universe of discourse is the set of integers.
-<ol marker="labeltextrmalph">
+<ol marker="a">
   <li>
 <p>
   Provide an example of a predicate <m>P(x)</m> such that
@@ -195,7 +195,7 @@ We can interpret the formal statement
 as meaning
 <q>Everybody is married to somebody.</q>
 Interpret the meaning of each of the following statements in a similar way.
-<ol marker="labeltextrmalph">
+<ol marker="a">
   <li>
 <p>
   For all <m>x</m>, there exists <m>y</m> such that <m>M(x,y)</m>.
@@ -226,7 +226,7 @@ Interpret the meaning of each of the following statements in a similar way.
 <p>
 Suppose the universe of discourse is the set of real numbers and consider the predicate <m>F(x,y)\coloneqq</m> <q><m>x=y^2</m></q>.
 Interpret the meaning of each of the following statements.
-<ol marker="labeltextrmalph">
+<ol marker="a">
   <li>
 <p>
   There exists <m>x</m> such that there exists <m>y</m> such that <m>F(x,y)</m>.
@@ -322,7 +322,7 @@ becomes
   <p>
 Convert the following propositions into statements using only logical and mathematical symbols.
 Assume that the universe of discourse is the set of real numbers.
-<ol marker="labeltextrmalph">
+<ol marker="a">
   <li>
 <p>
   There exists <m>x</m> such that <m>x^2+1</m> is greater than zero.
@@ -400,7 +400,7 @@ Rewrite each in an equivalent way that makes the universal quantifier explicit w
 Consider the proposition <q>If <m>\varepsilon >0</m>,
 then there exists <m>N\in\mathbb{N}</m> such that
 <m>1/N\lt \varepsilon</m>.</q> Assume the universe of discourse is the set <m>\mathbb{R}</m>.
-<ol marker="labeltextrmalph">
+<ol marker="a">
   <li>
 <p>
   Express the statement in logical and mathematical symbols.
@@ -436,7 +436,7 @@ there exists <m>m\in\mathbb{R}</m> such that
 <statement>
   <p>
 Rewrite each of the following propositions in words and determine whether the proposition is true or false.
-<ol marker="labeltextrmalph">
+<ol marker="a">
   <li>
 <p>
   <m>(\forall n \in \mathbb{N})(n^2 \geq 5)</m>
@@ -475,7 +475,7 @@ Rewrite each of the following propositions in words and determine whether the pr
 <statement>
   <p>
 Consider the proposition <m>(\forall x)(\exists y)(xy=1)</m>.
-<ol marker="labeltextrmalph">
+<ol marker="a">
   <li>
 <p>
   Provide an example of a universe of discourse where this proposition is true.

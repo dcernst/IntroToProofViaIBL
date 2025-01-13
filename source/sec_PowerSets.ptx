@@ -37,7 +37,7 @@
     <statement>
       <p>
         For each of the following sets, find the power set.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>A=\{\circ, \triangle, \square\}</m>
@@ -110,7 +110,7 @@
         Determine whether each of the following statements is true or false.
         If the statement is true, prove it.
         If the statement is false, provide a counterexample.
-        <ol marker="labeltextrmalph">
+        <ol marker="a">
           <li>
             <p>
               <m>\mathcal{P}(S\cap T) \subseteq \mathcal{P}(S)\cap\mathcal{P}(T)</m>
