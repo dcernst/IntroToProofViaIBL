@@ -85,8 +85,8 @@
   <definition>
     <statement>
       <p>
-        An integer <m>n</m> is even if <m>n=2k</m> for some <m>k\in\mathbb{Z}</m>.
-        An integer <m>n</m> is odd if <m>n=2k+1</m> for some <m>k\in\mathbb{Z}</m>.
+        An integer <m>n</m> is <term>even</term> if <m>n=2k</m> for some <m>k\in\mathbb{Z}</m>.
+        An integer <m>n</m> is <term>odd</term> if <m>n=2k+1</m> for some <m>k\in\mathbb{Z}</m>.
       </p>
     </statement>
   </definition>
