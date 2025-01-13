@@ -183,11 +183,11 @@
     <statement>
       <p>
         Given <m>n,m\in\mathbb{Z}</m>,
-        we say that <m>n</m> divides <m>m</m>,
+        we say that <m>n</m> <term>divides</term> <m>m</m>,
         written <m>\tcboxmath{n|m}</m>,
         if there exists <m>k\in\mathbb{Z}</m> such that <m>m=nk</m>.
         If <m>n|m</m>,
-        we may also say that <m>m</m> is divisible by <m>n</m> or that <m>n</m> is a factor of <m>m</m>.
+        we may also say that <m>m</m> is <term>divisible</term> by <m>n</m> or that <m>n</m> is a <term>factor</term> of <m>m</m>.
       </p>
     </statement>
   </definition>
