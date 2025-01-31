@@ -97,15 +97,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.2';
+eBookConfig.runestone_version = '7.5.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.8b270ccf5298bad1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.d966d31a41778c59.css">
+<script src="_static/prefix-runtime.596d7408a9995282.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6a985cbf816db5c7.css">
 <style>
 #sec_baby_number_theory-16-1-1-1 { counter-set: sec_baby_number_theory-16-1-1-1 0; }
 #sec_baby_number_theory-16-1-1-1 > li::marker { content: ""counter(sec_baby_number_theory-16-1-1-1,lower-alpha)""; }
@@ -182,12 +182,6 @@ eBookConfig.enable_chatcodes =  false;
 #sec_More_About_Quantification-12-1-1-1 { counter-set: sec_More_About_Quantification-12-1-1-1 0; }
 #sec_More_About_Quantification-12-1-1-1 > li::marker { content: ""counter(sec_More_About_Quantification-12-1-1-1,lower-alpha)""; }
 #sec_More_About_Quantification-12-1-1-1 > li { counter-increment: sec_More_About_Quantification-12-1-1-1; }
-#sec_More_About_Quantification-13-1-1-1 { counter-set: sec_More_About_Quantification-13-1-1-1 0; }
-#sec_More_About_Quantification-13-1-1-1 > li::marker { content: ""counter(sec_More_About_Quantification-13-1-1-1,decimal)"."; }
-#sec_More_About_Quantification-13-1-1-1 > li { counter-increment: sec_More_About_Quantification-13-1-1-1; }
-#sec_More_About_Quantification-14-1-1-1 { counter-set: sec_More_About_Quantification-14-1-1-1 0; }
-#sec_More_About_Quantification-14-1-1-1 > li::marker { content: ""counter(sec_More_About_Quantification-14-1-1-1,decimal)"."; }
-#sec_More_About_Quantification-14-1-1-1 > li { counter-increment: sec_More_About_Quantification-14-1-1-1; }
 #sec_More_About_Quantification-24-1-1-1 { counter-set: sec_More_About_Quantification-24-1-1-1 0; }
 #sec_More_About_Quantification-24-1-1-1 > li::marker { content: ""counter(sec_More_About_Quantification-24-1-1-1,lower-alpha)""; }
 #sec_More_About_Quantification-24-1-1-1 > li { counter-increment: sec_More_About_Quantification-24-1-1-1; }
@@ -769,21 +763,21 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="thm_n_2_even_implies_n_even-1-1">If <span class="process-math">\(n\in\mathbb{Z}\)</span> such that <span class="process-math">\(n^2\)</span> is even, then <span class="process-math">\(n\)</span> is even.</div></article><article class="theorem theorem-like" id="thm_nm_even_implies_n_or_m_even"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.52</span><span class="period">.</span>
 </h3>
-<div class="para" id="thm_nm_even_implies_n_or_m_even-1-1">If <span class="process-math">\(n,m\in\mathbb{Z}\)</span> such that <span class="process-math">\(nm\)</span> is even, then <span class="process-math">\(n\)</span> is even or <span class="process-math">\(m\)</span> is even.</div></article><div class="para" id="sec_Techniques_for_Proving_Conditional_Propositions-14">Suppose that we want to prove some proposition <span class="process-math">\(P\)</span> (which might be something like <span class="process-math">\(A\implies B\)</span> or even more complicated). One approach, called <em class="emphasis">proof by contradiction</em>, is to assume <span class="process-math">\(\neg P\)</span> and then logically deduce a contradiction of the form <span class="process-math">\(Q\wedge \neg Q\text{,}\)</span> where <span class="process-math">\(Q\)</span> is some proposition. Since this is absurd, the assumption <span class="process-math">\(\neg P\)</span> must have been false, so <span class="process-math">\(P\)</span> is true. The tricky part about a proof by contradiction is that it is not usually obvious what the statement <span class="process-math">\(Q\)</span> should be.</div>
+<div class="para" id="thm_nm_even_implies_n_or_m_even-1-1">If <span class="process-math">\(n,m\in\mathbb{Z}\)</span> such that <span class="process-math">\(nm\)</span> is even, then <span class="process-math">\(n\)</span> is even or <span class="process-math">\(m\)</span> is even.</div></article><div class="para" id="sec_Techniques_for_Proving_Conditional_Propositions-14">Suppose that we want to prove some proposition <span class="process-math">\(P\)</span> (which might be something like <span class="process-math">\(A\implies B\)</span> or even more complicated). One approach, called <dfn class="terminology">proof by contradiction</dfn>, is to assume <span class="process-math">\(\neg P\)</span> and then logically deduce a contradiction of the form <span class="process-math">\(Q\wedge \neg Q\text{,}\)</span> where <span class="process-math">\(Q\)</span> is some proposition. Since this is absurd, the assumption <span class="process-math">\(\neg P\)</span> must have been false, so <span class="process-math">\(P\)</span> is true. The tricky part about a proof by contradiction is that it is not usually obvious what the statement <span class="process-math">\(Q\)</span> should be.</div>
 <article class="heuristic theorem-like" id="skeleton_pf_by_contradiction"><h3 class="heading">
-<span class="type">Skeleton Proof</span><span class="space"> </span><span class="codenumber">2.53</span><span class="period">.</span><span class="space"> </span><span class="title">Proof of <span class="process-math">\(O\)</span>&gt; by contradiction.</span>
+<span class="type">Skeleton Proof</span><span class="space"> </span><span class="codenumber">2.53</span><span class="period">.</span><span class="space"> </span><span class="title">Proof of <span class="process-math">\(P\)</span> by contradiction.</span>
 </h3>
 <div class="para" id="skeleton_pf_by_contradiction-2-1">Here is what the general structure for a proof by contradiction looks like if we are trying to prove the proposition <span class="process-math">\(P\text{.}\)</span>
 </div> <article class="proof" id="skeleton_pf_by_contradiction-2-2"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4>
 <div class="para" id="skeleton_pf_by_contradiction-2-2-1">
-<em class="emphasis">[State any upfront assumptions.]</em> For sake of a contradiction, assume <span class="process-math">\(\neg P\text{.}\)</span> <span class="process-math">\(\ldots\)</span> <em class="emphasis"></em>[Use definitions and known results to derive some <span class="process-math">\(Q\)</span> and its negation <span class="process-math">\(\neg Q\text{.}\)</span>]} <span class="process-math">\(\ldots\)</span> This is a contradiction. Therefore, <span class="process-math">\(P\text{.}\)</span>
+<em class="emphasis">[State any upfront assumptions.]</em> For sake of a contradiction, assume <span class="process-math">\(\neg P\text{.}\)</span> <span class="process-math">\(\ldots\)</span> <em class="emphasis"></em>[Use definitions and known results to derive some <span class="process-math">\(Q\)</span> and its negation <span class="process-math">\(\neg Q\text{.}\)</span>] <span class="process-math">\(\ldots\)</span> This is a contradiction. Therefore, <span class="process-math">\(P\text{.}\)</span>
 </div></article></article><div class="para" id="sec_Techniques_for_Proving_Conditional_Propositions-16">Proof by contradiction can be useful for proving statements of the form <span class="process-math">\(A\implies B\text{,}\)</span> where <span class="process-math">\(\neg B\)</span> is easier to “get your hands on,” because <span class="process-math">\(\neg(A \implies B)\)</span> is logically equivalent to <span class="process-math">\(A \wedge \neg B\)</span> (see <a href="sec_Intro_to_Logic.html#cor_NegateImplication" class="xref" data-knowl="./knowl/xref/cor_NegateImplication.html" data-reveal-label="Reveal" data-close-label="Close" title="Corollary 2.41">Corollary 2.41</a>).</div>
 <article class="heuristic theorem-like" id="skeleton_pf_by_contradiction_for_implication"><h3 class="heading">
 <span class="type">Skeleton Proof</span><span class="space"> </span><span class="codenumber">2.54</span><span class="period">.</span><span class="space"> </span><span class="title">Proof of <span class="process-math">\(A\implies B\)</span> by contradiction.</span>
 </h3>
 <div class="para" id="skeleton_pf_by_contradiction_for_implication-2-1">If you want to prove the implication <span class="process-math">\(A\implies B\)</span> via a proof by contradiction, then the structure of the proof is as follows.</div> <article class="proof" id="skeleton_pf_by_contradiction_for_implication-2-2"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4>
 <div class="para" id="skeleton_pf_by_contradiction_for_implication-2-2-1">
-<em class="emphasis">[State any upfront assumptions.]</em> For sake of a contradiction, assume <span class="process-math">\(A\)</span> and <span class="process-math">\(\neg B\text{.}\)</span> <span class="process-math">\(\ldots\)</span> <em class="emphasis"></em>[Use definitions and known results to derive some <span class="process-math">\(Q\)</span> and its negation <span class="process-math">\(\neg Q\text{.}\)</span>]} <span class="process-math">\(\ldots\)</span> This is a contradiction. Therefore, if <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\(B\text{.}\)</span>
+<em class="emphasis">[State any upfront assumptions.]</em> For sake of a contradiction, assume <span class="process-math">\(A\)</span> and <span class="process-math">\(\neg B\text{.}\)</span> <span class="process-math">\(\ldots\)</span> <em class="emphasis"></em>[Use definitions and known results to derive some <span class="process-math">\(Q\)</span> and its negation <span class="process-math">\(\neg Q\text{.}\)</span>] <span class="process-math">\(\ldots\)</span> This is a contradiction. Therefore, if <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\(B\text{.}\)</span>
 </div></article></article><article class="problem example-like" id="sec_Techniques_for_Proving_Conditional_Propositions-18"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.55</span><span class="period">.</span>
 </h3>
