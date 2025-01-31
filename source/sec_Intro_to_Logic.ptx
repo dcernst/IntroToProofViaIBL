@@ -44,7 +44,7 @@
 <li xml:id="def_logically_equivalent"><p>The proposition <q><term><m>A</m> if and only if <m>B</m></term></q> (alternatively, <q><term><m>A</m> is necessary and sufficient for <m>B</m></term></q>) is true if both <m>A</m> and <m>B</m> have the same truth value; expressed symbolically as <m>\tcboxmath{A\logeq B}</m> and called a <term>biconditional proposition</term>.  If <m>A\logeq B</m> is true, we say that <m>A</m> and <m>B</m> are <term>logically equivalent</term>.</p></li>
 </ol>
 </p>
-<p>Each of the boxed propositions is called a compound proposition, where <m>A</m> and <m>B</m> are referred to as the components of the compound proposition.</p>
+<p>Each of the boxed propositions is called a <term>compound proposition</term>, where <m>A</m> and <m>B</m> are referred to as the <term>components</term> of the compound proposition.</p>
 </statement>
 </definition>
 
@@ -309,7 +309,7 @@
     <statement>
       <p>
         If <m>A</m> and <m>B</m> are propositions,
-        then the converse of <m>A \implies B</m> is <m>B \implies A</m>.
+        then the <term>converse</term> of <m>A \implies B</m> is <m>B \implies A</m>.
       </p>
     </statement>
   </definition>
@@ -324,7 +324,7 @@
     <statement>
       <p>
         If <m>A</m> and <m>B</m> are propositions,
-        then the inverse of <m>A \implies B</m> is <m>\neg A \implies \neg B</m>.
+        then the <term>inverse</term> of <m>A \implies B</m> is <m>\neg A \implies \neg B</m>.
       </p>
     </statement>
   </definition>
@@ -355,7 +355,7 @@
     <statement>
       <p>
         If <m>A</m> and <m>B</m> are propositions,
-        then the contrapositive of
+        then the <term>contrapositive</term> of
         <m>A \implies B</m> is <m>\neg B \implies \neg A</m>.
       </p>
     </statement>
@@ -469,8 +469,8 @@
   <definition>
     <statement>
       <p>
-        A compound proposition that is always false is called a contradiction.
-        A compound proposition that is always true is called a tautology.
+        A compound proposition that is always false is called a <term>contradiction</term>.
+        A compound proposition that is always true is called a <term>tautology</term>.
       </p>
     </statement>
   </definition>

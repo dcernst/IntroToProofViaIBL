@@ -245,45 +245,29 @@
       </p>
     </statement>
   </problem>
-  <problem>
-    <statement>
-      <p>
-        Consider the following proposition in some universe of discourse.
-        <ol>
-          <li class="custom-list-style-type" label="">
-            <p>
-              <q>For all goofy wobblers <m>x</m>,
-              there exists a dinglehopper <m>y</m> such that if <m>x</m> is not a nugget,
-              then <m>y</m> is a doofus.</q>
-            </p>
-          </li>
-        </ol>
-      </p>
-      <p>
-        Find the negation of this proposition so that it includes the phrase
-        <q>is not a doofus.</q>
-      </p>
-    </statement>
-  </problem>
-  <problem>
-    <statement>
-      <p>
-        Consider the following proposition in some universe of discourse.
-        <ol>
-          <li class="custom-list-style-type" label="">
-            <p>
-              <q>If <m>x</m> and <m>y</m> are both snazzy,
-              then <m>xy</m> is not nifty.</q>
-            </p>
-          </li>
-        </ol>
-      </p>
-      <p>
-        Find the contrapositive of this proposition so that it includes the phrase
-        <q>not snazzy</q>.
-      </p>
-    </statement>
-  </problem>
+<problem>
+<statement>
+<p>Consider the following proposition in some universe of discourse.</p>
+
+<blockquote>
+<p><q>For all goofy wobblers <m>x</m>, there exists a dinglehopper <m>y</m> such that if <m>x</m> is not a nugget,then <m>y</m> is a doofus.</q></p>
+</blockquote>
+
+<p>Find the negation of this proposition so that it includes the phrase <q>is not a doofus.</q></p>
+</statement>
+</problem>
+
+<problem>
+<statement>
+<p>Consider the following proposition in some universe of discourse.</p>
+
+<blockquote>
+<p><q>If <m>x</m> and <m>y</m> are both snazzy, then <m>xy</m> is not nifty.</q></p>
+</blockquote>
+
+<p>Find the contrapositive of this proposition so that it includes the phrase <q>not snazzy</q>.</p>
+</statement>
+</problem>
   
 <p>At this point, we should be able to use our understanding of quantification to construct counterexamples to complicated false propositions and proofs of complicated true propositions. Here are some general proof structures for various logical forms.</p>
   

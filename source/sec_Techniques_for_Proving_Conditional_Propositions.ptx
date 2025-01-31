@@ -122,15 +122,15 @@
     </statement>
   </theorem>
 
-<p>Suppose that we want to prove some proposition <m>P</m> (which might be something like <m>A\implies B</m> or even more complicated). One approach, called <em>proof by contradiction</em>, is to assume <m>\neg P</m> and then logically deduce a contradiction of the form <m>Q\wedge \neg Q</m>, where <m>Q</m> is some proposition. Since this is absurd, the assumption <m>\neg P</m> must have been false, so <m>P</m> is true. The tricky part about a proof by contradiction is that it is not usually obvious what the statement <m>Q</m> should be.</p>
+<p>Suppose that we want to prove some proposition <m>P</m> (which might be something like <m>A\implies B</m> or even more complicated). One approach, called <term>proof by contradiction</term>, is to assume <m>\neg P</m> and then logically deduce a contradiction of the form <m>Q\wedge \neg Q</m>, where <m>Q</m> is some proposition. Since this is absurd, the assumption <m>\neg P</m> must have been false, so <m>P</m> is true. The tricky part about a proof by contradiction is that it is not usually obvious what the statement <m>Q</m> should be.</p>
 
 <heuristic xml:id="skeleton_pf_by_contradiction">
-<title>Proof of <m>O</m>> by contradiction</title>
+<title>Proof of <m>P</m> by contradiction</title>
 <statement>
 <p>Here is what the general structure for a proof by contradiction looks like if we are trying to prove the proposition <m>P</m>.</p>
 
 <proof>
-<p><em>[State any upfront assumptions.]</em> For sake of a contradiction, assume <m>\neg P</m>. <m>\ldots</m> <em></em>[Use definitions and known results to derive some <m>Q</m> and its negation <m>\neg Q</m>.]} <m>\ldots</m> This is a contradiction. Therefore, <m>P</m>.</p>
+<p><em>[State any upfront assumptions.]</em> For sake of a contradiction, assume <m>\neg P</m>. <m>\ldots</m> <em></em>[Use definitions and known results to derive some <m>Q</m> and its negation <m>\neg Q</m>.] <m>\ldots</m> This is a contradiction. Therefore, <m>P</m>.</p>
 </proof>
 </statement>
 </heuristic>
@@ -143,7 +143,7 @@
 <p>If you want to prove the implication <m>A\implies B</m> via a proof by contradiction, then the structure of the proof is as follows.</p>
 
 <proof>
-<p><em>[State any upfront assumptions.]</em> For sake of a contradiction, assume <m>A</m> and <m>\neg B</m>. <m>\ldots</m> <em></em>[Use definitions and known results to derive some <m>Q</m> and its negation <m>\neg Q</m>.]} <m>\ldots</m> This is a contradiction. Therefore, if <m>A</m>, then <m>B</m>.</p>
+<p><em>[State any upfront assumptions.]</em> For sake of a contradiction, assume <m>A</m> and <m>\neg B</m>. <m>\ldots</m> <em></em>[Use definitions and known results to derive some <m>Q</m> and its negation <m>\neg Q</m>.] <m>\ldots</m> This is a contradiction. Therefore, if <m>A</m>, then <m>B</m>.</p>
 </proof>
 </statement>
 </heuristic>

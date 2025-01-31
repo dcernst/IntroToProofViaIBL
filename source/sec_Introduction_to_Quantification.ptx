@@ -93,17 +93,14 @@ What would it take to justify your answers?
   </p>
 </statement>
   </problem>
-  <definition>
+<definition>
 <statement>
-  <p>
-<q>For all</q>
-is the <term>universal quantifier</term> and
-<q>there exists<ellipsis/> such that</q>
-is the <term>existential quantifier</term>.
-  </p>
+<p><q>For all</q> is the <term>universal quantifier</term> and <q>there exists<ellipsis/> such that</q>
+is the <term>existential quantifier</term>.</p>
 </statement>
-  </definition>
-  <p>
+</definition>
+
+<p>
 In mathematics, the phrases
 <q>for all</q>,
 <q>for any</q>,
@@ -284,28 +281,22 @@ For example,
 if <m>f</m> is a function while <m>c</m> and <m>L</m> are real numbers,
 then the formal definition of <m>\lim_{x\to c}f(x)=L</m>,
 which you may have encountered in calculus, is:
-  </p>
-  <blockquote>
-For all <m>\varepsilon >0</m>, there exists <m>\delta >0</m> such that for all <m>x</m>, if <m>0\lt |x-c|\lt \delta</m>, then <m>|f(x)-L|\lt \varepsilon</m>.
-  </blockquote>
-  <p>
-In order to study the abstract nature of complicated mathematical statements,
-it is useful to adopt some notation.
-  </p>
-  <definition xml:id="def_quantifiers">
+</p>
+
+<blockquote>
+<p>For all <m>\varepsilon >0</m>, there exists <m>\delta \lt 0</m> such that for all <m>x</m>, if <m>0\lt |x-c|\lt \delta</m>, then <m>|f(x)-L|\lt \varepsilon</m>.</p>
+</blockquote>
+
+<p>In order to study the abstract nature of complicated mathematical statements,
+it is useful to adopt some notation.</p>
+
+<definition xml:id="def_quantifiers">
 <statement>
-  <p>
-The universal quantifier
-<q>for all</q>
-is denoted <m>\tcboxmath{\forall}</m>,
-and the existential quantifier
-<q>there exists<ellipsis/> such that</q>
-is denoted <m>\tcboxmath{\exists}</m>.
-  </p>
+<p>The universal quantifier <q>for all</q> is denoted <m>\tcboxmath{\forall}</m>, and the existential quantifier <q>there exists<ellipsis/> such that</q> is denoted <m>\tcboxmath{\exists}</m>.</p>
 </statement>
-  </definition>
-  <p>
-Using our abbreviations for the logical connectives and quantifiers,
+</definition>
+
+<p>Using our abbreviations for the logical connectives and quantifiers,
 we can symbolically represent mathematical propositions.
 For example, the (true) proposition
 <q>There exists <m>x \in \mathbb{R}</m> such that <m>x^2-1=0</m></q>
