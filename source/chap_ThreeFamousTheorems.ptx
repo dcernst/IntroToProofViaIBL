@@ -13,17 +13,9 @@
 <attribution>G.H.<nbsp/>Hardy, mathematician</attribution>
 </blockquote>
 
-    <p>
-      In the last few chapters,
-      we have encountered all of the major proof techniques one needs in mathematics and enhanced our proof-writing skills.
-      In this chapter,
-      we put these techniques and skills to work to prove three famous theorems,
-      as well as numerous intermediate results along the way.
-      All of these theorems are ones you are likely familiar with from grade school,
-      but perhaps these facts were never rigorously justified for you.
-    </p>
-    <p>
-      In the first section,
+<p>In the last few chapters, we have encountered all of the major proof techniques one needs in mathematics and enhanced our proof-writing skills. In this chapter, we put these techniques and skills to work to prove three famous theorems, as well as numerous intermediate results along the way. All of these theorems are ones you are likely familiar with from grade school, but perhaps these facts were never rigorously justified for you.</p>
+    
+<p>In the first section,
       we develop all of the concepts necessary to state and then prove the
       <term>Fundamental Theorem of Arithmetic</term>
       (<xref ref="thm_FTA">Theorem</xref>),
