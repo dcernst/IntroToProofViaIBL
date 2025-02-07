@@ -284,7 +284,7 @@ which you may have encountered in calculus, is:
 </p>
 
 <blockquote>
-<p>For all <m>\varepsilon >0</m>, there exists <m>\delta \lt 0</m> such that for all <m>x</m>, if <m>0\lt |x-c|\lt \delta</m>, then <m>|f(x)-L|\lt \varepsilon</m>.</p>
+<p>For all <m>\varepsilon >0</m>, there exists <m>\delta \gt 0</m> such that for all <m>x</m>, if <m>0\lt |x-c|\lt \delta</m>, then <m>|f(x)-L|\lt \varepsilon</m>.</p>
 </blockquote>
 
 <p>In order to study the abstract nature of complicated mathematical statements,
