@@ -287,7 +287,7 @@
 <heuristic xml:id="skeleton_for_all_direct_proof">
 <title>Proof of <m>(\forall x)(A(x)\implies B(x))</m></title>
 <statement>
-<p>Below is the general structure for a direct proof of the proposition <m>(\forall x)(A(x)\implies B(x)</m>. Assume <m>U</m> is the universe of discourse.</p>
+<p>Below is the general structure for a direct proof of the proposition <m>(\forall x)(A(x)\implies B(x))</m>. Assume <m>U</m> is the universe of discourse.</p>
 
 <proof>
 <p><em>[State any upfront assumptions.]</em> Let <m>x \in U</m>. Assume <m>A(x)</m>. <m>\ldots</m> <em>[Use definitions and known results to derive <m>B(x)</m>]</em> <m>\ldots</m> Therefore, <m>B(x)</m>.</p>
@@ -405,7 +405,7 @@
 </statement>
 </problem>
   
-<p>Sometimes it is useful to split the universe of discourse into multiple collections to deal with separately. When doing this, it is important to make sure that your cases are exhaustive (i.e., every possible element of the universe of discourse has been accounted for). Ideally, your cases will also be disjoint (i.e., you have not considered the same element more than once). For example, if our universe of discourse is the set of integers, we can separately consider even versus odd integers. If our universe of discourse is the set of real numbers, we might want to consider rational versus irrational numbers, or possibly negative versus zero versus and positive. Attacking a proof in this way, is often referred to as a <term>proof by cases</term> (or <term>proof by exhaustion</term>). A proof by cases may also be useful when dealing with hypotheses involving <q>or</q>. Note that the use of a proof by cases is justified by <xref ref="thm_logical_form_for_cases">Theorem</xref>.</p>
+<p>Sometimes it is useful to split the universe of discourse into multiple collections to deal with separately. When doing this, it is important to make sure that your cases are exhaustive (i.e., every possible element of the universe of discourse has been accounted for). Ideally, your cases will also be disjoint (i.e., you have not considered the same element more than once). For example, if our universe of discourse is the set of integers, we can separately consider even versus odd integers. If our universe of discourse is the set of real numbers, we might want to consider rational versus irrational numbers, or possibly negative versus zero versus positive. Attacking a proof in this way, is often referred to as a <term>proof by cases</term> (or <term>proof by exhaustion</term>). A proof by cases may also be useful when dealing with hypotheses involving <q>or</q>. Note that the use of a proof by cases is justified by <xref ref="thm_logical_form_for_cases">Theorem</xref>.</p>
 
   <p>
     If you decide to approach a proof using cases,
