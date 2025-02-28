@@ -1,18 +1,12 @@
 <section xml:id="sec_RussellsParadox">
-  <title>Russell's Paradox</title>
-  <p>
-    We now turn our attention to the issue of whether there is one mother of all universal sets.
-    Before reading any further, consider this for a moment.
-    That is, is there one largest set that all other sets are a subset of?
-    Or, in other words, is there a set of all sets?
-    To help wrap our heads around this issue,
-    consider the following riddle,
-    known as the <term>Barber of Seville Paradox</term>.
-  </p>
-  <blockquote>
-    In Seville, there is a barber who shaves all those men, and only those men, who do not shave themselves.  Who shaves the barber?
-  </blockquote>
-  <problem xml:id="prob_barber">
+<title>Russell's Paradox</title>
+<p>We now turn our attention to the issue of whether there is one mother of all universal sets. Before reading any further, consider this for a moment. That is, is there one largest set that all other sets are a subset of? Or, in other words, is there a set of all sets? To help wrap our heads around this issue, consider the following riddle, known as the <term>Barber of Seville Paradox</term>.</p>
+  
+<blockquote>
+<p>In Seville, there is a barber who shaves all those men, and only those men, who do not shave themselves.  Who shaves the barber?</p>
+</blockquote>
+
+<problem xml:id="prob_barber">
     <statement>
       <p>
         In the Barber of Seville Paradox,
