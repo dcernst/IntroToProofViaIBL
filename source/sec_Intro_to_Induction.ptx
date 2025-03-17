@@ -70,7 +70,7 @@ Let <m>S\subseteq \mathbb{N}</m> such that both
   </li>
   <li>
 <p>
-  if <m>k\in S</m>, then <m>k+1\in S</m>.
+  If <m>k\in S</m>, then <m>k+1\in S</m>.
 </p>
   </li>
 </ol>
@@ -120,7 +120,7 @@ Assume
   </li>
   <li>
 <p>
-  for all <m>k\geq 1</m>, if <m>P(k)</m> is true,
+  For all <m>k\geq 1</m>, if <m>P(k)</m> is true,
   then <m>P(k+1)</m> is true.
 </p>
   </li>
