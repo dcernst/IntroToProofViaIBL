@@ -27,7 +27,7 @@ Assume that
   </li>
   <li>
 <p>
-  for all <m>k\geq a</m>, if <m>P(k)</m> is true,
+  For all <m>k\geq a</m>, if <m>P(k)</m> is true,
   then <m>P(k+1)</m> is true.
 </p>
   </li>
