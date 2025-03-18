@@ -105,7 +105,7 @@ For all integers <m>n \ge 2</m>, <m>2^n > n + 1</m>.
 <statement>
   <p>
 For all integers <m>n \ge 0</m>,
-<m>1 + 2^1 + 2^2 + \cdots + 2^n = 2^{n+1} - 1</m>.
+<m>2^0 + 2^1 + 2^2 + \cdots + 2^n = 2^{n+1} - 1</m>.
   </p>
 </statement>
   </theorem>
