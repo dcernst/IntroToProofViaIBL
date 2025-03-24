@@ -20,7 +20,7 @@
   <definition>
     <statement>
       <p>
-        Let <m>n\in\mathbb{Z}</m>.
+        Let <m>n\in\mathbb{N}</m>.
         <ol marker="a">
           <li>
             <p>
@@ -30,7 +30,7 @@
           </li>
           <li>
             <p>
-              If <m>n\in \mathbb{N}</m> such that <m>n</m> has exactly two distinct positive factors (namely, 1 and <m>n</m> itself),
+              If <m>n</m> has exactly two distinct positive factors (namely, 1 and <m>n</m> itself),
               then <m>n</m> is called <term>prime</term>.
             </p>
           </li>

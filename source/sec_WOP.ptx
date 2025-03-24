@@ -29,7 +29,7 @@
 
 <theorem>
 <statement>
-<p>If <m>A\subseteq \mathbb{R}</m> such that the maximum (respectively, minimum) of <m>A</m> exists, then the maximum (respectively, minimum) of <m>A</m> is unique.</p>
+<p>If <m>A\subseteq \mathbb{R}</m> such that a maximum (respectively, minimum) of <m>A</m> exists, then the maximum (respectively, minimum) of <m>A</m> is unique.</p>
 </statement>
 </theorem>
 
