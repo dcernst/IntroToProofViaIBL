@@ -14,7 +14,7 @@
         Let <m>P(1), P(2), P(3), \ldots</m> be a sequence of statements,
         one for each natural number.
         Assume that
-        <ol marker="labeltextrmroman">
+        <ol marker="(a)">
           <li>
             <p>
               <m>P(1),P(2),\ldots, P(m)</m> is true for some <m>m\geq 1</m>, and
@@ -151,7 +151,7 @@
         For example <m>011101</m> and <m>011011</m> are distinct binary strings of length 6.
         Here are the rules for <term>Binary Solitaire</term>: At any stage,
         you are allowed to:
-        <ol marker="labeltextrmroman">
+        <ol marker="(a)">
           <li>
             <p>
               Swap the leftmost digit (i.e., change 0 to 1, or 1 to 0).

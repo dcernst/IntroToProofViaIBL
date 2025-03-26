@@ -26,7 +26,7 @@
       <p>
         Consider the sets <m>3 \mathbb{Z}</m>,
         <m>5 \mathbb{Z}</m>, <m>15 \mathbb{Z}</m>, and <m>20 \mathbb{Z}</m>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               List at least five elements in each of the above sets.
@@ -158,7 +158,7 @@
       <p>
         For each of the following congruence classes,
         find five elements in the set such that at least one is greater than <m>70</m> and one is less than <m>70</m>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>[4]_7</m>
@@ -231,7 +231,7 @@
       <p>
         Let <m>n\in \mathbb{N}</m> and let <m>a_1,a_2,b_1,b_2 \in \mathbb{Z}</m>.
         If <m>[a_1]_n = [a_2]_n</m> and <m>[b_1]_n = [b_2]_n</m>, then
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>[a_1+b_1]_n = [a_2+b_2]_n</m>, and
@@ -285,7 +285,7 @@
         If <m>n\in \mathbb{N}</m>,
         then addition in <m>\mathbb{Z}/n\mathbb{Z}</m> is commutative and associative.
         That is, for all <m>[a]_n, [b]_n, [c]_n \in \mathbb{Z}/n\mathbb{Z}</m>, we have
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>[a]_n + [b]_n = [b]_n + [a]_n</m>, and
@@ -306,7 +306,7 @@
         If <m>n\in \mathbb{N}</m>,
         then multiplication in <m>\mathbb{Z}/n\mathbb{Z}</m> is commutative and associative.
         That is, for all <m>[a]_n, [b]_n, [c]_n \in \mathbb{Z}/n\mathbb{Z}</m>, we have
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>[a]_n \cdot [b]_n = [b]_n \cdot [a]_n</m>, and
@@ -334,7 +334,7 @@
         Let <m>n\in \mathbb{N}</m>.
         For all <m>k\in \mathbb{N}</m>,
         if <m>[a_1]_n,[a_2]_n,\ldots, [a_k]_n \in \mathbb{Z}/n\mathbb{Z}</m>, then
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>[a_1]_n+[a_2]_n+\cdots+ [a_k]_n = [a_1 + a_2 +\cdots+ a_k]_n</m>, and
@@ -386,7 +386,7 @@
         For each of the following,
         find a number <m>a</m> with
         <m>0\le a \le 6</m> such that the given quantity is equal to <m>[a]_7</m>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>[6^{179}]_7</m>

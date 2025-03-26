@@ -21,7 +21,7 @@
     <statement>
       <p>
         Let <m>n\in\mathbb{N}</m>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               If <m>a\in \mathbb{Z}</m> such that <m>a</m> divides <m>n</m>,

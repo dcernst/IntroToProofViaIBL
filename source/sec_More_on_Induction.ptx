@@ -19,7 +19,7 @@ but this time use the set <m>S=\{k\in \mathbb{N}\mid P(a+k-1) \text{ is true } \
 Let <m>P(a), P(a+1), P(a+2), \ldots</m> be a sequence of statements,
 one for each integer greater than or equal to <m>a</m>.
 Assume that
-<ol marker="labeltextrmroman">
+<ol marker="(a)">
   <li>
 <p>
   <m>P(a)</m> is true, and
@@ -185,7 +185,7 @@ some of which are polygons with finite area
 (bounded regions)
 and some of which are not
 (unbounded regions).
-<ol marker="a">
+<ol marker="(a)">
   <li>
 <p>
   Let <m>R(n)</m> be the number of regions the plane is divided into by <m>n</m> lines in general position.

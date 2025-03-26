@@ -177,7 +177,7 @@
         In each case,
         you should create a bijection between the two sets.
         Briefly justify that your functions are in fact bijections.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\card(\{a,b,c\})=\card(\{x,y,z\})</m>
@@ -232,7 +232,7 @@
         Let <m>\mathcal{B}_n</m> denote the collection of balanced parenthesizations consisting of <m>n</m> pairs of parentheses.
         For example,
         <m>\mathcal{B}_3=\{()()(), ()(()), (()()), (())(), ((()))\}</m>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Find all Dyck paths in <m>\mathcal{D}_3</m>.
@@ -256,7 +256,7 @@
     <statement>
       <p>
         Let <m>\mathcal{F}</m> denote the set of functions from <m>\mathbb{N}</m> to <m>\{0,1\}</m>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Describe at least three functions in <m>\mathcal{F}</m>.
@@ -279,7 +279,7 @@
     <statement>
       <p>
         Let <m>A</m>, <m>B</m>, and <m>C</m> be sets.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\card(A)=\card(A)</m>.
@@ -319,7 +319,7 @@
         Let <m>A</m>, <m>B</m>, <m>C</m>,
         and <m>D</m> be sets such that
         <m>\card(A)=\card(C)</m> and <m>\card(B)=\card(D)</m>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               If <m>A</m> and <m>B</m> are disjoint and <m>C</m> and <m>D</m> are disjoint,
@@ -355,7 +355,7 @@
     <statement>
       <p>
         Let <m>A</m>, <m>B</m>, and <m>C</m> be sets.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               If <m>A\subseteq B</m>, then <m>\card(A)\leq \card(B)</m>.

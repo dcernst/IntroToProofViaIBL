@@ -127,7 +127,7 @@
     <statement>
       <p>
         Determine whether each of the relations defined in the following examples and problems is a function.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <xref ref="ex_relation_finite_to_finite">Example</xref>
@@ -164,7 +164,7 @@
         <m>X</m> to <m>X</m>, or does not represent a function.
         If the relation is a function,
         determine the domain, codomain, and range.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>f=\{(\circ, a),(\square,b),(\triangle,c),(\alpha,d)\}</m>
@@ -289,7 +289,7 @@
         You may draw a function diagram,
         write down a list of ordered pairs,
         or write a formula as long as the domain and codomain are clear.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               A function <m>f</m> from a set with 4 elements to a set with 3 elements such that <m>\range(f)=\codom(f)</m>.
@@ -378,7 +378,7 @@
     <statement>
       <p>
         Let <m>A</m> be a nonempty set.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Suppose <m>R</m> is an equivalence relation on <m>A</m>.
@@ -471,7 +471,7 @@
       <p>
         For each of the following,
         explain why the given description does not define a function.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Define <m>f:\{1,2,3\}\to \{1,2,3\}</m> via <m>f(a)=a-1</m>.
@@ -541,7 +541,7 @@
       <p>
         For each of the following,
         determine whether the description determines a well-defined function.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Define <m>f:\mathbb{Z}/5\mathbb{Z}\to \mathbb{N}</m> via

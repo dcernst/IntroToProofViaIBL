@@ -40,7 +40,7 @@
       </p>
       <p>
         Using <m>R</m>, complete each of the following.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Draw the digraph for <m>R</m>.
@@ -64,7 +64,7 @@
     <statement>
       <p>
         Let <m>A=\{a,b,c,d,e\}</m>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Make up an equivalence relation <m>\sim</m> on <m>A</m> by drawing a digraph such that <m>a</m> is not related to <m>b</m> and <m>c</m> is not related to <m>b</m>.
@@ -126,7 +126,7 @@
       <p>
         Suppose <m>\sim</m> is an equivalence relation on a set <m>A</m>.
         Then
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\displaystyle \bigcup_{a\in A}\ \rel(a)=A</m>, and

@@ -48,7 +48,7 @@
         Quickly verify that the following sets are infinite by appealing to <xref ref="thm_naturalNumbersInfinite">Theorem</xref>,
         <xref ref="thm_infiniteSetsSameCardinality">Theorem</xref>,
         or <xref ref="prob_cardinalityPractice">Problem</xref>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               The set of odd natural numbers
@@ -112,7 +112,7 @@
       <p>
         The Infinite Hotel has rooms numbered <m>1,2,3,4,\ldots</m>.
         Every room in the Infinite Hotel is currently occupied.
-        <ol marker="labeltextrmroman">
+        <ol marker="(a)">
           <li>
             <p>
               Is it possible to make room for one more guest (assuming they want a room all to themselves)?
@@ -155,7 +155,7 @@
     <statement>
       <p>
         The following statements are equivalent.
-        <ol marker="labeltextrmroman">
+        <ol marker="(a)">
           <li>
             <p>
               The set <m>A</m> is infinite.
@@ -209,7 +209,7 @@
       <p>
         Quickly verify that the following sets are infinite by appealing to either <xref ref="thm_infiniteSetTFAE">Theorem</xref>
         (use (ii) implies (i)) or <xref ref="cor_infiniteSetInfiniteSubset">Corollary</xref>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Set of odd natural numbers

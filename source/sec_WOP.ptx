@@ -39,7 +39,7 @@
     <statement>
       <p>
         Find the maximum and the minimum for each of the following sets when they exist.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\{5,11,17,42,103\}</m>

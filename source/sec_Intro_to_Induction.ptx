@@ -2,7 +2,7 @@
   <title>Introduction to Induction</title>
   <p>
 Consider the claims:
-<ol marker="a">
+<ol marker="(a)">
   <li>
 <p>
   For all <m>n\in\mathbb{N}</m>,
@@ -62,7 +62,7 @@ which is a collection of axioms for the natural numbers introduced in the 19th c
 <statement>
   <p>
 Let <m>S\subseteq \mathbb{N}</m> such that both
-<ol marker="labeltextrmroman">
+<ol marker="(a)">
   <li>
 <p>
   <m>1\in S</m>, and
@@ -112,7 +112,7 @@ Your job is to show that the truth set is all of <m>\mathbb{N}</m>.
 Let <m>P(1), P(2), P(3), \ldots</m> be a sequence of statements,
 one for each natural number.
 Assume
-<ol marker="labeltextrmroman">
+<ol marker="(a)">
   <li>
 <p>
   <m>P(1)</m> is true, and

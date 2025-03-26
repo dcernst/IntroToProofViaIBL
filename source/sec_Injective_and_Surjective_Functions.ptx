@@ -16,7 +16,7 @@
     <statement>
       <p>
         Let <m>f:X\to Y</m> be a function.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               The function <m>f</m> is said to be <term>injective</term>
@@ -48,7 +48,7 @@
       <p>
         Compare and contrast the following statements.
         Do they mean the same thing?
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               For all <m>x\in X</m>,
@@ -73,7 +73,7 @@
         You may draw a function diagram,
         write down a list of ordered pairs,
         or write a formula as long as the domain and codomain are clear.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               A function <m>f:X\to Y</m> that is injective but not surjective.
@@ -104,7 +104,7 @@
         Provide an example of each of the following.
         You may either draw a graph or write down a formula.
         Make sure you have the correct domain.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               A function <m>f:\mathbb{R}\to \mathbb{R}</m> that is injective but not surjective.
@@ -220,7 +220,7 @@
 <problem xml:id="prob_injective_surjective_functions">
 <statement>
 <p>Determine whether each of the following functions is injective, surjective, both, or neither. In each case, you should provide a proof or a counterexample as appropriate. <i>Note:</i> You are probably not in a position to write a careful argument for surjectivity for <xref ref="surjective_hard">Part</xref>.
-<ol marker="a">
+<ol marker="(a)">
 <li><p>Define <m>f:\mathbb{R}\to \mathbb{R}</m> via <m>f(x)=x^{2}</m>
 </p></li>
 <li><p>Define <m>g:\mathbb{R}\to [0,\infty)</m> via <m>g(x)=x^{2}</m>
@@ -300,7 +300,7 @@ g(n)=\begin{cases}\frac{n}{2}, \amp  \text{ if } n\text{ is even } \\ \frac{n+1}
         <m>\pi_{1}(a,b)=a</m> and <m>\pi_{2}(a,b)=b</m>.
         We call <m>\pi_{1}</m> and <m>\pi_{2}</m> the <term>projections</term>
         of <m>S</m> onto <m>A</m> and <m>B</m>, respectively.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Provide examples to show that <m>\pi_{1}</m> does not need to be injective nor surjective.
@@ -348,7 +348,7 @@ g(n)=\begin{cases}\frac{n}{2}, \amp  \text{ if } n\text{ is even } \\ \frac{n+1}
     <statement>
       <p>
         Let <m>R</m> be a relation on a nonempty set <m>A</m>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               What conditions on <m>R</m> must hold in order for
@@ -388,7 +388,7 @@ g(n)=\begin{cases}\frac{n}{2}, \amp  \text{ if } n\text{ is even } \\ \frac{n+1}
       <p>
         For each of the following,
         identify the equivalence classes induced by the relation from <xref ref="thm_equiv_relation_from_preimages">Theorem</xref> for the given function.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               The function <m>f</m> defined in <xref ref="ex_function">Example</xref>.
@@ -530,7 +530,7 @@ g(n)=\begin{cases}\frac{n}{2}, \amp  \text{ if } n\text{ is even } \\ \frac{n+1}
     <statement>
       <p>
         Consider the equivalence classes you identified in Parts<nbsp/>(a) and<nbsp/>(b) of <xref ref="prob_equiv_classes_from_preimages">Problem</xref>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Draw the function diagram for the function
@@ -569,7 +569,7 @@ g(n)=\begin{cases}\frac{n}{2}, \amp  \text{ if } n\text{ is even } \\ \frac{n+1}
         <xref ref="fig_Z_to_Z_mod_4">Figure</xref>
         depicts a portion of the function diagram for <m>f</m>,
         where we have drawn the diagram from the top down instead of left to right.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Describe the equivalence classes induced by the relation given in <xref ref="thm_equiv_relation_from_preimages">Theorem</xref>.
@@ -640,7 +640,7 @@ g(n)=\begin{cases}\frac{n}{2}, \amp  \text{ if } n\text{ is even } \\ \frac{n+1}
       <p>
         Consider the function <m>h</m> defined in <xref ref="prob_well_defined">Problem</xref>
         <xref ref="mod_10_to_mod_10"></xref>.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Draw the function diagram for <m>h</m>.

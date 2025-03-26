@@ -41,7 +41,7 @@
         Quickly justify that each of the following sets is countable.
         Feel free to appeal to previous problems.
         Which sets are denumerable?
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\{a,b,c\}</m>
@@ -185,7 +185,7 @@
       </p>
       <p>
         Then we we have the following:
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               The collection <m>\{B_n\}_{n=1}^{\infty}</m> is pairwise disjoint.

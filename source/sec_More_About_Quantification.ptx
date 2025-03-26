@@ -18,7 +18,7 @@
       <p>
         Consider the propositions <m>(\exists x\in U)(x^2-4=0)</m> and <m>(\exists x\in U)(x^2-2=0)</m>,
         where <m>U</m> is some universe of discourse.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               Do these propositions have the same truth value if the universe of discourse is the set of real numbers?
@@ -72,7 +72,7 @@
       <p>
         Let <m>P(x)</m> be a predicate in some universe of discourse.
         Then
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\neg (\forall x)P(x)</m> is logically equivalent to <m>(\exists x)(\neg P(x))</m>;
@@ -92,7 +92,7 @@
       <p>
         Negate each of the following sentences.
         Disregard the truth value and the universe of discourse.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>(\forall x)(x>3)</m>
@@ -193,7 +193,7 @@
       <p>
         Negate each of the following propositions.
         Disregard the truth value and the universe of discourse.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>(\forall n\in\mathbb{N})(\exists m\in\mathbb{N})(m\lt n)</m>
@@ -338,7 +338,7 @@
         Determine whether each of the following statements is true or false.
         If the statement is true, prove it.
         If the statement is false, provide a counterexample.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               For all <m>n\in\mathbb{N}</m>, <m>n^2\geq 5</m>.

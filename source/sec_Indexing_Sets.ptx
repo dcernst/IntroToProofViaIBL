@@ -76,7 +76,7 @@
     <statement>
       <p>
         Let <m>\{A_{\alpha}\}_{\alpha\in\Delta}</m> be a collection of sets.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               The <term>union of the entire collection</term> is defined via
@@ -128,7 +128,7 @@
       <p>
         Let <m>\{I_n\}_{n\in\mathbb{N}}</m> be the collection of open intervals from the beginning of the section.
         Find each of the following.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\displaystyle \bigcup_{n\in\mathbb{N}}I_n</m>
@@ -148,7 +148,7 @@
       <p>
         Let <m>\{A_n\}_{n=1}^{26}</m> be the collection from earlier in the section.
         Find each of the following.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\displaystyle \bigcup_{n=1}^{26}A_n</m>
@@ -169,7 +169,7 @@
         Let <m>S_n = \{x \in \mathbb{R} \ \mid \ n-1\lt x\lt n \}</m>,
         where <m>n\in \mathbb{N}</m>.
         Find each of the following.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\displaystyle \bigcup_{n=1}^{\infty}S_n</m>
@@ -190,7 +190,7 @@
         Let <m>T_n = \{x \in \mathbb{R} \ \mid \ -\frac{1}{n}\lt x\lt \frac{1}{n} \}</m>,
         where <m>n\in \mathbb{N}</m>.
         Find each of the following.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\displaystyle \bigcup_{n=1}^{\infty}T_n</m>
@@ -213,7 +213,7 @@
         let <m>N_r</m> be the set containing all real numbers
         <em>except</em> <m>r</m>.
         Find each of the following.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\displaystyle \bigcup_{r\in\mathbb{Q}}N_r</m>
@@ -249,7 +249,7 @@
       <p>
         For each of the following,
         provide an example of a collection of sets with the stated property.
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               A collection of three subsets of
@@ -284,7 +284,7 @@
       <p>
         Let <m>\{A_{\alpha}\}_{\alpha\in\Delta}</m> be a collection of sets and let <m>B</m> be any set.
         Then
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\displaystyle B \cup \left(\bigcap_{\alpha\in\Delta}A_{\alpha}\right)=\bigcap_{\alpha\in\Delta}(B\cup A_{\alpha})</m>, and
@@ -305,7 +305,7 @@
       <p>
         Let <m>\{A_{\alpha}\}_{\alpha\in\Delta}</m> be a collection of sets.
         Then
-        <ol marker="a">
+        <ol marker="(a)">
           <li>
             <p>
               <m>\displaystyle \left(\bigcup_{\alpha\in\Delta} A_{\alpha}\right)^C=\bigcap_{\alpha\in\Delta}A_{\alpha}^{C}</m>, and
