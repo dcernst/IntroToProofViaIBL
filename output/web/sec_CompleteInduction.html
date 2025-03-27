@@ -250,7 +250,7 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para logical" id="sec_CompleteInduction-3-2-1">
 <div class="para">Let <span class="process-math">\(P(1), P(2), P(3), \ldots\)</span> be a sequence of statements, one for each natural number. Assume that</div>
-<ol class="lower-alpha ol-marker-2" id="sec_CompleteInduction-3-2-1-2">
+<ol class="lower-alpha ol-marker-1" id="sec_CompleteInduction-3-2-1-2">
 <li id="sec_CompleteInduction-3-2-1-2-1"><div class="para" id="sec_CompleteInduction-3-2-1-2-1-1">
 <span class="process-math">\(P(1),P(2),\ldots, P(m)\)</span> is true for some <span class="process-math">\(m\geq 1\text{,}\)</span> and</div></li>
 <li id="sec_CompleteInduction-3-2-1-2-2"><div class="para" id="sec_CompleteInduction-3-2-1-2-2-1">For all <span class="process-math">\(k \in \mathbb{N}\)</span> with <span class="process-math">\(m\leq k\text{,}\)</span> if <span class="process-math">\(P(j)\)</span> is true for all <span class="process-math">\(j\in \mathbb{N}\)</span> such that <span class="process-math">\(m\leq j \leq k\text{,}\)</span> then <span class="process-math">\(P(k+1)\)</span> is true.</div></li>
@@ -265,7 +265,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="skeleton_complete_induction-2-1">Here is the general structure for a proof by complete induction.</div> <article class="proof" id="skeleton_complete_induction-2-2"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4>
 <div class="para logical" id="skeleton_complete_induction-2-2-1">
 <div class="para">We proceed by complete induction.</div>
-<ol class="lower-roman ol-marker-3" id="skeleton_complete_induction-2-2-1-1">
+<ol class="lower-roman ol-marker-2" id="skeleton_complete_induction-2-2-1-1">
 <li id="skeleton_complete_induction-2-2-1-1-1"><div class="para" id="skeleton_complete_induction-2-2-1-1-1-1">Base step: <em class="emphasis">[Verify that each of the statements <span class="process-math">\(P(1),P(2),\ldots, P(m)\)</span> are true.  The value of <span class="process-math">\(m\)</span> depends on the statement.]</em>
 </div></li>
 <li id="skeleton_complete_induction-2-2-1-1-2"><div class="para" id="skeleton_complete_induction-2-2-1-1-2-1">Inductive step: <em class="emphasis">[Your goal is to prove “For all <span class="process-math">\(k\in\mathbb{N}\)</span> with <span class="process-math">\(m\leq k\text{,}\)</span> if <span class="process-math">\(P(j)\)</span> is true for all <span class="process-math">\(j\in \mathbb{N}\)</span> such that <span class="process-math">\(m\leq j \leq k\text{,}\)</span> then <span class="process-math">\(P(k+1)\)</span> is true.”]</em> Let <span class="process-math">\(k \in \mathbb{N}\)</span> with <span class="process-math">\(m\leq k\)</span> and suppose <span class="process-math">\(P(j)\)</span> is true for all <span class="process-math">\(m\leq j \leq k\text{.}\)</span> <em class="emphasis">[Do something to derive that <span class="process-math">\(P(k+1)\)</span> is true.]</em> Therefore, <span class="process-math">\(P(k+1)\)</span> is true.</div></li>
@@ -300,7 +300,7 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para logical" id="sec_CompleteInduction-16-1-1">
 <div class="para">A binary string of length <span class="process-math">\(n\)</span> is an ordered list of <span class="process-math">\(n\)</span> digits such that each digit is either 0 or 1. For example <span class="process-math">\(011101\)</span> and <span class="process-math">\(011011\)</span> are distinct binary strings of length 6. Here are the rules for <dfn class="terminology">Binary Solitaire</dfn>: At any stage, you are allowed to:</div>
-<ol class="lower-alpha ol-marker-2" id="sec_CompleteInduction-16-1-1-6">
+<ol class="lower-alpha ol-marker-1" id="sec_CompleteInduction-16-1-1-6">
 <li id="sec_CompleteInduction-16-1-1-6-1"><div class="para" id="sec_CompleteInduction-16-1-1-6-1-1">Swap the leftmost digit (i.e., change 0 to 1, or 1 to 0). For example, we can do <span class="process-math">\(011101\to 111101\text{.}\)</span>
 </div></li>
 <li id="sec_CompleteInduction-16-1-1-6-2"><div class="para" id="sec_CompleteInduction-16-1-1-6-2-1">Swap the digit immediately to the right of the leftmost occurrence of 1. For example, we can do <span class="process-math">\(011011\to 010011\text{.}\)</span>
