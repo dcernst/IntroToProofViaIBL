@@ -183,7 +183,7 @@
           \sim\ =\{(1,1),(1,2),(2,1), (2,2),(3,3),(4,4),(4,5),(5,4),(5,5),(6,6),(5,6),(6,5),(4,6),(6,4)\}
         </me>
         on the set <m>A=\{1,2,3,4,5,6\}</m>.
-        Find $<m>A/\mathord\sim</m> and verify that it is a partition.
+        Find <m>A/\mathord\sim</m> and verify that it is a partition.
       </p>
     </statement>
   </problem>
