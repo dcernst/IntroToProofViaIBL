@@ -536,20 +536,17 @@
     <m>f:X\to Y</m> is well defined prove that if <m>a</m> and <m>b</m> are two representations for the same element in <m>X</m>,
     then <m>f(a)=f(b)</m>.
   </p>
-  <problem xml:id="prob_well_defined">
-    <statement>
-      <p>
-        For each of the following,
-        determine whether the description determines a well-defined function.
-        <ol marker="(a)">
-          <li>
-            <p>
-              Define <m>f:\mathbb{Z}/5\mathbb{Z}\to \mathbb{N}</m> via
-              <me>
-                f([a]_5)=\begin{cases}0, \amp  \mbox{if }  a\mbox{ is even} \\ 1, \amp  \mbox{if }  a\mbox{ is odd} . \end{cases}
-              </me>
-            </p>
-          </li>
+
+<problem xml:id="prob_well_defined">
+<statement>
+<p>For each of the following, determine whether the description determines a function by considering whether the proposed mapping is well defined.
+<ol marker="(a)">
+<li><p>Define <m>f:\mathbb{Z}/5\mathbb{Z}\to \mathbb{N}</m> via
+<me>
+f([a]_5)=\begin{cases}0, \amp  \mbox{if }  a\mbox{ is even} \\ 1, \amp  \mbox{if }  a\mbox{ is odd} . \end{cases}
+</me>
+</p>
+</li>
           <li>
             <p>
               Define <m>g:\mathbb{Z}/6\mathbb{Z}\to \mathbb{N}</m> via
@@ -579,26 +576,15 @@
             </p>
           </li>
         </ol>
-      </p>
-    </statement>
-  </problem>
-  <problem>
-    <statement>
-      <p>
-        Let <m>k,n\in\mathbb{N}</m> and <m>m\in\mathbb{Z}</m>.
-        Under what conditions will <m>f_m: \mathbb{Z}/n\mathbb{Z}\to \mathbb{Z}/k\mathbb{Z}</m> given by
-        <m>f_m([x]_n) = [mx]_k</m> be a well-defined function?
-        Prove your claim.
-      </p>
-    </statement>
-  </problem>
-  <!-- <p>
-    \epigraph{Don't let anyone rob you of your imagination,
-    your creativity, or your curiosity.
-    It's your place in the world; it's your life.
-    Go on and do all you can with it,
-    and make it the life you want to live.}{Mae Jemison, NASA astronaut}
-  </p> -->
+</p>
+</statement>
+</problem>
+
+<problem>
+<statement>
+<p>Let <m>k,n\in\mathbb{N}</m> and <m>m\in\mathbb{Z}</m>. Under what conditions will <m>f_m: \mathbb{Z}/n\mathbb{Z}\to \mathbb{Z}/k\mathbb{Z}</m> given by <m>f_m([x]_n) = [mx]_k</m> be well defined? Prove your claim.</p>
+</statement>
+</problem>
 
 <blockquote>
 <p>Don't let anyone rob you of your imagination,
