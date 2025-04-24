@@ -157,7 +157,7 @@
         Fill in the blank with the appropriate word.
       </p>
       <blockquote>
-        The function <m>f:X\to \mathbb{R}</m> is <c><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/>   <nbsp/> <nbsp/> <nbsp/> <nbsp/> </c> if and only if every horizontal line hits the graph of <m>f</m> <em>at least once</em>.
+    <p>The function <m>f:X\to \mathbb{R}</m> is <c><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/>   <nbsp/> <nbsp/> <nbsp/> <nbsp/> </c> if and only if every horizontal line hits the graph of <m>f</m> <em>at least once</em>.</p>
       </blockquote>
       <p>
         Explain why this statement is true.
@@ -171,7 +171,7 @@
         Fill in the blank with the appropriate word.
       </p>
       <blockquote>
-        The function <m>f:X\to \mathbb{R}</m> is <c><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/>   <nbsp/> <nbsp/> <nbsp/> <nbsp/> </c> if and only if every horizontal line hits the graph of <m>f</m> <em>exactly once</em>.
+    <p>The function <m>f:X\to \mathbb{R}</m> is <c><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/>   <nbsp/> <nbsp/> <nbsp/> <nbsp/> </c> if and only if every horizontal line hits the graph of <m>f</m> <em>exactly once</em>.</p>
       </blockquote>
       <p>
         Explain why this statement is true.
