@@ -1,0 +1,123 @@
+INFO    : Found entry no longer exists 48103
+INFO    : Now preparing local server to preview your project directory `/Users/danaernst/GitHub/IntroToProofViaIBL`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : setting up ...
+INFO    : values set...
+WARNING : Port 8128 could not be used.
+WARNING : Trying port 8129 instead.
+
+INFO    : adding server entry
+INFO    : There are 10 or more servers on file. Cleaning up ...
+INFO    : Found entry no longer exists 48103
+INFO    : Terminating 48103
+INFO    : Terminate failed for 48103.
+ERROR   : process PID not found (pid=48103)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=48103)
+ERROR   : View encountered an error.  Please report this: process 8990 with laddr 
+ERROR   : View encountered an error.  Please report this: process 8990 with laddr 
+ERROR   : View encountered an error.  Please report this: process 8990 with laddr 
+INFO    : Found server at localhost:8128
+INFO    : Found entry no longer exists 48103
+INFO    : Terminating 48103
+INFO    : Terminate failed for 48103.
+ERROR   : process PID not found (pid=48103)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=48103)
+INFO    : Found entry no longer exists 48103
+INFO    : Terminating 48103
+INFO    : Terminate failed for 48103.
+ERROR   : process PID not found (pid=48103)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=48103)
+INFO    : Found entry no longer exists 48103
+INFO    : Terminating 48103
+INFO    : Terminate failed for 48103.
+ERROR   : process PID not found (pid=48103)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=48103)
+INFO    : Found entry no longer exists 48103
+INFO    : Terminating 48103
+INFO    : Terminate failed for 48103.
+ERROR   : process PID not found (pid=48103)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=48103)
+INFO    : Found entry no longer exists 48103
+INFO    : Terminating 48103
+INFO    : Terminate failed for 48103.
+ERROR   : process PID not found (pid=48103)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=48103)
+INFO    : Found entry no longer exists 48103
+INFO    : Terminating 48103
+INFO    : Terminate failed for 48103.
+ERROR   : process PID not found (pid=48103)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=48103)
+INFO    : Found entry no longer exists 48103
+INFO    : Terminating 48103
+INFO    : Terminate failed for 48103.
+ERROR   : process PID not found (pid=48103)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=48103)
+ERROR   : View encountered an error.  Please report this: process 9223 with laddr 
+ERROR   : View encountered an error.  Please report this: process 9223 with laddr 
+ERROR   : View encountered an error.  Please report this: process 9223 with laddr 
+INFO    : Found server at localhost:8129
+INFO    : Added server entry 653774bce7 9223 8129 localhost
+
+INFO    : Starting the server
+INFO    : Server will soon be available at http://localhost:8129
+INFO    : Opening browser for target `web` at http://localhost:8129/output/web

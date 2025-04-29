@@ -1,0 +1,145 @@
+INFO    : Found entry no longer exists 29546
+INFO    : Now preparing local server to preview your project directory `/Users/danaernst/GitHub/IntroToProofViaIBL`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : setting up ...
+INFO    : values set...
+WARNING : Port 8128 could not be used.
+WARNING : Trying port 8129 instead.
+
+WARNING : Port 8129 could not be used.
+WARNING : Trying port 8130 instead.
+
+INFO    : adding server entry
+INFO    : There are 10 or more servers on file. Cleaning up ...
+INFO    : Found entry no longer exists 46956
+INFO    : Terminating 46956
+INFO    : Terminate failed for 46956.
+ERROR   : process PID not found (pid=46956)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=46956)
+INFO    : Found entry no longer exists 29546
+INFO    : Terminating 29546
+INFO    : Terminate failed for 29546.
+ERROR   : process PID not found (pid=29546)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=29546)
+INFO    : Found entry no longer exists 98674
+INFO    : Terminating 98674
+INFO    : Terminate failed for 98674.
+ERROR   : process PID not found (pid=98674)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=98674)
+INFO    : Found entry no longer exists 26664
+INFO    : Terminating 26664
+INFO    : Terminate failed for 26664.
+ERROR   : process PID not found (pid=26664)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=26664)
+INFO    : Found entry no longer exists 29097
+INFO    : Terminating 29097
+INFO    : Terminate failed for 29097.
+ERROR   : process PID not found (pid=29097)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=29097)
+INFO    : Found entry no longer exists 31068
+INFO    : Terminating 31068
+INFO    : Terminate failed for 31068.
+ERROR   : process PID not found (pid=31068)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=31068)
+ERROR   : View encountered an error.  Please report this: process 47634 with laddr 
+ERROR   : View encountered an error.  Please report this: process 47634 with laddr 
+ERROR   : View encountered an error.  Please report this: process 47634 with laddr 
+INFO    : Found server at localhost:8128
+ERROR   : View encountered an error.  Please report this: process 48103 with laddr 
+ERROR   : View encountered an error.  Please report this: process 48103 with laddr 
+ERROR   : View encountered an error.  Please report this: process 48103 with laddr 
+INFO    : Found server at localhost:8129
+INFO    : Found entry no longer exists 23442
+INFO    : Terminating 23442
+INFO    : Terminate failed for 23442.
+ERROR   : process PID not found (pid=23442)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=23442)
+ERROR   : View encountered an error.  Please report this: process 5533 with laddr 
+ERROR   : View encountered an error.  Please report this: process 5533 with laddr 
+ERROR   : View encountered an error.  Please report this: process 5533 with laddr 
+INFO    : Found server at localhost:8130
+INFO    : Added server entry 653774bce7 5533 8130 localhost
+
+INFO    : Starting the server
+INFO    : Server will soon be available at http://localhost:8130
+INFO    : Opening browser for target `web` at http://localhost:8130/output/web
+WARNING : Port 8130 could not be used.
+WARNING : Trying port 8131 instead.
+
+INFO    : adding server entry
+INFO    : There are 10 or more servers on file. Cleaning up ...
+INFO    : Found entry no longer exists 47634
+INFO    : Terminating 47634
+INFO    : Terminate failed for 47634.
+ERROR   : process PID not found (pid=47634)
+Traceback (most recent call last):
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/Users/danaernst/Library/Python/3.9/lib/python/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=47634)
+ERROR   : View encountered an error.  Please report this: process 48103 with laddr 
+ERROR   : View encountered an error.  Please report this: process 48103 with laddr 
+ERROR   : View encountered an error.  Please report this: process 48103 with laddr 
+INFO    : Found server at localhost:8129
+ERROR   : View encountered an error.  Please report this: process 5533 with laddr 
+ERROR   : View encountered an error.  Please report this: process 5533 with laddr 
+ERROR   : View encountered an error.  Please report this: process 5533 with laddr 
+ERROR   : View encountered an error.  Please report this: process 5533 with laddr 
+INFO    : Found process 5533 no longer listening on specified port 8130
+INFO    : Terminating 5533
