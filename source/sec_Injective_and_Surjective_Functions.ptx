@@ -219,7 +219,7 @@
 
 <problem xml:id="prob_injective_surjective_functions">
 <statement>
-<p>Determine whether each of the following functions is injective, surjective, both, or neither. In each case, you should provide a proof or a counterexample as appropriate. <i>Note:</i> You are probably not in a position to write a careful argument for surjectivity for <xref ref="surjective_hard">Part</xref>.
+<p>Determine whether each of the following functions is injective, surjective, both, or neither. In each case, you should provide a proof or a counterexample as appropriate. <em>>Note:</em> You are probably not in a position to write a careful argument for surjectivity for <xref ref="surjective_hard">Part</xref>.
 <ol marker="(a)">
 <li><p>Define <m>f:\mathbb{R}\to \mathbb{R}</m> via <m>f(x)=x^{2}</m>
 </p></li>
