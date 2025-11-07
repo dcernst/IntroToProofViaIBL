@@ -153,7 +153,7 @@
       If <m>d=1</m>,
       it is clear that we can take <m>q=n</m> and <m>r=0</m>,
       so that <m>n=1\cdot n+0=dq+r</m>, as desired.
-      Now, assume that <m>d>1</m> and define
+      Now, assume that <m>d\gt 1</m> and define
       <me>
         S\coloneqq \{n-dk\mid k\in\mathbb{Z}\text{ and }  n-dk\geq 0\}
       </me>.
@@ -246,7 +246,7 @@
       <p>
         Suppose <m>n=27</m> and <m>d=5</m>.
         Find the quotient and remainder that are guaranteed to exist by the Division Algorithm.
-        That is, find the unique <m>q,r\in\mathbb{Z}</m> such that <m>0\leq d</m> and <m>n=dq+r</m>.
+        That is, find the unique <m>q,r\in\mathbb{Z}</m> such that <m>0\leq r\lt d</m> and <m>n=dq+r</m>.
       </p>
     </statement>
   </problem>
