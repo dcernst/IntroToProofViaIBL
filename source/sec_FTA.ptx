@@ -222,7 +222,7 @@
     and <m>r</m> the <term>remainder</term>.
     It is worth pointing out that the Division Algorithm holds more generally where the divisor <m>d</m> is not required to be positive.
     In this case, we must replace
-    <m>0\leq r\lt n</m> with <m>0\leq r\lt |n|</m>.
+    <m>0\leq r\lt d</m> with <m>0\leq r\lt |d|</m>.
   </p>
   <p>
     Contrary to its name,
@@ -246,7 +246,7 @@
       <p>
         Suppose <m>n=27</m> and <m>d=5</m>.
         Find the quotient and remainder that are guaranteed to exist by the Division Algorithm.
-        That is, find the unique <m>q,r\in\mathbb{Z}</m> such that <m>0\leq r\lt n</m> and <m>n=dq+r</m>.
+        That is, find the unique <m>q,r\in\mathbb{Z}</m> such that <m>0\leq d</m> and <m>n=dq+r</m>.
       </p>
     </statement>
   </problem>
@@ -258,7 +258,7 @@
       <p>
         Suppose <m>n=-26</m> and <m>d=3</m>.
         Find the quotient and remainder that are guaranteed to exist by the Division Algorithm.
-        That is, find the unique <m>q,r\in\mathbb{Z}</m> such that <m>0\leq r\lt n</m> and <m>n=dq+r</m>.
+        That is, find the unique <m>q,r\in\mathbb{Z}</m> such that <m>0\leq r\lt d</m> and <m>n=dq+r</m>.
       </p>
     </statement>
   </problem>
