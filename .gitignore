@@ -3,3 +3,4 @@
 *.log
 *.log
 .vscode
+.vscode/settings.json
