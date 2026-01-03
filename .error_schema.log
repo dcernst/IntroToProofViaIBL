@@ -1,5 +1,5 @@
-/Users/danaernst/GitHub/IntroToProofViaIBL/source/main.ptx:82:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element idx, got titlepage
-/Users/danaernst/GitHub/IntroToProofViaIBL/source/main.ptx:82:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element frontmatter there
-/Users/danaernst/GitHub/IntroToProofViaIBL/source/main.ptx:82:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
-/Users/danaernst/GitHub/IntroToProofViaIBL/source/main.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext
-/Users/danaernst/GitHub/IntroToProofViaIBL/source/main.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element pretext there
+<string>:82:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element idx, got titlepage
+<string>:82:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element frontmatter there
+<string>:82:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
+<string>:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext
+<string>:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element pretext there
