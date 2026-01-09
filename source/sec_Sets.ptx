@@ -42,7 +42,6 @@
     There are a few sets that are commonly discussed in mathematics and have predefined symbols to denote them.
     We have already encountered the integers,
     natural numbers, and real numbers.
-    Notice that our definition of the rational numbers uses set-builder notation.
     <ul>
       <li>
         <p>
@@ -58,7 +57,7 @@
       </li>
       <li>
         <p>
-          <term>Rational Numbers:</term> <m>\tcboxmath{\mathbb{Q}\coloneqq \{a/b \mid a, b \in \mathbb{Z} \text{ and } b \neq 0\}}</m>.
+          <term>Rational Numbers:</term> <m>\tcboxmath{\mathbb{Q}\coloneqq \{x\in \mathbb{R} \mid \text{there exists }a, b \in \mathbb{Z} \text{ such that } b \neq 0\text{ and }x=a/b\}}</m>.
         </p>
       </li>
       <li>
@@ -69,10 +68,13 @@
       </li>
     </ul>
   </p>
-  <p>
-    Since the set of natural numbers consists of the positive integers,
-    the natural numbers are sometimes denoted by <m>\tcboxmath{\mathbb{Z}^+}</m>.
-  </p>
+<p>
+Since the set of natural numbers consists of the positive integers, the natural numbers are sometimes denoted by <m>\tcboxmath{\mathbb{Z}^+}</m>. Notice that our definition of the rational numbers uses set-builder notation. This is often abbreviated as
+<me>
+\mathbb{Q} = \{a/b \mid a, b \in \mathbb{Z} \text{ and } b \neq 0\}.
+</me>
+Take a moment to convince yourself that this is a reasonable shorthand.
+</p>
   <problem>
     <statement>
       <p>
