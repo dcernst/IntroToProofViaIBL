@@ -105,41 +105,14 @@
     <xref ref="thm_cardinalityProperSubsetsFinite"></xref>
     and <xref ref="thm_infiniteSetTFAE"></xref> will make this idea explicit.
   </p>
-  <example>
-    <statement>
-      <p>
-        Let <m>m,n\in\mathbb{N}\cup\{0\}</m>.
-        A North-East lattice path from <m>(0,0)</m> to <m>(m,n)</m> is path in the plane from <m>(0,0)</m> to <m>(m,n)</m> consisting only steps either one unit North or one unit East.
-        Note that every lattice path from <m>(0,0)</m> to <m>(m,n)</m> consists of a total of <m>m+n</m> steps.
-        <xref ref="fig_lattice_path">Figure</xref>
-        shows a North-East lattice path from <m>(0,0)</m> to <m>(4,3)</m>.
-        Let <m>\mathcal{L}_{m,n}</m> denote the set of North-East paths from <m>(0,0)</m> to <m>(m,n)</m>.
-        For example,
-        the North-East lattice path given in <xref ref="fig_lattice_path">Figure</xref>
-        is an element of <m>\mathcal{L}_{4,3}</m>.
-        A binary string of length <m>k</m> is an ordered list of consisting of <m>k</m> entries where each entry is either 0 or 1.
-        For example,
-        <m>0101100</m> and <m>0101001</m> are two different binary strings of length 7.
-        Let <m>\mathcal{S}_k</m> denote the set of binary strings of length <m>k</m>.
-        For example,
-        <m>\mathcal{S}_3=\{000, 100,010,001,110,101,011,111\}</m>.
-        We claim that there is a bijection between
-        <m>\mathcal{L}_{m,n}</m> and <m>\mathcal{S}_{m+n}</m>.
-        One such bijection is given by mapping a lattice path to the string that results by assigning each East step to 0 and each North step to 1 as we travel the path from <m>(0,0)</m> to <m>(m,n)</m>.
-        Using this construction,
-        the lattice path in <xref ref="fig_lattice_path">Figure</xref>
-        would get mapped to the binary string <m>0101100</m>.
-        Since no two lattice paths will map to the same string,
-        our mapping is injective.
-        Given a string in <m>\mathcal{S}_{m+n}</m>,
-        it is easy to find the lattice path in <m>\mathcal{L}_{m,n}</m> that maps to it,
-        and so our function is also surjective.
-        Thus, our mapping is a bijection between
-        <m>\mathcal{L}_{m,n}</m> and <m>\mathcal{S}_{m+n}</m>.
-        We have shown that <m>\card(\mathcal{L}_{m,n})=\card(\mathcal{S}_{m+n})</m>.
-      </p>
-    </statement>
-  </example>
+
+<example>
+<statement>
+<p>Let <m>m,n\in\mathbb{N}\cup\{0\}</m>.
+A <term>North-East lattice path</term> from <m>(0,0)</m> to <m>(m,n)</m> is path in the plane from <m>(0,0)</m> to <m>(m,n)</m> consisting only of steps one unit North or one unit East. Note that every North-East lattice path from <m>(0,0)</m> to <m>(m,n)</m> consists of <m>m</m> East steps and <m>n</m> North steps, for a total of <m>m+n</m> steps.  
+Let <m>\mathcal{L}_{m,n}</m> denote the set of North-East paths from <m>(0,0)</m> to <m>(m,n)</m>. For example, the North-East lattice path given in  <xref ref="fig_lattice_path">Figure</xref> is an element of <m>\mathcal{L}_{4,3}</m>. On the other hand, a <term>binary string</term> of length <m>k</m> is an ordered list of consisting of <m>k</m> entries where each entry is either <m>0</m> or <m>1</m>.  Let <m>\mathcal{S}_{m,n}</m> denote the set of binary strings of length <m>m+n</m> consisting of <m>m</m> zeros and <m>n</m> ones. For example, <m>0101100</m> and <m>0101001</m> are two different binary strings in <m>\mathcal{S}_{4,3}</m>. We claim that there is a bijection between <m>\mathcal{L}_{m,n}</m> and <m>\mathcal{S}_{m,n}</m> given by mapping a lattice path to the string that results by assigning each East step to 0 and each North step to 1 as we travel the path from <m>(0,0)</m> to <m>(m,n)</m>.  Using this construction, the lattice path in  <xref ref="fig_lattice_path">Figure</xref> would get mapped to the binary string <m>0101100</m>. Since no two lattice paths will map to the same string, our mapping is injective.  Given a string in <m>\mathcal{S}_{m,n}</m>, it is easy to find the lattice path in <m>\mathcal{L}_{m,n}</m> that maps to it, and so our function is also surjective.  Thus, our mapping is a bijection between <m>\mathcal{L}_{m,n}</m> and <m>\mathcal{S}_{m,n}</m>.  This shows that <m>\card(\mathcal{L}_{m,n})=\card(\mathcal{S}_{m,n})</m>.</p>
+</statement>
+</example>
 
 <figure xml:id="fig_lattice_path">
 <caption>A North-East lattice path from <m>(0,0)</m> to <m>(4,3)</m>.</caption>
