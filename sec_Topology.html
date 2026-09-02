@@ -21,67 +21,21 @@
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="external/custom-styles.css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
+<meta name="twitter:title" content="An Introduction to Proof via Inquiry-Based Learning">
+<meta property="og:title" content="An Introduction to Proof via Inquiry-Based Learning">
 <meta property="book:title" content="An Introduction to Proof via Inquiry-Based Learning">
-<meta property="book:author" content="Dana C. Ernst, PhD">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.43"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -103,16 +57,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.1';
+eBookConfig.runestone_version = '8.2.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.dcab57465a404e85.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.79fbb790b185d712.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -120,18 +74,35 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="root-1-2.html"><span class="title">An Introduction to Proof via Inquiry-Based Learning</span></a></h1>
 <p class="byline">Dana C. Ernst, PhD</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_AxiomsRealNumbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chap_RealNumbers.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chap_ThreeFamousTheorems.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec_AxiomsRealNumbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chap_RealNumbers.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chap_ThreeFamousTheorems.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dom}{\operatorname{Dom}}
 \newcommand{\codom}{\operatorname{Codom}}
 \newcommand{\range}{\operatorname{Rng}}
@@ -151,18 +122,18 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="root-1-2-2.html" class="internal"><span class="title">Front Matter</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<ul id="ptx-toc-group-root-1-2-2" class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="chap_preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 <li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="chap_acknowledgements.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_intro.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_intro" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_WhatIsThisBookAllAbout.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What is This Book All About?</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_what_should_you_expect.html" class="internal"><span class="codenumber">1.2</span> <span class="title">What Should You Expect?</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_IBLApproach.html" class="internal"><span class="codenumber">1.3</span> <span class="title">An Inquiry-Based Approach</span></a></div></li>
@@ -172,7 +143,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_IntroToMath.html" class="internal"><span class="codenumber">2</span> <span class="title">Mathematics and Logic</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_IntroToMath" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_baby_number_theory.html" class="internal"><span class="codenumber">2.1</span> <span class="title">A Taste of Number Theory</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Intro_to_Logic.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Introduction to Logic</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Techniques_for_Proving_Conditional_Propositions.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Techniques for Proving Conditional Propositions</span></a></div></li>
@@ -182,7 +153,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_SetTheory.html" class="internal"><span class="codenumber">3</span> <span class="title">Set Theory</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_SetTheory" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Sets.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Sets</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_RussellsParadox.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Russell’s Paradox</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_PowerSets.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Power Sets</span></a></div></li>
@@ -192,7 +163,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_Induction.html" class="internal"><span class="codenumber">4</span> <span class="title">Induction</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_Induction" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Intro_to_Induction.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Induction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_More_on_Induction.html" class="internal"><span class="codenumber">4.2</span> <span class="title">More on Induction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_CompleteInduction.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Complete Induction</span></a></div></li>
@@ -201,14 +172,14 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="chap_RealNumbers.html" class="internal"><span class="codenumber">5</span> <span class="title">The Real Numbers</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-chap_RealNumbers">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_AxiomsRealNumbers.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Axioms of the Real Numbers</span></a></div></li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec_Topology.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Standard Topology of the Real Line</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_ThreeFamousTheorems.html" class="internal"><span class="codenumber">6</span> <span class="title">Three Famous Theorems</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_ThreeFamousTheorems" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_FTA.html" class="internal"><span class="codenumber">6.1</span> <span class="title">The Fundamental Theorem of Arithmetic</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Irrationality_of_Root_2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Irrationality of <span class="process-math">\(\sqrt{2}\)</span></span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Infinitude_of_Primes.html" class="internal"><span class="codenumber">6.3</span> <span class="title">The Infinitude of Primes</span></a></div></li>
@@ -216,7 +187,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_Relations_and_Partitions.html" class="internal"><span class="codenumber">7</span> <span class="title">Relations and Partitions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_Relations_and_Partitions" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Relations.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Relations</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Equivalence_Relations.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Equivalence Relations</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Partitions.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Partitions</span></a></div></li>
@@ -225,7 +196,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_Functions.html" class="internal"><span class="codenumber">8</span> <span class="title">Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_Functions" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Intro_to_Functions.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Introduction to Functions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Injective_and_Surjective_Functions.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Injective and Surjective Functions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Compositions_and_Inverse_Functions.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Compositions and Inverse Functions</span></a></div></li>
@@ -235,7 +206,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_Cardinality.html" class="internal"><span class="codenumber">9</span> <span class="title">Cardinality</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_Cardinality" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Intro_to_Cardinality.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Introduction to Cardinality</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Finite_Sets.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Finite Sets</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Infinite_Sets.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Infinite Sets</span></a></div></li>
@@ -248,21 +219,25 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix_paradoxes.html" class="internal"><span class="codenumber">C</span> <span class="title">Paradoxes</span></a></div></li>
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix_definitions.html" class="internal"><span class="codenumber">D</span> <span class="title">Definitions in Mathematics</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_Topology"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec_Topology">
+<h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Standard Topology of the Real Line</span>
 </h2>
-<div class="para" id="sec_Topology-2">In this section, we will introduce the notions of open, closed, compact, and connected as they pertain to subsets of the real numbers. These properties form the underpinnings of a branch of mathematics called <em class="emphasis">topology</em> (derived from the Greek words <em class="emphasis">tópos</em>, meaning ‘place, location’, and <em class="emphasis">ology</em>, meaning ‘study of’). Topology, sometimes called “rubber sheet geometry,” is concerned with properties of spaces that are invariant under any continuous deformation (e.g., bending, twisting, and stretching like rubber while not allowing tearing apart or gluing together). The fundamental concepts in topology are continuity, compactness, and connectedness, which rely on ideas such as “arbitrary close” and “far apart”. These ideas can be made precise using open sets.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-2">In this section, we will introduce the notions of open, closed, compact, and connected as they pertain to subsets of the real numbers. These properties form the underpinnings of a branch of mathematics called <em class="emphasis">topology</em> (derived from the Greek words <em class="emphasis">tópos</em>, meaning ‘place, location’, and <em class="emphasis">ology</em>, meaning ‘study of’). Topology, sometimes called “rubber sheet geometry,” is concerned with properties of spaces that are invariant under any continuous deformation (e.g., bending, twisting, and stretching like rubber while not allowing tearing apart or gluing together). The fundamental concepts in topology are continuity, compactness, and connectedness, which rely on ideas such as “arbitrary close” and “far apart”. These ideas can be made precise using open sets.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec_Topology-3">Once considered an abstract branch of pure mathematics, topology now has applications in biology, computer science, physics, and robotics. The goal of this section is to introduce you to the basics of the set-theoretic definitions used in topology and to provide you with an opportunity to tinker with open and closed subsets of the real numbers. In <a href="sec_Continuity.html" class="internal" title="Section 8.5: Continuous Real Functions">Section 8.5</a>, we will revisit these concepts and explore continuous functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-3">Once considered an abstract branch of pure mathematics, topology now has applications in biology, computer science, physics, and robotics. The goal of this section is to introduce you to the basics of the set-theoretic definitions used in topology and to provide you with an opportunity to tinker with open and closed subsets of the real numbers. In <a href="sec_Continuity.html" class="internal" title="Section 8.5: Continuous Real Functions">Section 8.5</a>, we will revisit these concepts and explore continuous functions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec_Topology-4">For this entire section, our universe of discourse is the set of real numbers. You may assume all the usual basic algebraic properties of the real numbers (addition, subtraction, multiplication, division, commutative property, distribution, etc.). We will often refer to an element in a subset of real numbers as a <em class="emphasis">point</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-4">For this entire section, our universe of discourse is the set of real numbers. You may assume all the usual basic algebraic properties of the real numbers (addition, subtraction, multiplication, division, commutative property, distribution, etc.). We will often refer to an element in a subset of real numbers as a <em class="emphasis">point</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def_open"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="def_open-1-1">A set <span class="process-math">\(U\)</span> is called an <dfn class="terminology">open</dfn> set if for every <span class="process-math">\(x \in U\text{,}\)</span> there exists a bounded open interval <span class="process-math">\((a,b)\)</span> containing <span class="process-math">\(x\)</span> such that <span class="process-math">\((a,b)\subseteq U\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def_open-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def_open-1-1">A set <span class="process-math">\(U\)</span> is called an <dfn class="terminology">open</dfn> set if for every <span class="process-math">\(x \in U\text{,}\)</span> there exists a bounded open interval <span class="process-math">\((a,b)\)</span> containing <span class="process-math">\(x\)</span> such that <span class="process-math">\((a,b)\subseteq U\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def_open-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.53"><a href="#def_open" title="Copy heading and permalink for Definition 5.53" aria-label="Copy heading and permalink for Definition 5.53">🔗</a></div></article><div class="para" id="sec_Topology-6">It follows immediately from the definition that every open set is a union of bounded open intervals.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 5.53"><a tabindex="-1" href="#def_open" title="Copy heading and permalink for Definition 5.53" aria-label="Copy heading and permalink for Definition 5.53">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-6">It follows immediately from the definition that every open set is a union of bounded open intervals.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="problem example-like" id="prob_open_or_not"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.54</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -272,94 +247,100 @@ eBookConfig.enable_chatcodes =  false;
 <ol class="lower-alpha ol-marker-1" id="prob_open_or_not-1-1-1">
 <li id="prob_open_or_not-1-1-1-1">
 <div class="para" id="prob_open_or_not-1-1-1-1-1">
-<span class="process-math">\(\displaystyle (1,2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (1,2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#prob_open_or_not-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#prob_open_or_not-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-2">
 <div class="para" id="prob_open_or_not-1-1-1-2-1">
-<span class="process-math">\(\displaystyle (1,\infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (1,\infty)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#prob_open_or_not-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#prob_open_or_not-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-3">
 <div class="para" id="prob_open_or_not-1-1-1-3-1">
-<span class="process-math">\(\displaystyle (1,2)\cup (\pi,5)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (1,2)\cup (\pi,5)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#prob_open_or_not-1-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item c"><a tabindex="-1" href="#prob_open_or_not-1-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-4">
 <div class="para" id="prob_open_or_not-1-1-1-4-1">
-<span class="process-math">\(\displaystyle [1,2]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle [1,2]\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#prob_open_or_not-1-1-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item d"><a tabindex="-1" href="#prob_open_or_not-1-1-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-5">
 <div class="para" id="prob_open_or_not-1-1-1-5-1">
-<span class="process-math">\(\displaystyle (-\infty,\sqrt{2}]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (-\infty,\sqrt{2}]\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item e"><a href="#prob_open_or_not-1-1-1-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item e"><a tabindex="-1" href="#prob_open_or_not-1-1-1-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-6">
 <div class="para" id="prob_open_or_not-1-1-1-6-1">
-<span class="process-math">\(\displaystyle \{4,17,42\}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \{4,17,42\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item f"><a href="#prob_open_or_not-1-1-1-6" title="Copy heading and permalink for Item f" aria-label="Copy heading and permalink for Item f">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item f"><a tabindex="-1" href="#prob_open_or_not-1-1-1-6" title="Copy heading and permalink for Item f" aria-label="Copy heading and permalink for Item f">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-7">
 <div class="para" id="prob_open_or_not-1-1-1-7-1">
-<span class="process-math">\(\displaystyle \left\{\frac{1}{n}\mid n\in \mathbb{N}\right\}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \left\{\frac{1}{n}\mid n\in \mathbb{N}\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item g"><a href="#prob_open_or_not-1-1-1-7" title="Copy heading and permalink for Item g" aria-label="Copy heading and permalink for Item g">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item g"><a tabindex="-1" href="#prob_open_or_not-1-1-1-7" title="Copy heading and permalink for Item g" aria-label="Copy heading and permalink for Item g">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-8">
 <div class="para" id="prob_open_or_not-1-1-1-8-1">
-<span class="process-math">\(\displaystyle \left\{\frac{1}{n}\mid n\in \mathbb{N}\right\}\cup \{0\}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \left\{\frac{1}{n}\mid n\in \mathbb{N}\right\}\cup \{0\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item h"><a href="#prob_open_or_not-1-1-1-8" title="Copy heading and permalink for Item h" aria-label="Copy heading and permalink for Item h">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item h"><a tabindex="-1" href="#prob_open_or_not-1-1-1-8" title="Copy heading and permalink for Item h" aria-label="Copy heading and permalink for Item h">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-9">
 <div class="para" id="prob_open_or_not-1-1-1-9-1">
-<span class="process-math">\(\displaystyle \mathbb{R}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \mathbb{R}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item i"><a href="#prob_open_or_not-1-1-1-9" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item i"><a tabindex="-1" href="#prob_open_or_not-1-1-1-9" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-10">
 <div class="para" id="prob_open_or_not-1-1-1-10-1">
-<span class="process-math">\(\displaystyle \mathbb{Q}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \mathbb{Q}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item j"><a href="#prob_open_or_not-1-1-1-10" title="Copy heading and permalink for Item j" aria-label="Copy heading and permalink for Item j">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item j"><a tabindex="-1" href="#prob_open_or_not-1-1-1-10" title="Copy heading and permalink for Item j" aria-label="Copy heading and permalink for Item j">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-11">
 <div class="para" id="prob_open_or_not-1-1-1-11-1">
-<span class="process-math">\(\displaystyle \mathbb{Z}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \mathbb{Z}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item k"><a href="#prob_open_or_not-1-1-1-11" title="Copy heading and permalink for Item k" aria-label="Copy heading and permalink for Item k">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item k"><a tabindex="-1" href="#prob_open_or_not-1-1-1-11" title="Copy heading and permalink for Item k" aria-label="Copy heading and permalink for Item k">🔗</a></div>
 </li>
 <li id="prob_open_or_not-1-1-1-12">
 <div class="para" id="prob_open_or_not-1-1-1-12-1">
-<span class="process-math">\(\displaystyle \emptyset\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1-1-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \emptyset\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1-1-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item l"><a href="#prob_open_or_not-1-1-1-12" title="Copy heading and permalink for Item l" aria-label="Copy heading and permalink for Item l">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item l"><a tabindex="-1" href="#prob_open_or_not-1-1-1-12" title="Copy heading and permalink for Item l" aria-label="Copy heading and permalink for Item l">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_not-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_not-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.54"><a href="#prob_open_or_not" title="Copy heading and permalink for Problem 5.54" aria-label="Copy heading and permalink for Problem 5.54">🔗</a></div></article><div class="para" id="sec_Topology-8">As expected, every open interval (i.e., intervals of the form <span class="process-math">\((a,b)\text{,}\)</span> <span class="process-math">\((-\infty,b)\text{,}\)</span> <span class="process-math">\((a,\infty)\text{,}\)</span> or <span class="process-math">\((-\infty,\infty)\)</span>) is an open set.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.54"><a tabindex="-1" href="#prob_open_or_not" title="Copy heading and permalink for Problem 5.54" aria-label="Copy heading and permalink for Problem 5.54">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-8">As expected, every open interval (i.e., intervals of the form <span class="process-math">\((a,b)\text{,}\)</span> <span class="process-math">\((-\infty,b)\text{,}\)</span> <span class="process-math">\((a,\infty)\text{,}\)</span> or <span class="process-math">\((-\infty,\infty)\)</span>) is an open set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="sec_Topology-9"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.55</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-9-1-1">Every open interval is an open set.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-9-1-1">Every open interval is an open set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.55"><a href="#sec_Topology-9" title="Copy heading and permalink for Theorem 5.55" aria-label="Copy heading and permalink for Theorem 5.55">🔗</a></div></article><div class="para" id="sec_Topology-10">However, it is important to point out that open sets can be more complicated than a single open interval.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.55"><a tabindex="-1" href="#sec_Topology-9" title="Copy heading and permalink for Theorem 5.55" aria-label="Copy heading and permalink for Theorem 5.55">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-10">However, it is important to point out that open sets can be more complicated than a single open interval.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="problem example-like" id="sec_Topology-11"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.56</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-11-1-1">Provide an example of an open set that is not a single open interval.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-11-1-1">Provide an example of an open set that is not a single open interval.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.56"><a href="#sec_Topology-11" title="Copy heading and permalink for Problem 5.56" aria-label="Copy heading and permalink for Problem 5.56">🔗</a></div></article><article class="theorem theorem-like" id="thm_finite_union_and_intersection_of_open_sets"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.56"><a tabindex="-1" href="#sec_Topology-11" title="Copy heading and permalink for Problem 5.56" aria-label="Copy heading and permalink for Problem 5.56">🔗</a></div>
+</article>
+<article class="theorem theorem-like" id="thm_finite_union_and_intersection_of_open_sets"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.57</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="thm_finite_union_and_intersection_of_open_sets-1-1">
@@ -367,65 +348,77 @@ eBookConfig.enable_chatcodes =  false;
 <ol class="lower-alpha ol-marker-1" id="thm_finite_union_and_intersection_of_open_sets-1-1-3">
 <li id="thm_finite_union_and_intersection_of_open_sets-1-1-3-1">
 <div class="para" id="thm_finite_union_and_intersection_of_open_sets-1-1-3-1-1">
-<span class="process-math">\(U\cup V\)</span> is an open set, and<div class="autopermalink" data-description="Paragraph"><a href="#thm_finite_union_and_intersection_of_open_sets-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(U\cup V\)</span> is an open set, and<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_open_sets-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#thm_finite_union_and_intersection_of_open_sets-1-1-3-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_open_sets-1-1-3-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="thm_finite_union_and_intersection_of_open_sets-1-1-3-2">
 <div class="para" id="thm_finite_union_and_intersection_of_open_sets-1-1-3-2-1">
-<span class="process-math">\(U\cap V\)</span> is an open set.<div class="autopermalink" data-description="Paragraph"><a href="#thm_finite_union_and_intersection_of_open_sets-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(U\cap V\)</span> is an open set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_open_sets-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#thm_finite_union_and_intersection_of_open_sets-1-1-3-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_open_sets-1-1-3-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm_finite_union_and_intersection_of_open_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_open_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.57"><a href="#thm_finite_union_and_intersection_of_open_sets" title="Copy heading and permalink for Theorem 5.57" aria-label="Copy heading and permalink for Theorem 5.57">🔗</a></div></article><div class="para" id="sec_Topology-13">According to the next two theorems, the union of arbitrarily many open sets is open while the intersection of a finite number of open sets is open.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.57"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_open_sets" title="Copy heading and permalink for Theorem 5.57" aria-label="Copy heading and permalink for Theorem 5.57">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-13">According to the next two theorems, the union of arbitrarily many open sets is open while the intersection of a finite number of open sets is open.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm_union_of_open_sets"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.58</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="thm_union_of_open_sets-1-1">If <span class="process-math">\(\{U_{\alpha}\}_{\alpha\in\Delta}\)</span> is a collection of open sets, then <span class="process-math">\(\bigcup_{\alpha\in\Delta} U_{\alpha}\)</span> is an open set.<div class="autopermalink" data-description="Paragraph"><a href="#thm_union_of_open_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm_union_of_open_sets-1-1">If <span class="process-math">\(\{U_{\alpha}\}_{\alpha\in\Delta}\)</span> is a collection of open sets, then <span class="process-math">\(\bigcup_{\alpha\in\Delta} U_{\alpha}\)</span> is an open set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm_union_of_open_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.58"><a href="#thm_union_of_open_sets" title="Copy heading and permalink for Theorem 5.58" aria-label="Copy heading and permalink for Theorem 5.58">🔗</a></div></article><div class="para" id="sec_Topology-15">Consider using induction to prove the next theorem.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.58"><a tabindex="-1" href="#thm_union_of_open_sets" title="Copy heading and permalink for Theorem 5.58" aria-label="Copy heading and permalink for Theorem 5.58">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-15">Consider using induction to prove the next theorem.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm_finite_intersection_of_open_sets"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.59</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="thm_finite_intersection_of_open_sets-1-1">If <span class="process-math">\(\{U_{i}\}_{i=1}^n\)</span> is a finite collection of open sets for <span class="process-math">\(n\in \mathbb{N}\text{,}\)</span> then <span class="process-math">\(\bigcap_{i=1}^n U_{i}\)</span> is an open set.<div class="autopermalink" data-description="Paragraph"><a href="#thm_finite_intersection_of_open_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm_finite_intersection_of_open_sets-1-1">If <span class="process-math">\(\{U_{i}\}_{i=1}^n\)</span> is a finite collection of open sets for <span class="process-math">\(n\in \mathbb{N}\text{,}\)</span> then <span class="process-math">\(\bigcap_{i=1}^n U_{i}\)</span> is an open set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm_finite_intersection_of_open_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.59"><a href="#thm_finite_intersection_of_open_sets" title="Copy heading and permalink for Theorem 5.59" aria-label="Copy heading and permalink for Theorem 5.59">🔗</a></div></article><article class="problem example-like" id="sec_Topology-17"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.59"><a tabindex="-1" href="#thm_finite_intersection_of_open_sets" title="Copy heading and permalink for Theorem 5.59" aria-label="Copy heading and permalink for Theorem 5.59">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Topology-17"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.60</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-17-1-1">Explain why we cannot utilize induction to prove that the intersection of infinitely many open sets indexed by the natural numbers is open.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-17-1-1">Explain why we cannot utilize induction to prove that the intersection of infinitely many open sets indexed by the natural numbers is open.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.60"><a href="#sec_Topology-17" title="Copy heading and permalink for Problem 5.60" aria-label="Copy heading and permalink for Problem 5.60">🔗</a></div></article><article class="problem example-like" id="prob_intersection_of_open_sets"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.60"><a tabindex="-1" href="#sec_Topology-17" title="Copy heading and permalink for Problem 5.60" aria-label="Copy heading and permalink for Problem 5.60">🔗</a></div>
+</article>
+<article class="problem example-like" id="prob_intersection_of_open_sets"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.61</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="prob_intersection_of_open_sets-1-1">
 <div class="para">Give an example of each of the following.</div>
 <ol class="lower-alpha ol-marker-1" id="prob_intersection_of_open_sets-1-1-1">
 <li id="prob_intersection_of_open_sets-1-1-1-1">
-<div class="para" id="prob_intersection_of_open_sets-1-1-1-1-1">A collection of open sets <span class="process-math">\(\{U_{\alpha}\}_{\alpha\in\Delta}\)</span> such that <span class="process-math">\(\bigcap_{\alpha\in\Delta} U_{\alpha}\)</span> is an open set.<div class="autopermalink" data-description="Paragraph"><a href="#prob_intersection_of_open_sets-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="prob_intersection_of_open_sets-1-1-1-1-1">A collection of open sets <span class="process-math">\(\{U_{\alpha}\}_{\alpha\in\Delta}\)</span> such that <span class="process-math">\(\bigcap_{\alpha\in\Delta} U_{\alpha}\)</span> is an open set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_intersection_of_open_sets-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#prob_intersection_of_open_sets-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#prob_intersection_of_open_sets-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="prob_intersection_of_open_sets-1-1-1-2">
-<div class="para" id="prob_intersection_of_open_sets-1-1-1-2-1">A collection of open sets <span class="process-math">\(\{U_{\alpha}\}_{\alpha\in\Delta}\)</span> such that <span class="process-math">\(\bigcap_{\alpha\in\Delta} U_{\alpha}\)</span> is not an open set.<div class="autopermalink" data-description="Paragraph"><a href="#prob_intersection_of_open_sets-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="prob_intersection_of_open_sets-1-1-1-2-1">A collection of open sets <span class="process-math">\(\{U_{\alpha}\}_{\alpha\in\Delta}\)</span> such that <span class="process-math">\(\bigcap_{\alpha\in\Delta} U_{\alpha}\)</span> is not an open set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_intersection_of_open_sets-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#prob_intersection_of_open_sets-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#prob_intersection_of_open_sets-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#prob_intersection_of_open_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_intersection_of_open_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.61"><a href="#prob_intersection_of_open_sets" title="Copy heading and permalink for Problem 5.61" aria-label="Copy heading and permalink for Problem 5.61">🔗</a></div></article><div class="para" id="sec_Topology-19">According to the previous problem, the intersection of infinitely many open sets may or may not be open. So, we know that there is no theorem that states that the intersection of arbitrarily many open sets is open. We only know for certain that the intersection of finitely many open sets is open by <a href="sec_Topology.html#thm_finite_intersection_of_open_sets" class="xref" data-knowl="./knowl/xref/thm_finite_intersection_of_open_sets.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.59">Theorem 5.59</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.61"><a tabindex="-1" href="#prob_intersection_of_open_sets" title="Copy heading and permalink for Problem 5.61" aria-label="Copy heading and permalink for Problem 5.61">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-19">According to the previous problem, the intersection of infinitely many open sets may or may not be open. So, we know that there is no theorem that states that the intersection of arbitrarily many open sets is open. We only know for certain that the intersection of finitely many open sets is open by <a href="sec_Topology.html#thm_finite_intersection_of_open_sets" class="xref" data-knowl="./knowl/xref/thm_finite_intersection_of_open_sets.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.59">Theorem 5.59</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="sec_Topology-20"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.62</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-20-1-1">Suppose <span class="process-math">\(A\subseteq \mathbb{R}\text{.}\)</span> A point <span class="process-math">\(p\in \mathbb{R}\)</span> is an <dfn class="terminology">accumulation point</dfn> of <span class="process-math">\(A\)</span> if for every bounded open interval <span class="process-math">\((a,b)\)</span> containing <span class="process-math">\(p\text{,}\)</span> there exists a point <span class="process-math">\(q \in (a,b)\cap A\)</span> such that <span class="process-math">\(q\neq p\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-20-1-1">Suppose <span class="process-math">\(A\subseteq \mathbb{R}\text{.}\)</span> A point <span class="process-math">\(p\in \mathbb{R}\)</span> is an <dfn class="terminology">accumulation point</dfn> of <span class="process-math">\(A\)</span> if for every bounded open interval <span class="process-math">\((a,b)\)</span> containing <span class="process-math">\(p\text{,}\)</span> there exists a point <span class="process-math">\(q \in (a,b)\cap A\)</span> such that <span class="process-math">\(q\neq p\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.62"><a href="#sec_Topology-20" title="Copy heading and permalink for Definition 5.62" aria-label="Copy heading and permalink for Definition 5.62">🔗</a></div></article><div class="para" id="sec_Topology-21">Notice that if <span class="process-math">\(p\)</span> is an accumulation point of <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\(p\)</span> may or may not be in <span class="process-math">\(A\text{.}\)</span> Loosely speaking, <span class="process-math">\(p\)</span> is an accumulation point of a set <span class="process-math">\(A\)</span> if there are points in <span class="process-math">\(A\)</span> arbitrarily close to <span class="process-math">\(p\text{.}\)</span> That is, if we zoom in on <span class="process-math">\(p\text{,}\)</span> we should always see points in <span class="process-math">\(A\)</span> nearby.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 5.62"><a tabindex="-1" href="#sec_Topology-20" title="Copy heading and permalink for Definition 5.62" aria-label="Copy heading and permalink for Definition 5.62">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-21">Notice that if <span class="process-math">\(p\)</span> is an accumulation point of <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\(p\)</span> may or may not be in <span class="process-math">\(A\text{.}\)</span> Loosely speaking, <span class="process-math">\(p\)</span> is an accumulation point of a set <span class="process-math">\(A\)</span> if there are points in <span class="process-math">\(A\)</span> arbitrarily close to <span class="process-math">\(p\text{.}\)</span> That is, if we zoom in on <span class="process-math">\(p\text{,}\)</span> we should always see points in <span class="process-math">\(A\)</span> nearby.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="problem example-like" id="sec_Topology-22"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.63</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -434,56 +427,70 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">Consider the open interval <span class="process-math">\(I=(1,2)\text{.}\)</span> Prove each of the following.</div>
 <ol class="lower-alpha ol-marker-1" id="sec_Topology-22-1-1-2">
 <li id="sec_Topology-22-1-1-2-1">
-<div class="para" id="sec_Topology-22-1-1-2-1-1">The points <span class="process-math">\(1\)</span> and <span class="process-math">\(2\)</span> are accumulation points of <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-22-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-22-1-1-2-1-1">The points <span class="process-math">\(1\)</span> and <span class="process-math">\(2\)</span> are accumulation points of <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-22-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#sec_Topology-22-1-1-2-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#sec_Topology-22-1-1-2-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="sec_Topology-22-1-1-2-2">
-<div class="para" id="sec_Topology-22-1-1-2-2-1">If <span class="process-math">\(p\in I\text{,}\)</span> then <span class="process-math">\(p\)</span> is an accumulation point of <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-22-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-22-1-1-2-2-1">If <span class="process-math">\(p\in I\text{,}\)</span> then <span class="process-math">\(p\)</span> is an accumulation point of <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-22-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#sec_Topology-22-1-1-2-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#sec_Topology-22-1-1-2-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="sec_Topology-22-1-1-2-3">
-<div class="para" id="sec_Topology-22-1-1-2-3-1">If <span class="process-math">\(p\lt 1\)</span> or <span class="process-math">\(p&gt;2\text{,}\)</span> then <span class="process-math">\(p\)</span> is not an accumulation point of <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-22-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-22-1-1-2-3-1">If <span class="process-math">\(p\lt 1\)</span> or <span class="process-math">\(p&gt;2\text{,}\)</span> then <span class="process-math">\(p\)</span> is not an accumulation point of <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-22-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#sec_Topology-22-1-1-2-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item c"><a tabindex="-1" href="#sec_Topology-22-1-1-2-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.63"><a href="#sec_Topology-22" title="Copy heading and permalink for Problem 5.63" aria-label="Copy heading and permalink for Problem 5.63">🔗</a></div></article><article class="theorem theorem-like" id="sec_Topology-23"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.63"><a tabindex="-1" href="#sec_Topology-22" title="Copy heading and permalink for Problem 5.63" aria-label="Copy heading and permalink for Problem 5.63">🔗</a></div>
+</article>
+<article class="theorem theorem-like" id="sec_Topology-23"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.64</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-23-1-1">A point <span class="process-math">\(p\)</span> is an accumulation point of the intervals <span class="process-math">\((a,b)\text{,}\)</span> <span class="process-math">\((a,b]\text{,}\)</span> <span class="process-math">\([a,b)\text{,}\)</span> and <span class="process-math">\([a,b]\)</span> if and only if <span class="process-math">\(p\in [a,b]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-23-1-1">A point <span class="process-math">\(p\)</span> is an accumulation point of the intervals <span class="process-math">\((a,b)\text{,}\)</span> <span class="process-math">\((a,b]\text{,}\)</span> <span class="process-math">\([a,b)\text{,}\)</span> and <span class="process-math">\([a,b]\)</span> if and only if <span class="process-math">\(p\in [a,b]\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.64"><a href="#sec_Topology-23" title="Copy heading and permalink for Theorem 5.64" aria-label="Copy heading and permalink for Theorem 5.64">🔗</a></div></article><article class="problem example-like" id="sec_Topology-24"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.64"><a tabindex="-1" href="#sec_Topology-23" title="Copy heading and permalink for Theorem 5.64" aria-label="Copy heading and permalink for Theorem 5.64">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Topology-24"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.65</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-24-1-1">Prove that the point <span class="process-math">\(p=0\)</span> is an accumulation point of <span class="process-math">\(A=\{\frac{1}{n}\mid n \in \mathbb{N}\}\text{.}\)</span> Are there any other accumulation points of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-24-1-1">Prove that the point <span class="process-math">\(p=0\)</span> is an accumulation point of <span class="process-math">\(A=\{\frac{1}{n}\mid n \in \mathbb{N}\}\text{.}\)</span> Are there any other accumulation points of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.65"><a href="#sec_Topology-24" title="Copy heading and permalink for Problem 5.65" aria-label="Copy heading and permalink for Problem 5.65">🔗</a></div></article><article class="problem example-like" id="sec_Topology-25"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.65"><a tabindex="-1" href="#sec_Topology-24" title="Copy heading and permalink for Problem 5.65" aria-label="Copy heading and permalink for Problem 5.65">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Topology-25"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.66</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-25-1-1">Provide an example of a set <span class="process-math">\(A\)</span> with exactly two accumulation points.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-25-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-25-1-1">Provide an example of a set <span class="process-math">\(A\)</span> with exactly two accumulation points.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-25-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.66"><a href="#sec_Topology-25" title="Copy heading and permalink for Problem 5.66" aria-label="Copy heading and permalink for Problem 5.66">🔗</a></div></article><div class="para" id="sec_Topology-26">Consider using <a href="sec_AxiomsRealNumbers.html#thm_rationals_dense" class="xref" data-knowl="./knowl/xref/thm_rationals_dense.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.51">Theorem 5.51</a> and <a href="sec_AxiomsRealNumbers.html#thm_irrationals_dense" class="xref" data-knowl="./knowl/xref/thm_irrationals_dense.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.52">Theorem 5.52</a> when proving the next result.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.66"><a tabindex="-1" href="#sec_Topology-25" title="Copy heading and permalink for Problem 5.66" aria-label="Copy heading and permalink for Problem 5.66">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-26">Consider using <a href="sec_AxiomsRealNumbers.html#thm_rationals_dense" class="xref" data-knowl="./knowl/xref/thm_rationals_dense.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.51">Theorem 5.51</a> and <a href="sec_AxiomsRealNumbers.html#thm_irrationals_dense" class="xref" data-knowl="./knowl/xref/thm_irrationals_dense.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.52">Theorem 5.52</a> when proving the next result.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="sec_Topology-27"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.67</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-27-1-1">If <span class="process-math">\(p\in\mathbb{R}\text{,}\)</span> then <span class="process-math">\(p\)</span> is an accumulation point of <span class="process-math">\(\mathbb{Q}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-27-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-27-1-1">If <span class="process-math">\(p\in\mathbb{R}\text{,}\)</span> then <span class="process-math">\(p\)</span> is an accumulation point of <span class="process-math">\(\mathbb{Q}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-27-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.67"><a href="#sec_Topology-27" title="Copy heading and permalink for Theorem 5.67" aria-label="Copy heading and permalink for Theorem 5.67">🔗</a></div></article><article class="definition definition-like" id="sec_Topology-28"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.67"><a tabindex="-1" href="#sec_Topology-27" title="Copy heading and permalink for Theorem 5.67" aria-label="Copy heading and permalink for Theorem 5.67">🔗</a></div>
+</article>
+<article class="definition definition-like" id="sec_Topology-28"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.68</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-28-1-1">A set <span class="process-math">\(A\subseteq \mathbb{R}\)</span> is called <dfn class="terminology">closed</dfn> if <span class="process-math">\(A\)</span> contains all of its accumulation points.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-28-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-28-1-1">A set <span class="process-math">\(A\subseteq \mathbb{R}\)</span> is called <dfn class="terminology">closed</dfn> if <span class="process-math">\(A\)</span> contains all of its accumulation points.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-28-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.68"><a href="#sec_Topology-28" title="Copy heading and permalink for Definition 5.68" aria-label="Copy heading and permalink for Definition 5.68">🔗</a></div></article><article class="problem example-like" id="prob_closed_or_not"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Definition 5.68"><a tabindex="-1" href="#sec_Topology-28" title="Copy heading and permalink for Definition 5.68" aria-label="Copy heading and permalink for Definition 5.68">🔗</a></div>
+</article>
+<article class="problem example-like" id="prob_closed_or_not"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.69</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="prob_closed_or_not-1-1">Determine whether each of the sets in <a href="sec_Topology.html#prob_open_or_not" class="xref" data-knowl="./knowl/xref/prob_open_or_not.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 5.54">Problem 5.54</a> is closed. Justify your assertions.<div class="autopermalink" data-description="Paragraph"><a href="#prob_closed_or_not-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="prob_closed_or_not-1-1">Determine whether each of the sets in <a href="sec_Topology.html#prob_open_or_not" class="xref" data-knowl="./knowl/xref/prob_open_or_not.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 5.54">Problem 5.54</a> is closed. Justify your assertions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_closed_or_not-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.69"><a href="#prob_closed_or_not" title="Copy heading and permalink for Problem 5.69" aria-label="Copy heading and permalink for Problem 5.69">🔗</a></div></article><div class="para" id="sec_Topology-30">The upshot of Parts (i) and (l) of <a href="sec_Topology.html#prob_open_or_not" class="xref" data-knowl="./knowl/xref/prob_open_or_not.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 5.54">Problem 5.54</a> and <a href="sec_Topology.html#prob_closed_or_not" class="xref" data-knowl="./knowl/xref/prob_closed_or_not.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 5.69">Problem 5.69</a> is that <span class="process-math">\(\mathbb{R}\)</span> and <span class="process-math">\(\emptyset\)</span> are both open and closed. It turns out that these are the only two subsets of the real numbers with this property. One issue with the terminology that could potentially create confusion is that the open interval <span class="process-math">\((-\infty, \infty)\)</span> is both an open and a closed set.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.69"><a tabindex="-1" href="#prob_closed_or_not" title="Copy heading and permalink for Problem 5.69" aria-label="Copy heading and permalink for Problem 5.69">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-30">The upshot of Parts (i) and (l) of <a href="sec_Topology.html#prob_open_or_not" class="xref" data-knowl="./knowl/xref/prob_open_or_not.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 5.54">Problem 5.54</a> and <a href="sec_Topology.html#prob_closed_or_not" class="xref" data-knowl="./knowl/xref/prob_closed_or_not.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 5.69">Problem 5.69</a> is that <span class="process-math">\(\mathbb{R}\)</span> and <span class="process-math">\(\emptyset\)</span> are both open and closed. It turns out that these are the only two subsets of the real numbers with this property. One issue with the terminology that could potentially create confusion is that the open interval <span class="process-math">\((-\infty, \infty)\)</span> is both an open and a closed set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="problem example-like" id="prob_open_vs_closed"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.70</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -492,45 +499,53 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">Provide an example of each of the following. You do not need to prove that your answers are correct.</div>
 <ol class="lower-alpha ol-marker-1" id="prob_open_vs_closed-1-1-1">
 <li id="prob_open_vs_closed-1-1-1-1">
-<div class="para" id="prob_open_vs_closed-1-1-1-1-1">A set that is open but not closed.<div class="autopermalink" data-description="Paragraph"><a href="#prob_open_vs_closed-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="prob_open_vs_closed-1-1-1-1-1">A set that is open but not closed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_vs_closed-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#prob_open_vs_closed-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#prob_open_vs_closed-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="prob_open_vs_closed-1-1-1-2">
-<div class="para" id="prob_open_vs_closed-1-1-1-2-1">A set that is closed but not open.<div class="autopermalink" data-description="Paragraph"><a href="#prob_open_vs_closed-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="prob_open_vs_closed-1-1-1-2-1">A set that is closed but not open.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_vs_closed-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#prob_open_vs_closed-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#prob_open_vs_closed-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="prob_open_vs_closed_last">
-<div class="para" id="prob_open_vs_closed_last-1">A set that neither open nor closed.<div class="autopermalink" data-description="Paragraph"><a href="#prob_open_vs_closed_last-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="prob_open_vs_closed_last-1">A set that neither open nor closed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_vs_closed_last-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#prob_open_vs_closed_last" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item c"><a tabindex="-1" href="#prob_open_vs_closed_last" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#prob_open_vs_closed-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_vs_closed-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.70"><a href="#prob_open_vs_closed" title="Copy heading and permalink for Problem 5.70" aria-label="Copy heading and permalink for Problem 5.70">🔗</a></div></article><div class="para" id="sec_Topology-32">Another potentially annoying feature of the terminology illustrated by <a href="sec_Topology.html#prob_open_vs_closed" class="xref" data-knowl="./knowl/xref/prob_open_vs_closed.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 5.70">Problem 5.70</a> is that if a set is not open, it may or may not be closed. Similarly, if a set is not closed, it may or may not be open. That is, open and closed are not opposites of each other.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.70"><a tabindex="-1" href="#prob_open_vs_closed" title="Copy heading and permalink for Problem 5.70" aria-label="Copy heading and permalink for Problem 5.70">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-32">Another potentially annoying feature of the terminology illustrated by <a href="sec_Topology.html#prob_open_vs_closed" class="xref" data-knowl="./knowl/xref/prob_open_vs_closed.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 5.70">Problem 5.70</a> is that if a set is not open, it may or may not be closed. Similarly, if a set is not closed, it may or may not be open. That is, open and closed are not opposites of each other.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec_Topology-33">The next result justifies referring to <span class="process-math">\([a,b]\)</span> as a closed interval.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-33">The next result justifies referring to <span class="process-math">\([a,b]\)</span> as a closed interval.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="sec_Topology-34"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.71</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-34-1-1">Every interval of the form <span class="process-math">\([a,b]\text{,}\)</span> <span class="process-math">\((-\infty,b]\text{,}\)</span> <span class="process-math">\([a,\infty)\text{,}\)</span> or <span class="process-math">\((-\infty,\infty)\)</span> is a closed set.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-34-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-34-1-1">Every interval of the form <span class="process-math">\([a,b]\text{,}\)</span> <span class="process-math">\((-\infty,b]\text{,}\)</span> <span class="process-math">\([a,\infty)\text{,}\)</span> or <span class="process-math">\((-\infty,\infty)\)</span> is a closed set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-34-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.71"><a href="#sec_Topology-34" title="Copy heading and permalink for Theorem 5.71" aria-label="Copy heading and permalink for Theorem 5.71">🔗</a></div></article><article class="theorem theorem-like" id="sec_Topology-35"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.71"><a tabindex="-1" href="#sec_Topology-34" title="Copy heading and permalink for Theorem 5.71" aria-label="Copy heading and permalink for Theorem 5.71">🔗</a></div>
+</article>
+<article class="theorem theorem-like" id="sec_Topology-35"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.72</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-35-1-1">Every finite subset of <span class="process-math">\(\mathbb{R}\)</span> is closed.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-35-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-35-1-1">Every finite subset of <span class="process-math">\(\mathbb{R}\)</span> is closed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-35-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.72"><a href="#sec_Topology-35" title="Copy heading and permalink for Theorem 5.72" aria-label="Copy heading and permalink for Theorem 5.72">🔗</a></div></article><div class="para" id="sec_Topology-36">Despite the fact that open and closed are not opposites of each other, there is a nice relationship between open and closed sets in terms of complements.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.72"><a tabindex="-1" href="#sec_Topology-35" title="Copy heading and permalink for Theorem 5.72" aria-label="Copy heading and permalink for Theorem 5.72">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-36">Despite the fact that open and closed are not opposites of each other, there is a nice relationship between open and closed sets in terms of complements.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="sec_Topology-37"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.73</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-37-1-1">Let <span class="process-math">\(U\subseteq \mathbb{R}\text{.}\)</span> Then <span class="process-math">\(U\)</span> is open if and only if <span class="process-math">\(U^C\)</span> is closed.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-37-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-37-1-1">Let <span class="process-math">\(U\subseteq \mathbb{R}\text{.}\)</span> Then <span class="process-math">\(U\)</span> is open if and only if <span class="process-math">\(U^C\)</span> is closed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-37-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.73"><a href="#sec_Topology-37" title="Copy heading and permalink for Theorem 5.73" aria-label="Copy heading and permalink for Theorem 5.73">🔗</a></div></article><article class="theorem theorem-like" id="thm_finite_union_and_intersection_of_closed_sets"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.73"><a tabindex="-1" href="#sec_Topology-37" title="Copy heading and permalink for Theorem 5.73" aria-label="Copy heading and permalink for Theorem 5.73">🔗</a></div>
+</article>
+<article class="theorem theorem-like" id="thm_finite_union_and_intersection_of_closed_sets"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.74</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="thm_finite_union_and_intersection_of_closed_sets-1-1">
@@ -538,37 +553,45 @@ eBookConfig.enable_chatcodes =  false;
 <ol class="lower-alpha ol-marker-1" id="thm_finite_union_and_intersection_of_closed_sets-1-1-3">
 <li id="thm_finite_union_and_intersection_of_closed_sets-1-1-3-1">
 <div class="para" id="thm_finite_union_and_intersection_of_closed_sets-1-1-3-1-1">
-<span class="process-math">\(A\cup B\)</span> is a closed set, and<div class="autopermalink" data-description="Paragraph"><a href="#thm_finite_union_and_intersection_of_closed_sets-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A\cup B\)</span> is a closed set, and<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_closed_sets-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#thm_finite_union_and_intersection_of_closed_sets-1-1-3-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_closed_sets-1-1-3-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="thm_finite_union_and_intersection_of_closed_sets-1-1-3-2">
 <div class="para" id="thm_finite_union_and_intersection_of_closed_sets-1-1-3-2-1">
-<span class="process-math">\(A\cap B\)</span> is a closed set.<div class="autopermalink" data-description="Paragraph"><a href="#thm_finite_union_and_intersection_of_closed_sets-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(A\cap B\)</span> is a closed set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_closed_sets-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#thm_finite_union_and_intersection_of_closed_sets-1-1-3-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_closed_sets-1-1-3-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#thm_finite_union_and_intersection_of_closed_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_closed_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.74"><a href="#thm_finite_union_and_intersection_of_closed_sets" title="Copy heading and permalink for Theorem 5.74" aria-label="Copy heading and permalink for Theorem 5.74">🔗</a></div></article><div class="para" id="sec_Topology-39">The next two theorems are analogous to <a href="sec_Topology.html#thm_union_of_open_sets" class="xref" data-knowl="./knowl/xref/thm_union_of_open_sets.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.58">Theorem 5.58</a> and <a href="sec_Topology.html#thm_finite_intersection_of_open_sets" class="xref" data-knowl="./knowl/xref/thm_finite_intersection_of_open_sets.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.59">Theorem 5.59</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-39" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.74"><a tabindex="-1" href="#thm_finite_union_and_intersection_of_closed_sets" title="Copy heading and permalink for Theorem 5.74" aria-label="Copy heading and permalink for Theorem 5.74">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-39">The next two theorems are analogous to <a href="sec_Topology.html#thm_union_of_open_sets" class="xref" data-knowl="./knowl/xref/thm_union_of_open_sets.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.58">Theorem 5.58</a> and <a href="sec_Topology.html#thm_finite_intersection_of_open_sets" class="xref" data-knowl="./knowl/xref/thm_finite_intersection_of_open_sets.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.59">Theorem 5.59</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-39" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm_intersection_of_closed_sets"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.75</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="thm_intersection_of_closed_sets-1-1">If <span class="process-math">\(\{A_{\alpha}\}_{\alpha\in\Delta}\)</span> is a collection of closed sets, then <span class="process-math">\(\bigcap_{\alpha\in \Delta} A_{\alpha}\)</span> is a closed set.<div class="autopermalink" data-description="Paragraph"><a href="#thm_intersection_of_closed_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm_intersection_of_closed_sets-1-1">If <span class="process-math">\(\{A_{\alpha}\}_{\alpha\in\Delta}\)</span> is a collection of closed sets, then <span class="process-math">\(\bigcap_{\alpha\in \Delta} A_{\alpha}\)</span> is a closed set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm_intersection_of_closed_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.75"><a href="#thm_intersection_of_closed_sets" title="Copy heading and permalink for Theorem 5.75" aria-label="Copy heading and permalink for Theorem 5.75">🔗</a></div></article><article class="theorem theorem-like" id="sec_Topology-41"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.75"><a tabindex="-1" href="#thm_intersection_of_closed_sets" title="Copy heading and permalink for Theorem 5.75" aria-label="Copy heading and permalink for Theorem 5.75">🔗</a></div>
+</article>
+<article class="theorem theorem-like" id="sec_Topology-41"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.76</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-41-1-1">If <span class="process-math">\(\{A_{i}\}_{i=1}^n\)</span> is a finite collection of closed sets for <span class="process-math">\(n\in \mathbb{N}\text{,}\)</span> then <span class="process-math">\(\bigcup_{i=1}^n A_{i}\)</span> is a closed set.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-41-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-41-1-1">If <span class="process-math">\(\{A_{i}\}_{i=1}^n\)</span> is a finite collection of closed sets for <span class="process-math">\(n\in \mathbb{N}\text{,}\)</span> then <span class="process-math">\(\bigcup_{i=1}^n A_{i}\)</span> is a closed set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-41-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.76"><a href="#sec_Topology-41" title="Copy heading and permalink for Theorem 5.76" aria-label="Copy heading and permalink for Theorem 5.76">🔗</a></div></article><article class="problem example-like" id="prob_union_of_closed_sets"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.76"><a tabindex="-1" href="#sec_Topology-41" title="Copy heading and permalink for Theorem 5.76" aria-label="Copy heading and permalink for Theorem 5.76">🔗</a></div>
+</article>
+<article class="problem example-like" id="prob_union_of_closed_sets"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.77</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="prob_union_of_closed_sets-1-1">Provide an example of a collection of closed sets <span class="process-math">\(\{A_{\alpha}\}_{\alpha\in\Delta}\)</span> such that <span class="process-math">\(\bigcup_{\alpha\in \Delta} A_{\alpha}\)</span> is not a closed set.<div class="autopermalink" data-description="Paragraph"><a href="#prob_union_of_closed_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="prob_union_of_closed_sets-1-1">Provide an example of a collection of closed sets <span class="process-math">\(\{A_{\alpha}\}_{\alpha\in\Delta}\)</span> such that <span class="process-math">\(\bigcup_{\alpha\in \Delta} A_{\alpha}\)</span> is not a closed set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_union_of_closed_sets-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.77"><a href="#prob_union_of_closed_sets" title="Copy heading and permalink for Problem 5.77" aria-label="Copy heading and permalink for Problem 5.77">🔗</a></div></article><article class="problem example-like" id="prob_open_or_closed"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.77"><a tabindex="-1" href="#prob_union_of_closed_sets" title="Copy heading and permalink for Problem 5.77" aria-label="Copy heading and permalink for Problem 5.77">🔗</a></div>
+</article>
+<article class="problem example-like" id="prob_open_or_closed"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.78</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="prob_open_or_closed-1-1">
@@ -576,48 +599,54 @@ eBookConfig.enable_chatcodes =  false;
 <ol class="lower-alpha ol-marker-1" id="prob_open_or_closed-1-1-1">
 <li id="prob_open_or_closed-1-1-1-1">
 <div class="para" id="p-derived-prob_open_or_closed-1-1-1-1"><span class="process-math">\(\displaystyle V=\bigcup_{n=2}^{\infty} \left(n - \frac{1}{2},n\right)\)</span></div>
-<div class="autopermalink" data-description="Item a"><a href="#prob_open_or_closed-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#prob_open_or_closed-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="prob_open_or_closed-1-1-1-2">
 <div class="para" id="prob_open_or_closed-1-1-1-2-1">
-<span class="process-math">\(\displaystyle W=\bigcap_{n=2}^{\infty} \left(n - \frac{1}{2},n\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_closed-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle W=\bigcap_{n=2}^{\infty} \left(n - \frac{1}{2},n\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_closed-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#prob_open_or_closed-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#prob_open_or_closed-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="prob_open_or_closed-1-1-1-3">
 <div class="para" id="prob_open_or_closed-1-1-1-3-1">
-<span class="process-math">\(\displaystyle X=\bigcap_{n=1}^{\infty} \left(-\frac{1}{n}, \frac{1}{n}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_closed-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle X=\bigcap_{n=1}^{\infty} \left(-\frac{1}{n}, \frac{1}{n}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_closed-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#prob_open_or_closed-1-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item c"><a tabindex="-1" href="#prob_open_or_closed-1-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="prob_open_or_closed-1-1-1-4">
 <div class="para" id="prob_open_or_closed-1-1-1-4-1">
-<span class="process-math">\(\displaystyle Y=\bigcap_{n=1}^{\infty} \left(-n, n\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_closed-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle Y=\bigcap_{n=1}^{\infty} \left(-n, n\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_closed-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#prob_open_or_closed-1-1-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item d"><a tabindex="-1" href="#prob_open_or_closed-1-1-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li id="prob_open_or_closed-1-1-1-5">
 <div class="para" id="prob_open_or_closed-1-1-1-5-1">
-<span class="process-math">\(\displaystyle Z=(0,1)\cap \mathbb{Q}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_closed-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle Z=(0,1)\cap \mathbb{Q}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_closed-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item e"><a href="#prob_open_or_closed-1-1-1-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item e"><a tabindex="-1" href="#prob_open_or_closed-1-1-1-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#prob_open_or_closed-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_open_or_closed-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.78"><a href="#prob_open_or_closed" title="Copy heading and permalink for Problem 5.78" aria-label="Copy heading and permalink for Problem 5.78">🔗</a></div></article><article class="problem example-like" id="sec_Topology-44"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.78"><a tabindex="-1" href="#prob_open_or_closed" title="Copy heading and permalink for Problem 5.78" aria-label="Copy heading and permalink for Problem 5.78">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Topology-44"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.79</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-44-1-1">Prove or provide a counterexample: Every non-closed set has at least one accumulation point.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-44-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-44-1-1">Prove or provide a counterexample: Every non-closed set has at least one accumulation point.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-44-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.79"><a href="#sec_Topology-44" title="Copy heading and permalink for Problem 5.79" aria-label="Copy heading and permalink for Problem 5.79">🔗</a></div></article><div class="para" id="sec_Topology-45">We now introduce three special classes of subsets of <span class="process-math">\(\mathbb{R}\text{:}\)</span> compact, connected, and disconnected.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-45" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.79"><a tabindex="-1" href="#sec_Topology-44" title="Copy heading and permalink for Problem 5.79" aria-label="Copy heading and permalink for Problem 5.79">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-45">We now introduce three special classes of subsets of <span class="process-math">\(\mathbb{R}\text{:}\)</span> compact, connected, and disconnected.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-45" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="sec_Topology-46"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.80</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-46-1-1">A set <span class="process-math">\(K\subseteq\mathbb{R}\)</span> is called <dfn class="terminology">compact</dfn> if <span class="process-math">\(K\)</span> is both closed and bounded.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-46-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-46-1-1">A set <span class="process-math">\(K\subseteq\mathbb{R}\)</span> is called <dfn class="terminology">compact</dfn> if <span class="process-math">\(K\)</span> is both closed and bounded.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-46-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.80"><a href="#sec_Topology-46" title="Copy heading and permalink for Definition 5.80" aria-label="Copy heading and permalink for Definition 5.80">🔗</a></div></article><div class="para" id="sec_Topology-47">It is important to point out that there is a more general definition of compact in an arbitrary topological space. However, using our notions of open and closed, it is a theorem that a subset of the real line is compact if and only if it is closed and bounded.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-47" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 5.80"><a tabindex="-1" href="#sec_Topology-46" title="Copy heading and permalink for Definition 5.80" aria-label="Copy heading and permalink for Definition 5.80">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-47">It is important to point out that there is a more general definition of compact in an arbitrary topological space. However, using our notions of open and closed, it is a theorem that a subset of the real line is compact if and only if it is closed and bounded.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-47" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="problem example-like" id="prob_compact_or_not"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.81</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -627,123 +656,139 @@ eBookConfig.enable_chatcodes =  false;
 <ol class="lower-alpha ol-marker-1" id="prob_compact_or_not-1-1-1">
 <li id="prob_compact_or_not-1-1-1-1">
 <div class="para" id="prob_compact_or_not-1-1-1-1-1">
-<span class="process-math">\(\displaystyle [0,1)\cup [2,3]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle [0,1)\cup [2,3]\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#prob_compact_or_not-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-2">
 <div class="para" id="prob_compact_or_not-1-1-1-2-1">
-<span class="process-math">\(\displaystyle [0,1)\cup (1,2]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle [0,1)\cup (1,2]\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#prob_compact_or_not-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-3">
 <div class="para" id="prob_compact_or_not-1-1-1-3-1">
-<span class="process-math">\(\displaystyle [0,1)\cup [1,2]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle [0,1)\cup [1,2]\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#prob_compact_or_not-1-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item c"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-4">
 <div class="para" id="prob_compact_or_not-1-1-1-4-1">
-<span class="process-math">\(\displaystyle \mathbb{R}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \mathbb{R}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#prob_compact_or_not-1-1-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item d"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-5">
 <div class="para" id="prob_compact_or_not-1-1-1-5-1">
-<span class="process-math">\(\displaystyle \mathbb{Q}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \mathbb{Q}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item e"><a href="#prob_compact_or_not-1-1-1-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item e"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-6">
 <div class="para" id="prob_compact_or_not-1-1-1-6-1">
-<span class="process-math">\(\displaystyle \mathbb{R}\setminus\mathbb{Q}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \mathbb{R}\setminus\mathbb{Q}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item f"><a href="#prob_compact_or_not-1-1-1-6" title="Copy heading and permalink for Item f" aria-label="Copy heading and permalink for Item f">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item f"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-6" title="Copy heading and permalink for Item f" aria-label="Copy heading and permalink for Item f">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-7">
 <div class="para" id="prob_compact_or_not-1-1-1-7-1">
-<span class="process-math">\(\displaystyle \mathbb{Z}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \mathbb{Z}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item g"><a href="#prob_compact_or_not-1-1-1-7" title="Copy heading and permalink for Item g" aria-label="Copy heading and permalink for Item g">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item g"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-7" title="Copy heading and permalink for Item g" aria-label="Copy heading and permalink for Item g">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-8">
 <div class="para" id="prob_compact_or_not-1-1-1-8-1">
-<span class="process-math">\(\displaystyle \left\{\frac{1}{n}\mid n\in\mathbb{N}\right\}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \left\{\frac{1}{n}\mid n\in\mathbb{N}\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item h"><a href="#prob_compact_or_not-1-1-1-8" title="Copy heading and permalink for Item h" aria-label="Copy heading and permalink for Item h">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item h"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-8" title="Copy heading and permalink for Item h" aria-label="Copy heading and permalink for Item h">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-9">
 <div class="para" id="prob_compact_or_not-1-1-1-9-1">
-<span class="process-math">\(\displaystyle [0,1]\cup\left\{1+\frac{1}{n}\mid n\in\mathbb{N}\right\}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle [0,1]\cup\left\{1+\frac{1}{n}\mid n\in\mathbb{N}\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item i"><a href="#prob_compact_or_not-1-1-1-9" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item i"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-9" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-10">
 <div class="para" id="prob_compact_or_not-1-1-1-10-1">
-<span class="process-math">\(\displaystyle \{17,42\}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \{17,42\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item j"><a href="#prob_compact_or_not-1-1-1-10" title="Copy heading and permalink for Item j" aria-label="Copy heading and permalink for Item j">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item j"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-10" title="Copy heading and permalink for Item j" aria-label="Copy heading and permalink for Item j">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-11">
 <div class="para" id="prob_compact_or_not-1-1-1-11-1">
-<span class="process-math">\(\displaystyle \{17\}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \{17\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item k"><a href="#prob_compact_or_not-1-1-1-11" title="Copy heading and permalink for Item k" aria-label="Copy heading and permalink for Item k">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item k"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-11" title="Copy heading and permalink for Item k" aria-label="Copy heading and permalink for Item k">🔗</a></div>
 </li>
 <li id="prob_compact_or_not-1-1-1-12">
 <div class="para" id="prob_compact_or_not-1-1-1-12-1">
-<span class="process-math">\(\displaystyle \emptyset\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1-1-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle \emptyset\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item l"><a href="#prob_compact_or_not-1-1-1-12" title="Copy heading and permalink for Item l" aria-label="Copy heading and permalink for Item l">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item l"><a tabindex="-1" href="#prob_compact_or_not-1-1-1-12" title="Copy heading and permalink for Item l" aria-label="Copy heading and permalink for Item l">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#prob_compact_or_not-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_compact_or_not-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.81"><a href="#prob_compact_or_not" title="Copy heading and permalink for Problem 5.81" aria-label="Copy heading and permalink for Problem 5.81">🔗</a></div></article><article class="problem example-like" id="sec_Topology-49"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.81"><a tabindex="-1" href="#prob_compact_or_not" title="Copy heading and permalink for Problem 5.81" aria-label="Copy heading and permalink for Problem 5.81">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Topology-49"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.82</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-49-1-1">Is every finite set compact? Justify your assertion.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-49-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-49-1-1">Is every finite set compact? Justify your assertion.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-49-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.82"><a href="#sec_Topology-49" title="Copy heading and permalink for Problem 5.82" aria-label="Copy heading and permalink for Problem 5.82">🔗</a></div></article><div class="para" id="sec_Topology-50">The next theorem says that every nonempty compact set contains its greatest lower bound and its least upper bound. That is, every nonempty compact set attains a minimum and a maximum value.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-50" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.82"><a tabindex="-1" href="#sec_Topology-49" title="Copy heading and permalink for Problem 5.82" aria-label="Copy heading and permalink for Problem 5.82">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-50">The next theorem says that every nonempty compact set contains its greatest lower bound and its least upper bound. That is, every nonempty compact set attains a minimum and a maximum value.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-50" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="sec_Topology-51"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.83</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-51-1-1">If <span class="process-math">\(K\)</span> is a nonempty compact subset of <span class="process-math">\(\mathbb{R}\text{,}\)</span> then <span class="process-math">\(\sup(K),\inf(K)\in K\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-51-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-51-1-1">If <span class="process-math">\(K\)</span> is a nonempty compact subset of <span class="process-math">\(\mathbb{R}\text{,}\)</span> then <span class="process-math">\(\sup(K),\inf(K)\in K\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-51-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.83"><a href="#sec_Topology-51" title="Copy heading and permalink for Theorem 5.83" aria-label="Copy heading and permalink for Theorem 5.83">🔗</a></div></article><article class="definition definition-like" id="sec_Topology-52"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.83"><a tabindex="-1" href="#sec_Topology-51" title="Copy heading and permalink for Theorem 5.83" aria-label="Copy heading and permalink for Theorem 5.83">🔗</a></div>
+</article>
+<article class="definition definition-like" id="sec_Topology-52"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.84</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-52-1-1">A set <span class="process-math">\(A\subseteq \mathbb{R}\)</span> is <dfn class="terminology">disconnected</dfn> if there exists two disjoint open sets <span class="process-math">\(U_1\)</span> and <span class="process-math">\(U_2\)</span> such that <span class="process-math">\(A\cap U_1\)</span> and <span class="process-math">\(A\cap U_2\)</span> are nonempty but <span class="process-math">\(A\subseteq U_1\cup U_2\)</span> (equivalently, <span class="process-math">\(A=(A\cap U_1)\cup(A\cap U_2)\)</span>). If a set is not disconnected, then we say that it is <dfn class="terminology">connected</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-52-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-52-1-1">A set <span class="process-math">\(A\subseteq \mathbb{R}\)</span> is <dfn class="terminology">disconnected</dfn> if there exists two disjoint open sets <span class="process-math">\(U_1\)</span> and <span class="process-math">\(U_2\)</span> such that <span class="process-math">\(A\cap U_1\)</span> and <span class="process-math">\(A\cap U_2\)</span> are nonempty but <span class="process-math">\(A\subseteq U_1\cup U_2\)</span> (equivalently, <span class="process-math">\(A=(A\cap U_1)\cup(A\cap U_2)\)</span>). If a set is not disconnected, then we say that it is <dfn class="terminology">connected</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-52-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 5.84"><a href="#sec_Topology-52" title="Copy heading and permalink for Definition 5.84" aria-label="Copy heading and permalink for Definition 5.84">🔗</a></div></article><div class="para" id="sec_Topology-53">In other words, a set is disconnected if it can be partitioned into two nonempty subsets such that each subset does not contain points of the other and does not contain any accumulation points of the other. Showing that a set is disconnected is generally easier than showing a set is connected. To prove that a set is disconnected, you simply need to exhibit two open sets with the necessary properties. However, to prove that a set is connected, you need to prove that no such pair of open sets exists.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-53" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 5.84"><a tabindex="-1" href="#sec_Topology-52" title="Copy heading and permalink for Definition 5.84" aria-label="Copy heading and permalink for Definition 5.84">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-53">In other words, a set is disconnected if it can be partitioned into two nonempty subsets such that each subset does not contain points of the other and does not contain any accumulation points of the other. Showing that a set is disconnected is generally easier than showing a set is connected. To prove that a set is disconnected, you simply need to exhibit two open sets with the necessary properties. However, to prove that a set is connected, you need to prove that no such pair of open sets exists.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-53" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="problem example-like" id="sec_Topology-54"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.85</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-54-1-1">Determine whether each of the sets in <a href="sec_Topology.html#prob_compact_or_not" class="xref" data-knowl="./knowl/xref/prob_compact_or_not.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 5.81">Problem 5.81</a> is is connected or disconnected. Briefly justify your assertions.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-54-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-54-1-1">Determine whether each of the sets in <a href="sec_Topology.html#prob_compact_or_not" class="xref" data-knowl="./knowl/xref/prob_compact_or_not.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 5.81">Problem 5.81</a> is is connected or disconnected. Briefly justify your assertions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-54-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 5.85"><a href="#sec_Topology-54" title="Copy heading and permalink for Problem 5.85" aria-label="Copy heading and permalink for Problem 5.85">🔗</a></div></article><article class="theorem theorem-like" id="sec_Topology-55"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 5.85"><a tabindex="-1" href="#sec_Topology-54" title="Copy heading and permalink for Problem 5.85" aria-label="Copy heading and permalink for Problem 5.85">🔗</a></div>
+</article>
+<article class="theorem theorem-like" id="sec_Topology-55"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.86</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Topology-55-1-1">If <span class="process-math">\(a\in\mathbb{R}\text{,}\)</span> then <span class="process-math">\(\{a\}\)</span> is connected.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-55-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-55-1-1">If <span class="process-math">\(a\in\mathbb{R}\text{,}\)</span> then <span class="process-math">\(\{a\}\)</span> is connected.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-55-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.86"><a href="#sec_Topology-55" title="Copy heading and permalink for Theorem 5.86" aria-label="Copy heading and permalink for Theorem 5.86">🔗</a></div></article><div class="para" id="sec_Topology-56">The proof of the next theorem is harder than you might expect. Consider a proof by contradiction and try to make use of the Completeness Axiom.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-56" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.86"><a tabindex="-1" href="#sec_Topology-55" title="Copy heading and permalink for Theorem 5.86" aria-label="Copy heading and permalink for Theorem 5.86">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-56">The proof of the next theorem is harder than you might expect. Consider a proof by contradiction and try to make use of the Completeness Axiom.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-56" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm_closed_interval_connected"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.87</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="thm_closed_interval_connected-1-1">Every closed interval <span class="process-math">\([a,b]\)</span> is connected.<div class="autopermalink" data-description="Paragraph"><a href="#thm_closed_interval_connected-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="thm_closed_interval_connected-1-1">Every closed interval <span class="process-math">\([a,b]\)</span> is connected.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm_closed_interval_connected-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 5.87"><a href="#thm_closed_interval_connected" title="Copy heading and permalink for Theorem 5.87" aria-label="Copy heading and permalink for Theorem 5.87">🔗</a></div></article><div class="para" id="sec_Topology-58">It turns out that every connected set in <span class="process-math">\(\mathbb{R}\)</span> is either a singleton or an interval. We have not officially proved this claim, but we do have the tools to do so. Feel free to try your hand at proving this fact.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-58" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5.87"><a tabindex="-1" href="#thm_closed_interval_connected" title="Copy heading and permalink for Theorem 5.87" aria-label="Copy heading and permalink for Theorem 5.87">🔗</a></div>
+</article>
+<div class="para" id="sec_Topology-58">It turns out that every connected set in <span class="process-math">\(\mathbb{R}\)</span> is either a singleton or an interval. We have not officially proved this claim, but we do have the tools to do so. Feel free to try your hand at proving this fact.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-58" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <blockquote class="blockquote" id="sec_Topology-59">
-<div class="para" id="sec_Topology-59-1">If you learn how to learn, it’s the ultimate meta skill and I believe you can learn how to be healthy, you can learn how to be fit, you can learn how to be happy, you can learn how to have good relationships, you can learn how to be successful. These are all things that can be learned. So if you can learn that is a trump card, it’s an ace, it’s a joker, it’s a wild card. You can trade it for any other skill.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Topology-59-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Topology-59-1">If you learn how to learn, it’s the ultimate meta skill and I believe you can learn how to be healthy, you can learn how to be fit, you can learn how to be happy, you can learn how to have good relationships, you can learn how to be successful. These are all things that can be learned. So if you can learn that is a trump card, it’s an ace, it’s a joker, it’s a wild card. You can trade it for any other skill.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Topology-59-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<cite class="attribution">―Naval Ravikant, entrepreneur &amp; investor</cite><div class="autopermalink" data-description="Quotation"><a href="#sec_Topology-59" title="Copy heading and permalink for Quotation" aria-label="Copy heading and permalink for Quotation">🔗</a></div>
+<cite class="attribution">―Naval Ravikant, entrepreneur &amp; investor</cite><div class="autopermalink" aria-hidden="true" data-description="Quotation"><a tabindex="-1" href="#sec_Topology-59" title="Copy heading and permalink for Quotation" aria-label="Copy heading and permalink for Quotation">🔗</a></div>
 </blockquote>
-<div class="autopermalink" data-description="Section 5.2: Standard Topology of the Real Line"><a href="#sec_Topology" title="Copy heading and permalink for Section 5.2: Standard Topology of the Real Line" aria-label="Copy heading and permalink for Section 5.2: Standard Topology of the Real Line">🔗</a></div></section></div>
+<div class="autopermalink" aria-hidden="true" data-description="Section 5.2: Standard Topology of the Real Line"><a tabindex="-1" href="#sec_Topology" title="Copy heading and permalink for Section 5.2: Standard Topology of the Real Line" aria-label="Copy heading and permalink for Section 5.2: Standard Topology of the Real Line">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec_AxiomsRealNumbers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chap_ThreeFamousTheorems.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

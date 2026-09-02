@@ -21,67 +21,21 @@
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="external/custom-styles.css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
+<meta name="twitter:title" content="An Introduction to Proof via Inquiry-Based Learning">
+<meta property="og:title" content="An Introduction to Proof via Inquiry-Based Learning">
 <meta property="book:title" content="An Introduction to Proof via Inquiry-Based Learning">
-<meta property="book:author" content="Dana C. Ernst, PhD">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.43"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -103,16 +57,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.1';
+eBookConfig.runestone_version = '8.2.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.dcab57465a404e85.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.79fbb790b185d712.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -120,18 +74,35 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="root-1-2.html"><span class="title">An Introduction to Proof via Inquiry-Based Learning</span></a></h1>
 <p class="byline">Dana C. Ernst, PhD</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_Indexing_Sets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chap_SetTheory.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chap_Induction.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec_Indexing_Sets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chap_SetTheory.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chap_Induction.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dom}{\operatorname{Dom}}
 \newcommand{\codom}{\operatorname{Codom}}
 \newcommand{\range}{\operatorname{Rng}}
@@ -151,18 +122,18 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="root-1-2-2.html" class="internal"><span class="title">Front Matter</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<ul id="ptx-toc-group-root-1-2-2" class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="chap_preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 <li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="chap_acknowledgements.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_intro.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_intro" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_WhatIsThisBookAllAbout.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What is This Book All About?</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_what_should_you_expect.html" class="internal"><span class="codenumber">1.2</span> <span class="title">What Should You Expect?</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_IBLApproach.html" class="internal"><span class="codenumber">1.3</span> <span class="title">An Inquiry-Based Approach</span></a></div></li>
@@ -172,7 +143,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_IntroToMath.html" class="internal"><span class="codenumber">2</span> <span class="title">Mathematics and Logic</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_IntroToMath" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_baby_number_theory.html" class="internal"><span class="codenumber">2.1</span> <span class="title">A Taste of Number Theory</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Intro_to_Logic.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Introduction to Logic</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Techniques_for_Proving_Conditional_Propositions.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Techniques for Proving Conditional Propositions</span></a></div></li>
@@ -182,7 +153,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="chap_SetTheory.html" class="internal"><span class="codenumber">3</span> <span class="title">Set Theory</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-chap_SetTheory">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Sets.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Sets</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_RussellsParadox.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Russell’s Paradox</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_PowerSets.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Power Sets</span></a></div></li>
@@ -192,7 +163,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_Induction.html" class="internal"><span class="codenumber">4</span> <span class="title">Induction</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_Induction" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Intro_to_Induction.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Induction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_More_on_Induction.html" class="internal"><span class="codenumber">4.2</span> <span class="title">More on Induction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_CompleteInduction.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Complete Induction</span></a></div></li>
@@ -201,14 +172,14 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_RealNumbers.html" class="internal"><span class="codenumber">5</span> <span class="title">The Real Numbers</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_RealNumbers" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_AxiomsRealNumbers.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Axioms of the Real Numbers</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Topology.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Standard Topology of the Real Line</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_ThreeFamousTheorems.html" class="internal"><span class="codenumber">6</span> <span class="title">Three Famous Theorems</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_ThreeFamousTheorems" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_FTA.html" class="internal"><span class="codenumber">6.1</span> <span class="title">The Fundamental Theorem of Arithmetic</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Irrationality_of_Root_2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Irrationality of <span class="process-math">\(\sqrt{2}\)</span></span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Infinitude_of_Primes.html" class="internal"><span class="codenumber">6.3</span> <span class="title">The Infinitude of Primes</span></a></div></li>
@@ -216,7 +187,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_Relations_and_Partitions.html" class="internal"><span class="codenumber">7</span> <span class="title">Relations and Partitions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_Relations_and_Partitions" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Relations.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Relations</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Equivalence_Relations.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Equivalence Relations</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Partitions.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Partitions</span></a></div></li>
@@ -225,7 +196,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_Functions.html" class="internal"><span class="codenumber">8</span> <span class="title">Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_Functions" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Intro_to_Functions.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Introduction to Functions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Injective_and_Surjective_Functions.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Injective and Surjective Functions</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Compositions_and_Inverse_Functions.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Compositions and Inverse Functions</span></a></div></li>
@@ -235,7 +206,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chap_Cardinality.html" class="internal"><span class="codenumber">9</span> <span class="title">Cardinality</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chap_Cardinality" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Intro_to_Cardinality.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Introduction to Cardinality</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Finite_Sets.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Finite Sets</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_Infinite_Sets.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Infinite Sets</span></a></div></li>
@@ -248,19 +219,23 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix_paradoxes.html" class="internal"><span class="codenumber">C</span> <span class="title">Paradoxes</span></a></div></li>
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix_definitions.html" class="internal"><span class="codenumber">D</span> <span class="title">Definitions in Mathematics</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_Cartesian_Products"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec_Cartesian_Products">
+<h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cartesian Products of Sets</span>
 </h2>
-<div class="para" id="sec_Cartesian_Products-2">Given a collection of sets, we can form new sets by taking unions, intersections, complements, and set differences. In this section, we introduce a type of “product” of sets. You have already encountered this concept when you learned to plot points in the plane. You also crossed paths with this notion if you have taken a course in linear algebra.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-2">Given a collection of sets, we can form new sets by taking unions, intersections, complements, and set differences. In this section, we introduce a type of “product” of sets. You have already encountered this concept when you learned to plot points in the plane. You also crossed paths with this notion if you have taken a course in linear algebra.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="sec_Cartesian_Products-3"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-3-1-1">For each <span class="process-math">\(n\in \mathbb{N}\text{,}\)</span> we define an <dfn class="terminology"><span class="process-math">\(n\)</span>-tuple</dfn> to be an ordered list of <span class="process-math">\(n\)</span> elements of the form <span class="process-math">\(\tcboxmath{(a_1, a_2,\ldots,a_n)}\text{.}\)</span> We refer to <span class="process-math">\(a_i\)</span> as the <span class="process-math">\(i\)</span>th <dfn class="terminology">component</dfn> (or<dfn class="terminology">coordinate</dfn>) of <span class="process-math">\((a_1, a_2,\ldots,a_n)\text{.}\)</span> Two <span class="process-math">\(n\)</span>-tuples <span class="process-math">\((a_1, a_2,\ldots,a_n)\)</span> and <span class="process-math">\((b_1, b_2,\ldots,b_n)\)</span> are equal if <span class="process-math">\(a_i=b_i\)</span> for all <span class="process-math">\(1\leq i\leq n\text{.}\)</span> A <span class="process-math">\(2\)</span>-tuple <span class="process-math">\((a,b)\)</span> is more commonly referred to as an <dfn class="terminology">ordered pair</dfn> while a <span class="process-math">\(3\)</span>-tuple <span class="process-math">\((a,b,c)\)</span> is often called an <dfn class="terminology">ordered triple</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-3-1-1">For each <span class="process-math">\(n\in \mathbb{N}\text{,}\)</span> we define an <dfn class="terminology"><span class="process-math">\(n\)</span>-tuple</dfn> to be an ordered list of <span class="process-math">\(n\)</span> elements of the form <span class="process-math">\(\tcboxmath{(a_1, a_2,\ldots,a_n)}\text{.}\)</span> We refer to <span class="process-math">\(a_i\)</span> as the <span class="process-math">\(i\)</span>th <dfn class="terminology">component</dfn> (or<dfn class="terminology">coordinate</dfn>) of <span class="process-math">\((a_1, a_2,\ldots,a_n)\text{.}\)</span> Two <span class="process-math">\(n\)</span>-tuples <span class="process-math">\((a_1, a_2,\ldots,a_n)\)</span> and <span class="process-math">\((b_1, b_2,\ldots,b_n)\)</span> are equal if <span class="process-math">\(a_i=b_i\)</span> for all <span class="process-math">\(1\leq i\leq n\text{.}\)</span> A <span class="process-math">\(2\)</span>-tuple <span class="process-math">\((a,b)\)</span> is more commonly referred to as an <dfn class="terminology">ordered pair</dfn> while a <span class="process-math">\(3\)</span>-tuple <span class="process-math">\((a,b,c)\)</span> is often called an <dfn class="terminology">ordered triple</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 3.44"><a href="#sec_Cartesian_Products-3" title="Copy heading and permalink for Definition 3.44" aria-label="Copy heading and permalink for Definition 3.44">🔗</a></div></article><div class="para" id="sec_Cartesian_Products-4">Occasionally, other symbols are used to surround the components of an <span class="process-math">\(n\)</span>-tuple, such as square brackets “<span class="process-math">\([\ ]\)</span>” or angle brackets “<span class="process-math">\(\langle\ \rangle\)</span>”. In some programming languages, curly braces “<span class="process-math">\(\{\ \}\)</span>” are used to specify arrays. However, we avoid this convention in mathematics since curly braces are the standard notation for sets. The term “tuple” can also occur when discussing other mathematical objects, such as vectors.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 3.44"><a tabindex="-1" href="#sec_Cartesian_Products-3" title="Copy heading and permalink for Definition 3.44" aria-label="Copy heading and permalink for Definition 3.44">🔗</a></div>
+</article>
+<div class="para" id="sec_Cartesian_Products-4">Occasionally, other symbols are used to surround the components of an <span class="process-math">\(n\)</span>-tuple, such as square brackets “<span class="process-math">\([\ ]\)</span>” or angle brackets “<span class="process-math">\(\langle\ \rangle\)</span>”. In some programming languages, curly braces “<span class="process-math">\(\{\ \}\)</span>” are used to specify arrays. However, we avoid this convention in mathematics since curly braces are the standard notation for sets. The term “tuple” can also occur when discussing other mathematical objects, such as vectors.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec_Cartesian_Products-5">We can use the notion of <span class="process-math">\(n\)</span>-tuples to construct new sets from existing sets.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-5">We can use the notion of <span class="process-math">\(n\)</span>-tuples to construct new sets from existing sets.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="sec_Cartesian_Products-6"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.45</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -272,8 +247,9 @@ eBookConfig.enable_chatcodes =  false;
 \tcboxmath{A\times B\coloneqq \{(a,b)\mid a\in A, b\in B\}}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para logical" id="sec_Cartesian_Products-6-1-2">
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_Cartesian_Products-6-1-2">
 <div class="para">We similarly define the Cartesian product of <span class="process-math">\(n\)</span> sets, say <span class="process-math">\(A_1, \ldots, A_n\text{,}\)</span> by</div>
 <div class="displaymath process-math" id="sec_Cartesian_Products-6-1-2-3">
 \begin{equation*}
@@ -288,9 +264,11 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">is often abbreviated as <span class="process-math">\(A^n\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 3.45"><a href="#sec_Cartesian_Products-6" title="Copy heading and permalink for Definition 3.45" aria-label="Copy heading and permalink for Definition 3.45">🔗</a></div></article><div class="para" id="sec_Cartesian_Products-7">Cartesian products are named after French philosopher and mathematician <a class="external" href="https://en.wikipedia.org/wiki/Rene_Descartes" target="_blank">René Descartes</a> (1596–1650). Cartesian products will play a prominent role in <a href="chap_Relations_and_Partitions.html" class="internal" title="Chapter 7: Relations and Partitions">Chapter 7</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 3.45"><a tabindex="-1" href="#sec_Cartesian_Products-6" title="Copy heading and permalink for Definition 3.45" aria-label="Copy heading and permalink for Definition 3.45">🔗</a></div>
+</article>
+<div class="para" id="sec_Cartesian_Products-7">Cartesian products are named after French philosopher and mathematician <a class="external" href="https://en.wikipedia.org/wiki/Rene_Descartes" target="_blank">René Descartes</a> (1596–1650). Cartesian products will play a prominent role in <a href="chap_Relations_and_Partitions.html" class="internal" title="Chapter 7: Relations and Partitions">Chapter 7</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="ex_CartesianProduct"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -302,9 +280,11 @@ eBookConfig.enable_chatcodes =  false;
 A\times B=\{(a,\alpha), (a,\beta),(b,\alpha),(b,\beta), (c,\alpha),(c,\beta)\}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex_CartesianProduct-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_CartesianProduct-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 3.46"><a href="#ex_CartesianProduct" title="Copy heading and permalink for Example 3.46" aria-label="Copy heading and permalink for Example 3.46">🔗</a></div></article><article class="example example-like" id="sec_Cartesian_Products-9"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Example 3.46"><a tabindex="-1" href="#ex_CartesianProduct" title="Copy heading and permalink for Example 3.46" aria-label="Copy heading and permalink for Example 3.46">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_Cartesian_Products-9"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec_Cartesian_Products-9-1-1">
@@ -320,43 +300,53 @@ A\times B=\{(a,\alpha), (a,\beta),(b,\alpha),(b,\beta), (c,\alpha),(c,\beta)\}\t
 \mathbb{R}^3=\mathbb{R}\times \mathbb{R}\times \mathbb{R}=\{(x,y,z)\mid x,y,z\in \mathbb{R}\}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 3.47"><a href="#sec_Cartesian_Products-9" title="Copy heading and permalink for Example 3.47" aria-label="Copy heading and permalink for Example 3.47">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-10"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Example 3.47"><a tabindex="-1" href="#sec_Cartesian_Products-9" title="Copy heading and permalink for Example 3.47" aria-label="Copy heading and permalink for Example 3.47">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-10"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.48</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec_Cartesian_Products-10-1-1">
 <div class="para">Consider the sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> from <a href="sec_Cartesian_Products.html#ex_CartesianProduct" class="xref" data-knowl="./knowl/xref/ex_CartesianProduct.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 3.46">Example 3.46</a>.</div>
 <ol class="lower-alpha ol-marker-1" id="sec_Cartesian_Products-10-1-1-4">
 <li id="sec_Cartesian_Products-10-1-1-4-1">
-<div class="para" id="sec_Cartesian_Products-10-1-1-4-1-1">Find <span class="process-math">\(B\times A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-10-1-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-10-1-1-4-1-1">Find <span class="process-math">\(B\times A\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-10-1-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#sec_Cartesian_Products-10-1-1-4-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#sec_Cartesian_Products-10-1-1-4-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-10-1-1-4-2">
-<div class="para" id="sec_Cartesian_Products-10-1-1-4-2-1">Find <span class="process-math">\(B\times B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-10-1-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-10-1-1-4-2-1">Find <span class="process-math">\(B\times B\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-10-1-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#sec_Cartesian_Products-10-1-1-4-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#sec_Cartesian_Products-10-1-1-4-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.48"><a href="#sec_Cartesian_Products-10" title="Copy heading and permalink for Problem 3.48" aria-label="Copy heading and permalink for Problem 3.48">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-11"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.48"><a tabindex="-1" href="#sec_Cartesian_Products-10" title="Copy heading and permalink for Problem 3.48" aria-label="Copy heading and permalink for Problem 3.48">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-11"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.49</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-11-1-1">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, why do you think that <span class="process-math">\(A\times B\)</span> is referred to as a type of “product”? Think about the area model for multiplication of natural numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-11-1-1">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, why do you think that <span class="process-math">\(A\times B\)</span> is referred to as a type of “product”? Think about the area model for multiplication of natural numbers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.49"><a href="#sec_Cartesian_Products-11" title="Copy heading and permalink for Problem 3.49" aria-label="Copy heading and permalink for Problem 3.49">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-12"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.49"><a tabindex="-1" href="#sec_Cartesian_Products-11" title="Copy heading and permalink for Problem 3.49" aria-label="Copy heading and permalink for Problem 3.49">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-12"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-12-1-1">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are both finite sets, then how many elements will <span class="process-math">\(A\times B\)</span> have?<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-12-1-1">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are both finite sets, then how many elements will <span class="process-math">\(A\times B\)</span> have?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.50"><a href="#sec_Cartesian_Products-12" title="Copy heading and permalink for Problem 3.50" aria-label="Copy heading and permalink for Problem 3.50">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-13"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.50"><a tabindex="-1" href="#sec_Cartesian_Products-12" title="Copy heading and permalink for Problem 3.50" aria-label="Copy heading and permalink for Problem 3.50">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-13"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.51</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-13-1-1">Let <span class="process-math">\(A=\{1, 2, 3\}\text{,}\)</span> <span class="process-math">\(B=\{1,2\}\text{,}\)</span> and <span class="process-math">\(C=\{1,3\}\text{.}\)</span> Find <span class="process-math">\(A \times B\times C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-13-1-1">Let <span class="process-math">\(A=\{1, 2, 3\}\text{,}\)</span> <span class="process-math">\(B=\{1,2\}\text{,}\)</span> and <span class="process-math">\(C=\{1,3\}\text{.}\)</span> Find <span class="process-math">\(A \times B\times C\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.51"><a href="#sec_Cartesian_Products-13" title="Copy heading and permalink for Problem 3.51" aria-label="Copy heading and permalink for Problem 3.51">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-14"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.51"><a tabindex="-1" href="#sec_Cartesian_Products-13" title="Copy heading and permalink for Problem 3.51" aria-label="Copy heading and permalink for Problem 3.51">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-14"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.52</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec_Cartesian_Products-14-1-1">
@@ -364,69 +354,85 @@ A\times B=\{(a,\alpha), (a,\beta),(b,\alpha),(b,\beta), (c,\alpha),(c,\beta)\}\t
 <ol class="lower-alpha ol-marker-1" id="sec_Cartesian_Products-14-1-1-3">
 <li id="sec_Cartesian_Products-14-1-1-3-1">
 <div class="para" id="sec_Cartesian_Products-14-1-1-3-1-1">
-<span class="process-math">\(\displaystyle X\times Y\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-14-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle X\times Y\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-14-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#sec_Cartesian_Products-14-1-1-3-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#sec_Cartesian_Products-14-1-1-3-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-14-1-1-3-2">
 <div class="para" id="sec_Cartesian_Products-14-1-1-3-2-1">
-<span class="process-math">\(\displaystyle Y\times X\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-14-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle Y\times X\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-14-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#sec_Cartesian_Products-14-1-1-3-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#sec_Cartesian_Products-14-1-1-3-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-14-1-1-3-3">
 <div class="para" id="sec_Cartesian_Products-14-1-1-3-3-1">
-<span class="process-math">\(\displaystyle X\times X\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-14-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle X\times X\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-14-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#sec_Cartesian_Products-14-1-1-3-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item c"><a tabindex="-1" href="#sec_Cartesian_Products-14-1-1-3-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-14-1-1-3-4">
 <div class="para" id="sec_Cartesian_Products-14-1-1-3-4-1">
-<span class="process-math">\(\displaystyle Y\times Y\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-14-1-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle Y\times Y\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-14-1-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#sec_Cartesian_Products-14-1-1-3-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item d"><a tabindex="-1" href="#sec_Cartesian_Products-14-1-1-3-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.52"><a href="#sec_Cartesian_Products-14" title="Copy heading and permalink for Problem 3.52" aria-label="Copy heading and permalink for Problem 3.52">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-15"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.52"><a tabindex="-1" href="#sec_Cartesian_Products-14" title="Copy heading and permalink for Problem 3.52" aria-label="Copy heading and permalink for Problem 3.52">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-15"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-15-1-1">If <span class="process-math">\(A\)</span> is a set, then what is <span class="process-math">\(A\times \emptyset\)</span> equal to?<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-15-1-1">If <span class="process-math">\(A\)</span> is a set, then what is <span class="process-math">\(A\times \emptyset\)</span> equal to?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.53"><a href="#sec_Cartesian_Products-15" title="Copy heading and permalink for Problem 3.53" aria-label="Copy heading and permalink for Problem 3.53">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-16"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.53"><a tabindex="-1" href="#sec_Cartesian_Products-15" title="Copy heading and permalink for Problem 3.53" aria-label="Copy heading and permalink for Problem 3.53">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-16"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.54</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-16-1-1">Given sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> when will <span class="process-math">\(A\times B\)</span> be equal to <span class="process-math">\(B\times A\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-16-1-1">Given sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> when will <span class="process-math">\(A\times B\)</span> be equal to <span class="process-math">\(B\times A\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.54"><a href="#sec_Cartesian_Products-16" title="Copy heading and permalink for Problem 3.54" aria-label="Copy heading and permalink for Problem 3.54">🔗</a></div></article><article class="problem example-like" id="prob_some_lines"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.54"><a tabindex="-1" href="#sec_Cartesian_Products-16" title="Copy heading and permalink for Problem 3.54" aria-label="Copy heading and permalink for Problem 3.54">🔗</a></div>
+</article>
+<article class="problem example-like" id="prob_some_lines"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.55</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="prob_some_lines-1-1">Write <span class="process-math">\(\mathbb{N}\times \mathbb{R}\)</span> using set-builder notation and then describe this set geometrically by interpreting it as a subset of <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#prob_some_lines-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="prob_some_lines-1-1">Write <span class="process-math">\(\mathbb{N}\times \mathbb{R}\)</span> using set-builder notation and then describe this set geometrically by interpreting it as a subset of <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#prob_some_lines-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.55"><a href="#prob_some_lines" title="Copy heading and permalink for Problem 3.55" aria-label="Copy heading and permalink for Problem 3.55">🔗</a></div></article><div class="para" id="sec_Cartesian_Products-18">We now turn our attention to subsets of Cartesian products.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.55"><a tabindex="-1" href="#prob_some_lines" title="Copy heading and permalink for Problem 3.55" aria-label="Copy heading and permalink for Problem 3.55">🔗</a></div>
+</article>
+<div class="para" id="sec_Cartesian_Products-18">We now turn our attention to subsets of Cartesian products.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="sec_Cartesian_Products-19"><h3 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.56</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-19-1-1">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\text{,}\)</span> and <span class="process-math">\(D\)</span> be sets. If <span class="process-math">\(A\subseteq C\)</span> and <span class="process-math">\(B\subseteq D\text{,}\)</span> then <span class="process-math">\(A\times B\subseteq C\times D\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-19-1-1">Let <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\text{,}\)</span> and <span class="process-math">\(D\)</span> be sets. If <span class="process-math">\(A\subseteq C\)</span> and <span class="process-math">\(B\subseteq D\text{,}\)</span> then <span class="process-math">\(A\times B\subseteq C\times D\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 3.56"><a href="#sec_Cartesian_Products-19" title="Copy heading and permalink for Theorem 3.56" aria-label="Copy heading and permalink for Theorem 3.56">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-20"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 3.56"><a tabindex="-1" href="#sec_Cartesian_Products-19" title="Copy heading and permalink for Theorem 3.56" aria-label="Copy heading and permalink for Theorem 3.56">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-20"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.57</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-20-1-1">Is it true that if <span class="process-math">\(A\times B\subseteq C\times D\text{,}\)</span> then <span class="process-math">\(A\subseteq C\)</span> and <span class="process-math">\(B\subseteq D\text{?}\)</span> Do not forget to think about cases involving the empty set.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-20-1-1">Is it true that if <span class="process-math">\(A\times B\subseteq C\times D\text{,}\)</span> then <span class="process-math">\(A\subseteq C\)</span> and <span class="process-math">\(B\subseteq D\text{?}\)</span> Do not forget to think about cases involving the empty set.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.57"><a href="#sec_Cartesian_Products-20" title="Copy heading and permalink for Problem 3.57" aria-label="Copy heading and permalink for Problem 3.57">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-21"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.57"><a tabindex="-1" href="#sec_Cartesian_Products-20" title="Copy heading and permalink for Problem 3.57" aria-label="Copy heading and permalink for Problem 3.57">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-21"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.58</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-21-1-1">Is every subset of <span class="process-math">\(C\times D\)</span> of the form <span class="process-math">\(A\times B\text{,}\)</span> where <span class="process-math">\(A\subseteq C\)</span> and <span class="process-math">\(B\subseteq D\text{?}\)</span> If so, prove it. If not, find a counterexample.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-21-1-1">Is every subset of <span class="process-math">\(C\times D\)</span> of the form <span class="process-math">\(A\times B\text{,}\)</span> where <span class="process-math">\(A\subseteq C\)</span> and <span class="process-math">\(B\subseteq D\text{?}\)</span> If so, prove it. If not, find a counterexample.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.58"><a href="#sec_Cartesian_Products-21" title="Copy heading and permalink for Problem 3.58" aria-label="Copy heading and permalink for Problem 3.58">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-22"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.58"><a tabindex="-1" href="#sec_Cartesian_Products-21" title="Copy heading and permalink for Problem 3.58" aria-label="Copy heading and permalink for Problem 3.58">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-22"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.59</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-22-1-1">If <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> are nonempty sets, is <span class="process-math">\(A\times B\)</span> a subset of <span class="process-math">\(A\times B\times C\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-22-1-1">If <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> are nonempty sets, is <span class="process-math">\(A\times B\)</span> a subset of <span class="process-math">\(A\times B\times C\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.59"><a href="#sec_Cartesian_Products-22" title="Copy heading and permalink for Problem 3.59" aria-label="Copy heading and permalink for Problem 3.59">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-23"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.59"><a tabindex="-1" href="#sec_Cartesian_Products-22" title="Copy heading and permalink for Problem 3.59" aria-label="Copy heading and permalink for Problem 3.59">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-23"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.60</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec_Cartesian_Products-23-1-1">
@@ -434,56 +440,58 @@ A\times B=\{(a,\alpha), (a,\beta),(b,\alpha),(b,\beta), (c,\alpha),(c,\beta)\}\t
 <ol class="lower-alpha ol-marker-1" id="sec_Cartesian_Products-23-1-1-5">
 <li id="sec_Cartesian_Products-23-1-1-5-1">
 <div class="para" id="sec_Cartesian_Products-23-1-1-5-1-1">
-<span class="process-math">\(\displaystyle (A\cap B)\times (C\cap D)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-23-1-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (A\cap B)\times (C\cap D)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#sec_Cartesian_Products-23-1-1-5-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-23-1-1-5-2">
 <div class="para" id="sec_Cartesian_Products-23-1-1-5-2-1">
-<span class="process-math">\(\displaystyle (A\times C)\cap (B\times D)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-23-1-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (A\times C)\cap (B\times D)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#sec_Cartesian_Products-23-1-1-5-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-23-1-1-5-3">
 <div class="para" id="sec_Cartesian_Products-23-1-1-5-3-1">
-<span class="process-math">\(\displaystyle (A\cup B)\times (C\cup D)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-23-1-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (A\cup B)\times (C\cup D)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#sec_Cartesian_Products-23-1-1-5-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item c"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-23-1-1-5-4">
 <div class="para" id="sec_Cartesian_Products-23-1-1-5-4-1">
-<span class="process-math">\(\displaystyle (A\times C)\cup (B\times D)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-23-1-1-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (A\times C)\cup (B\times D)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#sec_Cartesian_Products-23-1-1-5-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item d"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-23-1-1-5-5">
 <div class="para" id="sec_Cartesian_Products-23-1-1-5-5-1">
-<span class="process-math">\(\displaystyle A\times (B\cap C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-23-1-1-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle A\times (B\cap C)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item e"><a href="#sec_Cartesian_Products-23-1-1-5-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item e"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-23-1-1-5-6">
 <div class="para" id="sec_Cartesian_Products-23-1-1-5-6-1">
-<span class="process-math">\(\displaystyle (A\times B)\cap (A\times C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-23-1-1-5-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (A\times B)\cap (A\times C)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item f"><a href="#sec_Cartesian_Products-23-1-1-5-6" title="Copy heading and permalink for Item f" aria-label="Copy heading and permalink for Item f">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item f"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-6" title="Copy heading and permalink for Item f" aria-label="Copy heading and permalink for Item f">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-23-1-1-5-7">
 <div class="para" id="sec_Cartesian_Products-23-1-1-5-7-1">
-<span class="process-math">\(\displaystyle A\times (B\cup C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-23-1-1-5-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle A\times (B\cup C)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item g"><a href="#sec_Cartesian_Products-23-1-1-5-7" title="Copy heading and permalink for Item g" aria-label="Copy heading and permalink for Item g">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item g"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-7" title="Copy heading and permalink for Item g" aria-label="Copy heading and permalink for Item g">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-23-1-1-5-8">
 <div class="para" id="sec_Cartesian_Products-23-1-1-5-8-1">
-<span class="process-math">\(\displaystyle (A\times B)\cup (A\times C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-23-1-1-5-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (A\times B)\cup (A\times C)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item h"><a href="#sec_Cartesian_Products-23-1-1-5-8" title="Copy heading and permalink for Item h" aria-label="Copy heading and permalink for Item h">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item h"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1-5-8" title="Copy heading and permalink for Item h" aria-label="Copy heading and permalink for Item h">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.60"><a href="#sec_Cartesian_Products-23" title="Copy heading and permalink for Problem 3.60" aria-label="Copy heading and permalink for Problem 3.60">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-24"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.60"><a tabindex="-1" href="#sec_Cartesian_Products-23" title="Copy heading and permalink for Problem 3.60" aria-label="Copy heading and permalink for Problem 3.60">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-24"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.61</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="sec_Cartesian_Products-24-1-1">
@@ -491,48 +499,54 @@ A\times B=\{(a,\alpha), (a,\beta),(b,\alpha),(b,\beta), (c,\alpha),(c,\beta)\}\t
 <ol class="lower-alpha ol-marker-1" id="sec_Cartesian_Products-24-1-1-5">
 <li id="sec_Cartesian_Products-24-1-1-5-1">
 <div class="para" id="sec_Cartesian_Products-24-1-1-5-1-1">
-<span class="process-math">\(\displaystyle (A\cap B)\times (C\cap D)=(A\times C)\cap (B\times D)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-24-1-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (A\cap B)\times (C\cap D)=(A\times C)\cap (B\times D)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#sec_Cartesian_Products-24-1-1-5-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1-5-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-24-1-1-5-2">
 <div class="para" id="sec_Cartesian_Products-24-1-1-5-2-1">
-<span class="process-math">\(\displaystyle (A\cup B)\times (C\cup D)=(A\times C)\cup (B\times D)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-24-1-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle (A\cup B)\times (C\cup D)=(A\times C)\cup (B\times D)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#sec_Cartesian_Products-24-1-1-5-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1-5-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-24-1-1-5-3">
 <div class="para" id="sec_Cartesian_Products-24-1-1-5-3-1">
-<span class="process-math">\(\displaystyle A\times (B\cap C)=(A\times B)\cap (A\times C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-24-1-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle A\times (B\cap C)=(A\times B)\cap (A\times C)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#sec_Cartesian_Products-24-1-1-5-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item c"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1-5-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-24-1-1-5-4">
 <div class="para" id="sec_Cartesian_Products-24-1-1-5-4-1">
-<span class="process-math">\(\displaystyle A\times (B\cup C)=(A\times B)\cup (A\times C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-24-1-1-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle A\times (B\cup C)=(A\times B)\cup (A\times C)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#sec_Cartesian_Products-24-1-1-5-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item d"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1-5-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li id="sec_Cartesian_Products-24-1-1-5-5">
 <div class="para" id="sec_Cartesian_Products-24-1-1-5-5-1">
-<span class="process-math">\(\displaystyle A\times (B\setminus C) = (A\times B)\setminus (A\times C)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-24-1-1-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\displaystyle A\times (B\setminus C) = (A\times B)\setminus (A\times C)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item e"><a href="#sec_Cartesian_Products-24-1-1-5-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item e"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1-5-5" title="Copy heading and permalink for Item e" aria-label="Copy heading and permalink for Item e">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.61"><a href="#sec_Cartesian_Products-24" title="Copy heading and permalink for Problem 3.61" aria-label="Copy heading and permalink for Problem 3.61">🔗</a></div></article><article class="problem example-like" id="sec_Cartesian_Products-25"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.61"><a tabindex="-1" href="#sec_Cartesian_Products-24" title="Copy heading and permalink for Problem 3.61" aria-label="Copy heading and permalink for Problem 3.61">🔗</a></div>
+</article>
+<article class="problem example-like" id="sec_Cartesian_Products-25"><h3 class="heading">
 <span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.62</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sec_Cartesian_Products-25-1-1">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, conjecture a way to rewrite <span class="process-math">\((A\times B)^C\)</span> in a way that involves <span class="process-math">\(A^C\)</span> and <span class="process-math">\(B^C\)</span> and then prove your conjecture.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-25-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_Cartesian_Products-25-1-1">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, conjecture a way to rewrite <span class="process-math">\((A\times B)^C\)</span> in a way that involves <span class="process-math">\(A^C\)</span> and <span class="process-math">\(B^C\)</span> and then prove your conjecture.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-25-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Problem 3.62"><a href="#sec_Cartesian_Products-25" title="Copy heading and permalink for Problem 3.62" aria-label="Copy heading and permalink for Problem 3.62">🔗</a></div></article><blockquote class="blockquote" id="sec_Cartesian_Products-26">
-<div class="para" id="sec_Cartesian_Products-26-1">If there is no struggle, there is no progress.<div class="autopermalink" data-description="Paragraph"><a href="#sec_Cartesian_Products-26-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Problem 3.62"><a tabindex="-1" href="#sec_Cartesian_Products-25" title="Copy heading and permalink for Problem 3.62" aria-label="Copy heading and permalink for Problem 3.62">🔗</a></div>
+</article>
+<blockquote class="blockquote" id="sec_Cartesian_Products-26">
+<div class="para" id="sec_Cartesian_Products-26-1">If there is no struggle, there is no progress.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_Cartesian_Products-26-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<cite class="attribution">―Frederick Douglass, writer &amp; statesman</cite><div class="autopermalink" data-description="Quotation"><a href="#sec_Cartesian_Products-26" title="Copy heading and permalink for Quotation" aria-label="Copy heading and permalink for Quotation">🔗</a></div>
+<cite class="attribution">―Frederick Douglass, writer &amp; statesman</cite><div class="autopermalink" aria-hidden="true" data-description="Quotation"><a tabindex="-1" href="#sec_Cartesian_Products-26" title="Copy heading and permalink for Quotation" aria-label="Copy heading and permalink for Quotation">🔗</a></div>
 </blockquote>
-<div class="autopermalink" data-description="Section 3.5: Cartesian Products of Sets"><a href="#sec_Cartesian_Products" title="Copy heading and permalink for Section 3.5: Cartesian Products of Sets" aria-label="Copy heading and permalink for Section 3.5: Cartesian Products of Sets">🔗</a></div></section></div>
+<div class="autopermalink" aria-hidden="true" data-description="Section 3.5: Cartesian Products of Sets"><a tabindex="-1" href="#sec_Cartesian_Products" title="Copy heading and permalink for Section 3.5: Cartesian Products of Sets" aria-label="Copy heading and permalink for Section 3.5: Cartesian Products of Sets">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec_Indexing_Sets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chap_Induction.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
