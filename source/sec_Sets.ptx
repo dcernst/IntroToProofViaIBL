@@ -276,7 +276,7 @@ Take a moment to convince yourself that this is a reasonable shorthand.
     This is in agreement with <xref ref="thm_trivial_subsets">Theorem</xref>(b),
     which states that the empty set is always a subset of every set.
     In light of this,
-    it is common to omit discussion of the case when <m>A</m> is the empty set when proving that <m>A</m> is s a subset of <m>B</m>.
+    it is common to omit discussion of the case when <m>A</m> is the empty set when proving that <m>A</m> is a subset of <m>B</m>.
   </p>
   <problem>
     <statement>

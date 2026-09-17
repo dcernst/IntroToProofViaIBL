@@ -64,7 +64,7 @@
     The next theorem tells us how to negate logical forms involving quantifiers.
     Your proof should involve several mini arguments.
     For example, in Part<nbsp/>(a),
-    you will need to proof that if <m>\neg (\forall x)P(x)</m> is true,
+    you will need to prove that if <m>\neg (\forall x)P(x)</m> is true,
     then <m>(\exists x)(\neg P(x))</m> is also true.
   </p>
   <theorem xml:id="thm_negation_of_quantifiers">
