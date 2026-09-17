@@ -55,7 +55,7 @@ For example, compare <m>L(a,b)</m> with <m>L(b,a)</m>.
   </p>
   <p>
 One way we can make propositions out of predicates is by assigning specific values to the free variables.
-That is, if <m>P(x)</m> is a predicate and <m>x_0</m> is specific value for <m>x</m>,
+That is, if <m>P(x)</m> is a predicate and <m>x_0</m> is a specific value for <m>x</m>,
 then <m>P(x_0)</m> is now a proposition that is either true or false.
   </p>
   <problem>
